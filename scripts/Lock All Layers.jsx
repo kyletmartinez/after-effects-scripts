@@ -14,7 +14,7 @@
  */
 
 (function() {
-    function locAllLayers (comp) {
+    function lockAllLayers (comp) {
         var layers = comp.layers;
         var numLayers = layers.length;
         for (var l = 1; l <= numLayers; l++) {
