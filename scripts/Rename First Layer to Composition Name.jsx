@@ -23,7 +23,10 @@
         var comp = selectedComps[c];
         var compName = comp.name;
         var layer = comp.layers[1];
+        var locked = layer.locked;
+        layer.locked = false;
         layer.name = compName;
+        layer.locked = locked;
     }
     app.endUndoGroup();
 })();
