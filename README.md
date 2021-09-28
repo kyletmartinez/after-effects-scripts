@@ -50,6 +50,10 @@ Lock every layer in every conmposition in the project
 
 Convert selected keyframes into hold keyframes
 
+#### [Randomize Layer Start Time](/scripts/Randomize%20Layer%20Start%20Time.jsx)
+
+Randomly shift the start time of all selected layers within a provided range
+
 #### [Rename Composition to File Name](/scripts/Rename%20Composition%20to%20File%20Name.jsx)
 
 Rename the current composition to the same name as the project 
@@ -73,6 +77,10 @@ Rename the source of the selected layer to match
 #### [Reset Composition Work Area](/scripts/Reset%20Composition%20Work%20Area.jsx)
 
 Set the Work Area to cover the entire composition
+
+#### [Shift Selected Layers](/scripts/Shift%20Selected%20Layers.jsx)
+
+Shift all selected layers to the Current Time Indicator as a group while maintaining relative timing
 
 #### [Toggle Maintain Scale Expression](/scripts/Toggle%20Maintain%20Scale%20Expression.jsx)
 
