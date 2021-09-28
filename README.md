@@ -34,6 +34,10 @@ Clean out the Render Queue
 
 Clean unused items from any selected folders. Remove empty folders unless they are top level
 
+#### [Copy Composition Work Area](/scripts/Copy%20Composition%20Work%20Area.jsx)
+
+Copy the Work Area from the active composition. Hold the ALT key to paste the copied Work Area to the active composition.
+
 #### [Force Composition Panel Refresh](/scripts/Force%20Composition%20Panel%20Refresh.jsx)
 
 Force the Composition Panel to refresh the current frame
