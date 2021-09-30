@@ -98,6 +98,10 @@ Set the Work Area to cover the entire composition
 
 Shift all selected layers to the Current Time Indicator as a group while maintaining relative timing
 
+#### [Set New Color](/scripts/Set%20New%20Color.jsx)
+
+Set new color based on original color, blend mode, and opacity
+
 #### [Stick Effect to Layer](/scripts/Stick%20Effect%20to%20Layer.jsx)
 
 Force effects wih selected position properties such as CC Bend It or Gradient Ramp to stick properly to a layer
