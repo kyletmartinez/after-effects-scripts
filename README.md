@@ -38,9 +38,17 @@ Clean unused items from any selected folders. Remove empty folders unless they a
 
 Copy the Work Area from the active composition. Hold the ALT key to paste the copied Work Area to the active composition.
 
+#### [Cycle Composition Background Color](/scripts/Cycle%20Composition%20Background%20Color.jsx)
+
+Cycle the composition background color between black, gray, and white
+
 #### [Force Composition Panel Refresh](/scripts/Force%20Composition%20Panel%20Refresh.jsx)
 
 Force the Composition Panel to refresh the current frame
+
+#### [Hard Solo Layers](/scripts/Hard%20Solo%20Layers.jsx)
+
+Disable (toggle the eyeball icon) on all unselected layers
 
 #### [Invert Selected Keyframes](/scripts/Invert%20Selected%20Keyframes.jsx)
 
@@ -57,6 +65,10 @@ Convert selected keyframes into hold keyframes
 #### [Randomize Layer Start Time](/scripts/Randomize%20Layer%20Start%20Time.jsx)
 
 Randomly shift the start time of all selected layers within a provided range
+
+#### [Randomize Selected Keyframe Values](/scripts/Randomize Selected%20Keyframe%20Values.jsx)
+
+Randomize the value for selected 1 dimensional keyframes
 
 #### [Rename Composition to File Name](/scripts/Rename%20Composition%20to%20File%20Name.jsx)
 
@@ -85,6 +97,10 @@ Set the Work Area to cover the entire composition
 #### [Shift Selected Layers](/scripts/Shift%20Selected%20Layers.jsx)
 
 Shift all selected layers to the Current Time Indicator as a group while maintaining relative timing
+
+#### [Stick Effect to Layer](/scripts/Stick%20Effect%20to%20Layer.jsx)
+
+Force effects wih selected position properties such as CC Bend It or Gradient Ramp to stick properly to a layer
 
 #### [Toggle Maintain Scale Expression](/scripts/Toggle%20Maintain%20Scale%20Expression.jsx)
 
