@@ -66,7 +66,7 @@ Convert selected keyframes into hold keyframes
 
 Randomly shift the start time of all selected layers within a provided range
 
-#### [Randomize Selected Keyframe Values](/scripts/Randomize Selected%20Keyframe%20Values.jsx)
+#### [Randomize Selected Keyframe Values](/scripts/Randomize%20Selected%20Keyframe%20Values.jsx)
 
 Randomize the value for selected 1 dimensional keyframes
 
