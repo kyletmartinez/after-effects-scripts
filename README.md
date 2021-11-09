@@ -14,6 +14,10 @@ Add a new maker to all selected layers with an optional comment
 
 Add all selected properties to Essential Graphics Panel using effect names instead of property names for expression controls
 
+#### [Add Posterize Time](/scripts/Add%20Posterize%20Time.jsx)
+
+Add an adjustment layer with the Posterize Time effect set to 12 fps
+
 #### [Calculate Difference Between Keyframe Values](/scripts/Calculate%20Difference%20Between%20Keyframe%20Values.jsx)
 
 Calculate the difference between two keyframe values
