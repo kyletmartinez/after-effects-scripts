@@ -86,6 +86,10 @@ Rename the first layer in each selected composition to match the name of the com
 
 Rename the source of the currently selected layer
 
+#### [Rename Selected Layers With Text](/scripts/Rename%20Selected%20Layers%20With%20Text.jsx)
+
+Rename selected layers and append each character along with character count
+
 #### [Rename Selected Layers](/scripts/Rename%20Selected%20Layers.jsx)
 
 Rename selected layers and append zero padded numbers
