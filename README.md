@@ -46,6 +46,10 @@ Copy the Work Area from the active composition. Hold the ALT key to paste the co
 
 Cycle the composition background color between black, gray, and white
 
+#### [Disable Specified Effects](/scripts/Disable%20Specified%20Effects.jsx)
+
+Disable all of the specified effects in the project. Hold the ALT key to enable.
+
 #### [Force Composition Panel Refresh](/scripts/Force%20Composition%20Panel%20Refresh.jsx)
 
 Force the Composition Panel to refresh the current frame
