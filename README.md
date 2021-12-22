@@ -110,6 +110,10 @@ Set the Work Area to cover the entire composition
 
 Shift all selected layers to the Current Time Indicator as a group while maintaining relative timing
 
+#### [Selected Unparented Layers](/scripts/Select%20Unparented%20Layers.jsx)
+
+Select all unparented layers in the current composition
+
 #### [Set New Color](/scripts/Set%20New%20Color.jsx)
 
 Set new color based on original color, blend mode, and opacity
