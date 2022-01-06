@@ -42,6 +42,10 @@ Clean unused items from any selected folders. Remove empty folders unless they a
 
 Copy the Work Area from the active composition. Hold the ALT key to paste the copied Work Area to the active composition.
 
+#### [Create Text Layers From File](/scripts/Create%20Text%20Layers%20From%20File.jsx)
+
+Add a new Text Layer in the current composition for each line of text in the file in the selected text file
+
 #### [Cycle Composition Background Color](/scripts/Cycle%20Composition%20Background%20Color.jsx)
 
 Cycle the composition background color between black, gray, and white
