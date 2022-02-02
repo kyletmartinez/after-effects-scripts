@@ -130,6 +130,10 @@ Set new color based on original color, blend mode, and opacity
 
 Force effects wih selected position properties such as CC Bend It or Gradient Ramp to stick properly to a layer
 
+#### [Toggle Difference Blend Mode](/scripts/Toggle%20Difference%20Blend%20Mode.jsx)
+
+Toggle the blend mode of the selected layers between Normal and Difference. Hold the ALT key to force all selected layers to Normal blend mode. Hold the SHIFT key to force all selected layers to Difference blend mode.
+
 #### [Toggle Maintain Scale Expression](/scripts/Toggle%20Maintain%20Scale%20Expression.jsx)
 
 Disable or enable an expression that maintains the visual scale of a layer as its positioned in Z Space
