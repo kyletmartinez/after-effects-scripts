@@ -10,6 +10,10 @@ To run the script natively in After Effects use `File > Script > Run Script File
 
 Add a camera and 3D null as a controller to the current composition
 
+#### [Add Fill With Color Cycle.jsx](/scripts/Add%20Fill%20With%20Color%20Cycle.jsx)
+
+Add the Fill effect to all selected layers while cycling through red, green, blue, yellow, magenta, and cyan
+
 #### [Add Markers to Selected Layers](/scripts/Add%20Markers%20to%20Selected%20Layers.jsx)
 
 Add a new maker to all selected layers with an optional comment
