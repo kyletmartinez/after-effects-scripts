@@ -62,6 +62,10 @@ Cycle the composition background color between black, gray, and white
 
 Disable all of the specified effects in the project. Hold the ALT key to enable.
 
+#### [Expose Essential Properties to Essential Graphics Panel](script/Expose%20Essential%20Properties%20to%20Essential%20Graphics%20Panel.jsx)
+
+Essential Properties from a nested composition can not be directly added to the Essential Graphic Panel of the parent composition. Instead, run this script to expose those Essential Properties by using an intermediate expression controller. Select a layer to add all properterties or select specific properties to add them. This script does not currently support Dropdown Menu Control.
+
 #### [Force Composition Panel Refresh](/scripts/Force%20Composition%20Panel%20Refresh.jsx)
 
 Force the Composition Panel to refresh the current frame
