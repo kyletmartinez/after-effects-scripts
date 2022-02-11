@@ -30,9 +30,9 @@ Add an adjustment layer with the Posterize Time effect set to 12 fps
 
 Calculate the difference between two keyframe values
 
-#### [Calculate Distance Between 2D Layers](/scripts/Calculate%20Distance%20Between%202D%20Layers.jsx)
+#### [Calculate Distance Between Layers](/scripts/Calculate%20Distance%20Between%202D%20Layers.jsx)
 
-Calculate the distance between two 2D layers
+Calculate the distance between any two layers. Two 2D layers will result in 2D distance (composition space). Two 3D layers will result in 3D distance (world space). One 2D layer and one 3D layer will result in 3D distance (world space). Hold the ALT key to force the result to be 2D distance (composition space). Forcing 2D distance (composition space) will result in the optical distance between two layers.
 
 #### [Center Composition](/scripts/Center%20Composition.jsx)
 
