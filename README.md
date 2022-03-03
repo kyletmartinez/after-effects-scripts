@@ -6,6 +6,10 @@ To run the script natively in After Effects use `File > Script > Run Script File
 
 ## Scripts
 
+#### [Add 3D Break](/scripts/Add%203D%20Break.jsx)
+
+Add an adjustment layer above the currently selected layer to break the 3D space of After Effects. If no layers are selected the adjustment layer will be added at the top.
+
 #### [Add Camera With Controller](/scripts/Add%20Camera%20With%20Controller.jsx)
 
 Add a camera and 3D null as a controller to the current composition
