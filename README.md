@@ -14,7 +14,7 @@ Add an adjustment layer above the currently selected layer to break the 3D space
 
 Add a camera and 3D null as a controller to the current composition.
 
-#### [Add Fill With Color Cycle.jsx](/scripts/Add%20Fill%20With%20Color%20Cycle.jsx)
+#### [Add Fill With Color Cycle](/scripts/Add%20Fill%20With%20Color%20Cycle.jsx)
 
 Add the Fill effect to all selected layers while cycling through red, green, blue, yellow, magenta, and cyan.
 
