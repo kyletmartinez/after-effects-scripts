@@ -42,6 +42,10 @@ Calculate the distance between any two layers. Two 2D layers will result in 2D d
 
 Center the composition in the Composition Panel. Hold the ALT key or SHIFT key for other zoom levels.
 
+#### [Change Nested Composition Duration](/scripts/Change%20Nested%20Composition%20Duration.jsx)
+
+Change the composition and all layers to the given duration. All nested precomps will be affected as well (and precomps within those precomps and so on).
+
 #### [Clean Render Queue](/scripts/Clean%20Render%20Queue.jsx)
 
 Clean out the Render Queue.
