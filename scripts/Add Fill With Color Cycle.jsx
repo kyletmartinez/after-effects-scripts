@@ -34,7 +34,7 @@
     var numSelectedLayers = selectedLayers.length;
     for (var l = 0; l < numSelectedLayers; l++) {
         var currentLayer = selectedLayers[l];
-        var effect = layer.property("ADBE Effect Parade").addProperty("ADBE Fill");
+        var effect = currentLayer.property("ADBE Effect Parade").addProperty("ADBE Fill");
         var color = getNextColor();
         effect.property(3).setValue(color);
     }
