@@ -1,6 +1,6 @@
 # After Effects Scripts
 
-A collection of helpful scripts for After Effects that run natively or with a 3rd party script launcher such as [kbar2](https://aescripts.com/kbar), [Tool Launcher](https://aescripts.com/tool-launcher/), or [Quick Menu 2](https://aescripts.com/quick-menu/).
+A collection of helpful scripts for After Effects that run natively or with a 3rd party script launcher..
 
 To run the script natively in After Effects use `File > Script > Run Script File...` and choose this script.
 
@@ -22,13 +22,14 @@ Add the Fill effect to all selected layers while cycling through red, green, blu
 
 Add a new maker to all selected layers with an optional comment.
 
+#### [Add Posterize Time](/scripts/Add%20Posterize%20Time.jsx)
+
+Add an adjustment layer with the Posterize Time effect set to 12 fps.
+
 #### [Add Selected Properties to Essential Graphics Panel](/scripts/Add%20Selected%20Properties%20to%20Essential%20Graphics%20Panel.jsx)
 
 Add all selected properties to Essential Graphics Panel using effect names instead of property names for expression controls.
 
-#### [Add Posterize Time](/scripts/Add%20Posterize%20Time.jsx)
-
-Add an adjustment layer with the Posterize Time effect set to 12 fps.
 
 #### [Calculate Difference Between Keyframe Values](/scripts/Calculate%20Difference%20Between%20Keyframe%20Values.jsx)
 
@@ -45,6 +46,10 @@ Center the composition in the Composition Panel. Hold the ALT key or SHIFT key f
 #### [Change Nested Composition Duration](/scripts/Change%20Nested%20Composition%20Duration.jsx)
 
 Change the composition and all layers to the given duration. All nested precomps will be affected as well (and precomps within those precomps and so on).
+
+#### [Change Nested Composition Frame Rate](/scripts/Change%20Nested%20Composition%20Frame%20Rate.jsx)
+
+Change the composition and all layers to the given frame rate. All nested precomps will be affected as well (and precomps within those precomps and so on).
 
 #### [Clean Render Queue](/scripts/Clean%20Render%20Queue.jsx)
 
@@ -94,6 +99,18 @@ Lock every layer in every conmposition in the project.
 
 Convert selected keyframes into hold keyframes.
 
+##### [Matte Selected Layers to Layer Above](/scripts/Matte%20Selected%20Layers%20to%20Layer%20Above.jsx)
+
+Set the track matte of a layer to the layer above it using the specified track matte type. Change TRACK_MATTE_TYPE to any matte type or to none.
+
+##### [OCD Expression Fix](/scripts/OCD%20Expression%20Fix.jsx)
+
+Append `.value;` to the end of the expression on selected properties. Typically used immediately after using the pickwhip to quickly set the expression.
+
+##### [Parent Selected Layers to Layers Below](/scripts/Parent%20Selected%20Layers%20to%20Layers%20Below.jsx)
+
+Parent each selected layer to the layer directly below it.
+
 #### [Randomize Layer Start Time](/scripts/Randomize%20Layer%20Start%20Time.jsx)
 
 Randomly shift the start time of all selected layers within a provided range.
@@ -134,9 +151,9 @@ Set the Work Area to cover the entire composition.
 
 Round the position values of selected layers to the nearest whole number.
 
-#### [Shift Selected Layers](/scripts/Shift%20Selected%20Layers.jsx)
+<!-- #### [Shift Selected Layers](/scripts/Shift%20Selected%20Layers.jsx)
 
-Shift all selected layers to the Current Time Indicator as a group while maintaining relative timing.
+Shift all selected layers to the Current Time Indicator as a group while maintaining relative timing. -->
 
 #### [Selected Unparented Layers](/scripts/Select%20Unparented%20Layers.jsx)
 
@@ -165,6 +182,10 @@ Disable or enable an expression that maintains the visual scale of a layer as it
 #### [Toggle Onion Skinning](/scripts/Toggle%20Onion%20Skinning.jsx)
 
 Toggle onion skinning in the current composition.
+
+#### [Toggle Selected Property Expressions](/scripts/Toggle%20Selected%20Property%20Expressions.jsx)
+
+Toggle the expressions for selected properties
 
 #### [Zero Position](/scripts/Zero%20Position.jsx)
 
