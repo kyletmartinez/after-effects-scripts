@@ -151,10 +151,6 @@ Set the Work Area to cover the entire composition.
 
 Round the position values of selected layers to the nearest whole number.
 
-<!-- #### [Shift Selected Layers](/scripts/Shift%20Selected%20Layers.jsx)
-
-Shift all selected layers to the Current Time Indicator as a group while maintaining relative timing. -->
-
 #### [Selected Unparented Layers](/scripts/Select%20Unparented%20Layers.jsx)
 
 Select all unparented layers in the current composition.
@@ -178,6 +174,10 @@ Toggle the blend mode of the selected layers between Normal and Difference. Hold
 #### [Toggle Maintain Scale Expression](/scripts/Toggle%20Maintain%20Scale%20Expression.jsx)
 
 Disable or enable an expression that maintains the visual scale of a layer as its positioned in Z Space.
+
+#### [Toggle Puppet Pin Type](/scripts/Toggle%20Puppet%20Pin%20Type.jsx)
+
+Toggle selected puppet pins between Position type and Advanced type.
 
 #### [Toggle Onion Skinning](/scripts/Toggle%20Onion%20Skinning.jsx)
 
