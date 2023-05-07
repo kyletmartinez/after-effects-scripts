@@ -14,6 +14,10 @@ Add an adjustment layer above the currently selected layer to break the 3D space
 
 Add a camera and 3D null as a controller to the current composition.
 
+#### [Add Expression to Selected Properties](/scripts/Add%20Expression%20to%20Selected%20Properties.jsx)
+
+Add an expression to all selected properties.
+
 #### [Add Fill With Color Cycle](/scripts/Add%20Fill%20With%20Color%20Cycle.jsx)
 
 Add the Fill effect to all selected layers while cycling through red, green, blue, yellow, magenta, and cyan.
@@ -24,12 +28,11 @@ Add a new maker to all selected layers with an optional comment.
 
 #### [Add Posterize Time](/scripts/Add%20Posterize%20Time.jsx)
 
-Add an adjustment layer with the Posterize Time effect set to 12 fps.
+Add an adjustment layer with the Posterize Time effect to the current composition.
 
 #### [Add Selected Properties to Essential Graphics Panel](/scripts/Add%20Selected%20Properties%20to%20Essential%20Graphics%20Panel.jsx)
 
 Add all selected properties to Essential Graphics Panel using effect names instead of property names for expression controls.
-
 
 #### [Calculate Difference Between Keyframe Values](/scripts/Calculate%20Difference%20Between%20Keyframe%20Values.jsx)
 
@@ -43,6 +46,10 @@ Calculate the distance between any two layers. Two 2D layers will result in 2D d
 
 Center the composition in the Composition Panel. Hold the ALT key or SHIFT key for other zoom levels.
 
+#### [Change Nested Composition Background](/scripts/Change%20Nested%20Composition%20Background.jsx)
+
+Change the background color of the current composition using a hexcode. All nested precomps will be affected as well (and precomps within those precomps and so on).
+
 #### [Change Nested Composition Duration](/scripts/Change%20Nested%20Composition%20Duration.jsx)
 
 Change the composition and all layers to the given duration. All nested precomps will be affected as well (and precomps within those precomps and so on).
@@ -50,6 +57,14 @@ Change the composition and all layers to the given duration. All nested precomps
 #### [Change Nested Composition Frame Rate](/scripts/Change%20Nested%20Composition%20Frame%20Rate.jsx)
 
 Change the composition and all layers to the given frame rate. All nested precomps will be affected as well (and precomps within those precomps and so on).
+
+#### [Change Nested Composition Layer Colors](/scripts/Change%20Nested%20Composition%20Layer%20Colors.jsx)
+
+Set the label color of all layers in the current composition to "None." All nested precomps will be affected as well (and precomps within those precomps and so on).
+
+#### [Change Nested Composition Layer Names](/scripts/Change%20Nested%20Composition%20Layer%20Names.jsx)
+
+Rename all the layers within all nested compositions.
 
 #### [Clean Render Queue](/scripts/Clean%20Render%20Queue.jsx)
 
@@ -73,9 +88,9 @@ Cycle the composition background color between black, gray, and white.
 
 #### [Disable Specified Effects](/scripts/Disable%20Specified%20Effects.jsx)
 
-Disable all of the specified effects in the project. Hold the ALT key to enable.
+Disable all of the specified effects in the project. Alt + click to enable. Add additional effects to be checked into the matchNames object.
 
-#### [Expose Essential Properties to Essential Graphics Panel](script/Expose%20Essential%20Properties%20to%20Essential%20Graphics%20Panel.jsx)
+#### [Expose Essential Properties to Essential Graphics Panel](/scripts/Expose%20Essential%20Properties%20to%20Essential%20Graphics%20Panel.jsx)
 
 Essential Properties from a nested composition can not be directly added to the Essential Graphic Panel of the parent composition. Instead, run this script to expose those Essential Properties by using an intermediate expression controller. Select a layer to add all properterties or select specific properties to add them. This script does not currently support Dropdown Menu Control.
 
@@ -95,21 +110,37 @@ Invert selected keyframe values.
 
 Lock every layer in every conmposition in the project.
 
+#### [Lock All Null Layers](/scripts/Lock%20All%20Null%20Layers.jsx)
+
+Lock all layers in a composition that are a null layer.
+
 #### [Make Hold Keyframes](/scripts/Make%20Hold%20Keyframes.jsx)
 
 Convert selected keyframes into hold keyframes.
 
-##### [Matte Selected Layers to Layer Above](/scripts/Matte%20Selected%20Layers%20to%20Layer%20Above.jsx)
+#### [Match Selected Layer Start Time To Below](/scripts/Match%20Selected%20Layer%20Start%20Time%20To%20Below.jsx)
+
+Match the start time of all selected layers to the layer directly below it.
+
+#### [Matte Selected Layers to Layer Above](/scripts/Matte%20Selected%20Layers%20to%20Layer%20Above.jsx)
 
 Set the track matte of a layer to the layer above it using the specified track matte type. Change TRACK_MATTE_TYPE to any matte type or to none.
 
-##### [OCD Expression Fix](/scripts/OCD%20Expression%20Fix.jsx)
+#### [OCD Expression Fix](/scripts/OCD%20Expression%20Fix.jsx)
 
-Append `.value;` to the end of the expression on selected properties. Typically used immediately after using the pickwhip to quickly set the expression.
+Append ".value;" to the end of the expression on selected properties. Typically used immediately after using the pickwhip to quickly set the expression.
 
-##### [Parent Selected Layers to Layers Below](/scripts/Parent%20Selected%20Layers%20to%20Layers%20Below.jsx)
+#### [Parent Selected Layers to Layers Below](/scripts/Parent%20Selected%20Layers%20to%20Layers%20Below.jsx)
 
 Parent each selected layer to the layer directly below it.
+
+#### [Posterize Keyframes](/scripts/Posterize%20Keyframes.jsx)
+
+Posterize all selected keyframes in a composition to be on 2s.
+
+#### [Posterize Start Time](/scripts/Posterize%20Start%20Time.jsx)
+
+Posterize the start time of all layers in a composition to be on 2s.
 
 #### [Randomize Layer Start Time](/scripts/Randomize%20Layer%20Start%20Time.jsx)
 
@@ -119,9 +150,13 @@ Randomly shift the start time of all selected layers within a provided range.
 
 Randomize the value for selected 1 dimensional keyframes.
 
+#### [Remove All Proxies](/scripts/Remove%20All%20Proxies.jsx)
+
+Remove all proxies set within the project.
+
 #### [Rename Composition to File Name](/scripts/Rename%20Composition%20to%20File%20Name.jsx)
 
-Rename the current composition to the same name as the project .
+Rename the current composition to the same name as the project.
 
 #### [Rename First Layer to Composition Name](/scripts/Rename%20First%20Layer%20to%20Composition%20Name.jsx)
 
@@ -130,6 +165,10 @@ Rename the first layer in each selected composition to match the name of the com
 #### [Rename Layer Source](/scripts/Rename%20Layer%20Source.jsx)
 
 Rename the source of the currently selected layer.
+
+#### [Rename Project Items](/scripts/Rename%20Project%20Items.jsx)
+
+Rename selected project items and append zero padded numbers.
 
 #### [Rename Selected Layers With Text](/scripts/Rename%20Selected%20Layers%20With%20Text.jsx)
 
@@ -143,6 +182,10 @@ Rename selected layers and append zero padded numbers.
 
 Rename the source of the selected layer to match.
 
+#### [Replace Text in Project Item Name](/scripts/Replace%20Text%20in%20Project%20Item%20Name.jsx)
+
+Replace text in the name of all selected project items.
+
 #### [Reset Composition Work Area](/scripts/Reset%20Composition%20Work%20Area.jsx)
 
 Set the Work Area to cover the entire composition.
@@ -151,7 +194,19 @@ Set the Work Area to cover the entire composition.
 
 Round the position values of selected layers to the nearest whole number.
 
-#### [Selected Unparented Layers](/scripts/Select%20Unparented%20Layers.jsx)
+#### [Save Frame as PNG](/scripts/Save%20Frame%20as%20PNG.jsx)
+
+Save the current frame as a PNG to the desktop. This does support transparency. The image is not amazing quality. Frames from the same composition and time will overwrite without a warning.
+
+#### [Select All Children](/scripts/Select%20All%20Children.jsx)
+
+Select all layers parented to the currently selected layer.
+
+#### [Select All Non-Null Layers](/scripts/Select%20All%20Non-Null%20Layers.jsx)
+
+Select all layers in a composition that are not a null layer.
+
+#### [Select Unparented Layers](/scripts/Select%20Unparented%20Layers.jsx)
 
 Select all unparented layers in the current composition.
 
@@ -159,9 +214,21 @@ Select all unparented layers in the current composition.
 
 Set new color based on original color, blend mode, and opacity.
 
+#### [Set Proxies From Folder](/scripts/Set%20Proxies%20From%20Folder.jsx)
+
+Automatically set proxies to all rendered MOV files in a folder that match compositions within the project.
+
+#### [Set Selected Layer Track Matte To Layer Above It](/scripts/Set%20Selected%20Layer%20Track%20Matte%20To%20Layer%20Above%20It.jsx)
+
+Set the track matte for all selected layers to the layer above it. Currently uses a Luma Inverted track matte type.
+
 #### [Set To Average Position](/scripts/Set%20To%20Average%20Position.jsx)
 
 Set the last selected layer to the average position of all other layers. Hold the ALT key to set the first selected layers to the average position of all other layers.
+
+#### [Shift Selected Layers](/scripts/Shift%20Selected%20Layers.jsx)
+
+Shift all selected layers to the Current Time Indicator as a group while maintaining relative timing.
 
 #### [Stick Effect to Layer](/scripts/Stick%20Effect%20to%20Layer.jsx)
 
@@ -173,15 +240,15 @@ Toggle the blend mode of the selected layers between Normal and Difference. Hold
 
 #### [Toggle Maintain Scale Expression](/scripts/Toggle%20Maintain%20Scale%20Expression.jsx)
 
-Disable or enable an expression that maintains the visual scale of a layer as its positioned in Z Space.
-
-#### [Toggle Puppet Pin Type](/scripts/Toggle%20Puppet%20Pin%20Type.jsx)
-
-Toggle selected puppet pins between Position type and Advanced type.
+Disable or enable an expression that maintains the visual scale of a layer as it's positioned in Z Space.
 
 #### [Toggle Onion Skinning](/scripts/Toggle%20Onion%20Skinning.jsx)
 
 Toggle onion skinning in the current composition.
+
+#### [Toggle Puppet Pin Type](/scripts/Toggle%20Puppet%20Pin%20Type.jsx)
+
+Toggle selected puppet pins between Position type and Advanced type.
 
 #### [Toggle Selected Property Expressions](/scripts/Toggle%20Selected%20Property%20Expressions.jsx)
 
