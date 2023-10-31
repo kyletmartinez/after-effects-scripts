@@ -1,6 +1,6 @@
 /**
  * @title Save Frame as PNG
- * @version 1.0
+ * @version 1.1
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Save the current frame as a PNG to the desktop. This does support transparency. The
@@ -20,5 +20,5 @@
     var time = comp.time;
     var name = comp.name;
     var path = Folder.desktop.toString();
-    comp.saveFrameToPng(time, File(path + "/" + name + ".png"));
+    comp.saveFrameToPng(time, File(path + "/" + Date.now() + "_" + name + ".png"));
 })()
