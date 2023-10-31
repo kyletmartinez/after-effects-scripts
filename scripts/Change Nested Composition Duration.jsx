@@ -1,6 +1,6 @@
 /**
  * @title Change Nested Composition Duration
- * @version 1.0
+ * @version 1.1
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Change the composition and all layers to the given duration. All nested precomps
@@ -32,10 +32,10 @@
     app.beginUndoGroup("Change Nested Composition Duration");
     var newDurationString = prompt("New Duration (Seconds)", "");
     if (newDurationString !== null && newDurationString.length > 0) {
-        var newDurationInt = parseInt(newDurationString);
-        if (isNaN(newDurationInt) === false) {
+        var newDurationFloat = parseFloat(newDurationString);
+        if (isNaN(newDurationFloat) === false) {
             var comp = app.project.activeItem;
-            changeCompDuration(comp, newDurationInt);
+            changeCompDuration(comp, newDurationFloat);
         }
     }
     app.endUndoGroup();
