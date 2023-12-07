@@ -1,5 +1,5 @@
 /**
- * @title Change Nested Composition Duration
+ * @name Change Nested Composition Duration
  * @version 1.1
  * @author Kyle Martinez <www.kyle-martinez.com>
  *

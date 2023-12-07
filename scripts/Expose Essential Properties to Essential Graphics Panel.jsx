@@ -1,5 +1,5 @@
 /**
- * @title Expose Essential Properties to Essential Graphics Panel
+ * @name Expose Essential Properties to Essential Graphics Panel
  * @version 1.0
  * @author Kyle Martinez <www.kyle-martinez.com>
  *

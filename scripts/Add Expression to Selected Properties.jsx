@@ -1,5 +1,5 @@
 /**
- * @title Add Expression to Selected Properties
+ * @name Add Expression to Selected Properties
  * @version 1.0
  * @author Kyle Martinez <www.kyle-martinez.com>
  *

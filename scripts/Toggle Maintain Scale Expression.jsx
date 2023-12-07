@@ -1,5 +1,5 @@
 /**
- * @title Toggle Maintain Scale Expression
+ * @name Toggle Maintain Scale Expression
  * @version 1.0
  * @author Kyle Martinez <www.kyle-martinez.com>
  *

@@ -1,5 +1,5 @@
 /**
- * @title Disable Specified Effects
+ * @name Disable Specified Effects
  * @version 1.0
  * @author Kyle Martinez <www.kyle-martinez.com>
  *

@@ -1,5 +1,5 @@
 /**
- * @title Set Proxies From Folder
+ * @name Set Proxies From Folder
  * @version 1.0
  * @author Kyle Martinez <www.kyle-martinez.com>
  *

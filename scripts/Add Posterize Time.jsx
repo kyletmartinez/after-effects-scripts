@@ -1,5 +1,5 @@
 /**
- * @title Add Posterize Time
+ * @name Add Posterize Time
  * @version 1.0
  * @author Kyle Martinez <www.kyle-martinez.com>
  *

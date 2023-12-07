@@ -1,5 +1,5 @@
 /**
- * @title Lock All Layers
+ * @name Lock All Layers
  * @version 1.3
  * @author Kyle Martinez <www.kyle-martinez.com>
  *

@@ -1,5 +1,5 @@
 /**
- * @title Cycle Composition Background Color
+ * @name Cycle Composition Background Color
  * @version 1.2
  * @author Kyle Martinez <www.kyle-martinez.com>
  *

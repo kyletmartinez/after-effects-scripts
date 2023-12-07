@@ -1,5 +1,5 @@
 /**
- * @title Hard Solo Layers
+ * @name Hard Solo Layers
  * @version 1.2
  * @author Kyle Martinez <www.kyle-martinez.com>
  *

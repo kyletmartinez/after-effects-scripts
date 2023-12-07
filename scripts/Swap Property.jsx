@@ -1,5 +1,5 @@
 /**
- * @title Swap Property
+ * @name Swap Property
  * @version 1.0
  * @author Kyle Martinez <www.kyle-martinez.com>
  *

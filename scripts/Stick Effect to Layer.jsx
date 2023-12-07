@@ -1,5 +1,5 @@
 /**
- * @title Stick Effect to Layer
+ * @name Stick Effect to Layer
  * @version 1.2
  * @author Kyle Martinez <www.kyle-martinez.com>
  *

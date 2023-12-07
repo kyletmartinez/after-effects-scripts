@@ -1,5 +1,5 @@
 /**
- * @title Add Composition Guides
+ * @name Add Composition Guides
  * @version 1.0
  * @author Kyle Martinez <www.kyle-martinez.com>
  *

@@ -1,5 +1,5 @@
 /**
- * @title Rename Source to Layer Name
+ * @name Rename Source to Layer Name
  * @version 1.3
  * @author Kyle Martinez <www.kyle-martinez.com>
  *

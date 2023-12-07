@@ -1,5 +1,5 @@
 /**
- * @title Matte Selected Layers to Layer Above
+ * @name Matte Selected Layers to Layer Above
  * @version 1.0
  * @author Kyle Martinez <www.kyle-martinez.com>
  *

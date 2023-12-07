@@ -1,5 +1,5 @@
 /**
- * @title Add Camera With Controller
+ * @name Add Camera With Controller
  * @version 1.0
  * @author Kyle Martinez <www.kyle-martinez.com>
  *

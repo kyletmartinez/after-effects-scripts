@@ -1,5 +1,5 @@
 /**
- * @title Parent Selected Layers to Layers Below
+ * @name Parent Selected Layers to Layers Below
  * @version 1.0
  * @author Kyle Martinez <www.kyle-martinez.com>
  *

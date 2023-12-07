@@ -1,5 +1,5 @@
 /**
- * @title Selected Unparented Layers
+ * @name Selected Unparented Layers
  * @version 1.0
  * @author Kyle Martinez <www.kyle-martinez.com>
  *

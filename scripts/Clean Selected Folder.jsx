@@ -1,5 +1,5 @@
 /**
- * @title Clean Selected Folders
+ * @name Clean Selected Folders
  * @version 1.3
  * @author Kyle Martinez <www.kyle-martinez.com>
  *

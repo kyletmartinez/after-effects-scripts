@@ -1,5 +1,5 @@
 /**
- * @title Center Composition
+ * @name Center Composition
  * @version 1.3
  * @author Kyle Martinez <www.kyle-martinez.com>
  *

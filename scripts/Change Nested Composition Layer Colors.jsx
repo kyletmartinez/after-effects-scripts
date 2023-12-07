@@ -1,5 +1,5 @@
 /**
- * @title Change Nested Composition Layer Colors
+ * @name Change Nested Composition Layer Colors
  * @version 1.0
  * @author Kyle Martinez <www.kyle-martinez.com>
  *

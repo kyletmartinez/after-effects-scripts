@@ -1,5 +1,5 @@
 /**
- * @title Replace Text in Project Item Name
+ * @name Replace Text in Project Item Name
  * @version 1.0
  * @author Kyle Martinez <www.kyle-martinez.com>
  *

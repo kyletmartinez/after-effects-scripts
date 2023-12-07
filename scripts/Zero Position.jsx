@@ -1,5 +1,5 @@
 /**
- * @title Zero Position
+ * @name Zero Position
  * @version 2.1
  * @author Kyle Martinez <www.kyle-martinez.com>
  *

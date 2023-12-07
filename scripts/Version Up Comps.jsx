@@ -1,5 +1,5 @@
 /**
- * @title Version Up Comps
+ * @name Version Up Comps
  * @version 1.0
  * @author Kyle Martinez <www.kyle-martinez.com>
  *

@@ -1,5 +1,5 @@
 /**
- * @title Randomize Selected Keyframe Values
+ * @name Randomize Selected Keyframe Values
  * @version 1.2
  * @author Kyle Martinez <www.kyle-martinez.com>
  *

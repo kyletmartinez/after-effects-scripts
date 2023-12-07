@@ -1,5 +1,5 @@
 /**
- * @title Randomize Layer Start Time
+ * @name Randomize Layer Start Time
  * @version 1.3
  * @author Kyle Martinez <www.kyle-martinez.com>
  *

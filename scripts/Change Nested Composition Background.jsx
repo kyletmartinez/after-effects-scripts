@@ -1,5 +1,5 @@
 /**
- * @title Change Nested Composition Background
+ * @name Change Nested Composition Background
  * @version 1.0
  * @author Kyle Martinez <www.kyle-martinez.com>
  *

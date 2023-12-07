@@ -1,5 +1,5 @@
 /**
- * @title Lock All Null Layers
+ * @name Lock All Null Layers
  * @version 1.0
  * @author Kyle Martinez <www.kyle-martinez.com>
  *

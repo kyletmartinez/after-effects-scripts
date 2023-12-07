@@ -1,5 +1,5 @@
 /**
- * @title Rename Composition to File Name
+ * @name Rename Composition to File Name
  * @version 1.1
  * @author Kyle Martinez <www.kyle-martinez.com>
  *

@@ -1,5 +1,5 @@
 /**
- * @title Match Selected Layer Start Time To Below
+ * @name Match Selected Layer Start Time To Below
  * @version 1.0
  * @author Kyle Martinez <www.kyle-martinez.com>
  *

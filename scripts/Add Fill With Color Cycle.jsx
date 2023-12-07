@@ -1,5 +1,5 @@
 /**
- * @title Add Fill With Color Cycle
+ * @name Add Fill With Color Cycle
  * @version 1.0
  * @author Kyle Martinez <www.kyle-martinez.com>
  *

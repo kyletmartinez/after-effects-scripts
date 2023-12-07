@@ -1,5 +1,5 @@
 /**
- * @title Change Nested Composition Frame Rate
+ * @name Change Nested Composition Frame Rate
  * @version 1.0
  * @author Kyle Martinez <www.kyle-martinez.com>
  *

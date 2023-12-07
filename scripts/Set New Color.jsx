@@ -1,5 +1,5 @@
 /**
- * @title Set New Color
+ * @name Set New Color
  * @version 1.3
  * @author Kyle Martinez <www.kyle-martinez.com>
  *

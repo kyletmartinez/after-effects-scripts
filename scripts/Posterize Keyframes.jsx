@@ -1,5 +1,5 @@
 /**
- * @title Posterize Keyframes
+ * @name Posterize Keyframes
  * @version 1.0
  * @author Kyle Martinez <www.kyle-martinez.com>
  *

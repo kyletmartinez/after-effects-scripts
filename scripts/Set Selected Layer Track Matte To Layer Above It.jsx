@@ -1,5 +1,5 @@
 /**
- * @title Set Selected Layer Track Matte To Layer Above It
+ * @name Set Selected Layer Track Matte To Layer Above It
  * @version 1.0
  * @author Kyle Martinez <www.kyle-martinez.com>
  *

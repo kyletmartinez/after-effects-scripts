@@ -1,5 +1,5 @@
 /**
- * @title Select All Non-Null Layers
+ * @name Select All Non-Null Layers
  * @version 1.0
  * @author Kyle Martinez <www.kyle-martinez.com>
  *

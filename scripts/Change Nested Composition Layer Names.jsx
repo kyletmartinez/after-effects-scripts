@@ -1,5 +1,5 @@
 /**
- * @title Change Nested Composition Layer Names
+ * @name Change Nested Composition Layer Names
  * @version 1.0
  * @author Kyle Martinez <www.kyle-martinez.com>
  *

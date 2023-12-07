@@ -1,5 +1,5 @@
 /**
- * @title Select All Children
+ * @name Select All Children
  * @version 1.0
  * @author Kyle Martinez <www.kyle-martinez.com>
  *

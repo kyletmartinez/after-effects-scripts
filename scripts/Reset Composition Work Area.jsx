@@ -1,5 +1,5 @@
 /**
- * @title Reset Composition Work Area
+ * @name Reset Composition Work Area
  * @version 1.2
  * @author Kyle Martinez <www.kyle-martinez.com>
  *

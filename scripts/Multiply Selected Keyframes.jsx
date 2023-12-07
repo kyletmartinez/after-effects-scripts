@@ -1,5 +1,5 @@
 /**
- * @title Multiply Selected Keyframes
+ * @name Multiply Selected Keyframes
  * @version 1.0
  * @author Kyle Martinez <www.kyle-martinez.com>
  *

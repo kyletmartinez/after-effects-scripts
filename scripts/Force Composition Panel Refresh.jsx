@@ -1,5 +1,5 @@
 /**
- * @title Force Composition Panel Refresh
+ * @name Force Composition Panel Refresh
  * @version 1.2
  * @author Kyle Martinez <www.kyle-martinez.com>
  *

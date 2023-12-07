@@ -1,5 +1,5 @@
 /**
- * @title Create Eye Rig
+ * @name Create Eye Rig
  * @version 1.0
  * @author Kyle Martinez <www.kyle-martinez.com>
  *

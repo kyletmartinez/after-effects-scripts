@@ -1,5 +1,5 @@
 /**
- * @title Create Text Layers From File
+ * @name Create Text Layers From File
  * @version 1.0
  * @author Kyle Martinez <www.kyle-martinez.com>
  *

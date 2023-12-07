@@ -1,5 +1,5 @@
 /**
- * @title Calculate Difference Between Keyframe Values
+ * @name Calculate Difference Between Keyframe Values
  * @version 1.0
  * @author Kyle Martinez <www.kyle-martinez.com>
  *

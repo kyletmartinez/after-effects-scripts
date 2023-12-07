@@ -1,5 +1,5 @@
 /**
- * @title Rename First Layer to Composition Name
+ * @name Rename First Layer to Composition Name
  * @version 1.0
  * @author Kyle Martinez <www.kyle-martinez.com>
  *

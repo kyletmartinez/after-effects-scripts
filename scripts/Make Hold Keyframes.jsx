@@ -1,5 +1,5 @@
 /**
- * @title Make Hold Keyframes
+ * @name Make Hold Keyframes
  * @version 1.3
  * @author Kyle Martinez <www.kyle-martinez.com>
  *

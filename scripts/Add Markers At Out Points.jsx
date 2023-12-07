@@ -1,5 +1,5 @@
 /**
- * @title Add Marker(s) At Out Point(s)
+ * @name Add Marker(s) At Out Point(s)
  * @version 1.0
  * @author Kyle Martinez <www.kyle-martinez.com>
  *

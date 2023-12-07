@@ -1,5 +1,5 @@
 /**
- * @title Toggle Difference Blend Mode
+ * @name Toggle Difference Blend Mode
  * @version 1.0
  * @author Kyle Martinez <www.kyle-martinez.com>
  *

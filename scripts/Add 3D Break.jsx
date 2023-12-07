@@ -1,5 +1,5 @@
 /**
- * @title Add 3D Break
+ * @name Add 3D Break
  * @version 1.0
  * @author Kyle Martinez <www.kyle-martinez.com>
  *

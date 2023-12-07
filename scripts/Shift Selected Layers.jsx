@@ -1,5 +1,5 @@
 /**
- * @title Shift Selected Layers
+ * @name Shift Selected Layers
  * @version 1.3
  * @author Kyle Martinez <www.kyle-martinez.com>
  *

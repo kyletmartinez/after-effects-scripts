@@ -1,5 +1,5 @@
 /**
- * @title Add Selected Properties to Essential Graphics Panel
+ * @name Add Selected Properties to Essential Graphics Panel
  * @version 1.0
  * @author Kyle Martinez <www.kyle-martinez.com>
  *

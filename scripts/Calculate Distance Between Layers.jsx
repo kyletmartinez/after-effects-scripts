@@ -1,5 +1,5 @@
 /**
- * @title Calculate Distance Between Layers
+ * @name Calculate Distance Between Layers
  * @version 1.0
  * @author Kyle Martinez <www.kyle-martinez.com>
  *

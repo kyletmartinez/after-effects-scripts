@@ -1,5 +1,5 @@
 /**
- * @title Rename Selected Layers
+ * @name Rename Selected Layers
  * @version 1.5
  * @author Kyle Martinez <www.kyle-martinez.com>
  *

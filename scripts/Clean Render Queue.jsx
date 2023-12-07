@@ -1,5 +1,5 @@
 /**
- * @title Clean Render Queue
+ * @name Clean Render Queue
  * @version 1.3
  * @author Kyle Martinez <www.kyle-martinez.com>
  *

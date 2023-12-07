@@ -1,5 +1,5 @@
 /**
- * @title Remove All Proxies
+ * @name Remove All Proxies
  * @version 1.0
  * @author Kyle Martinez <www.kyle-martinez.com>
  *

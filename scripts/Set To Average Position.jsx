@@ -1,5 +1,5 @@
 /**
- * @title Set To Average Position
+ * @name Set To Average Position
  * @version 1.0
  * @author Kyle Martinez <www.kyle-martinez.com>
  *

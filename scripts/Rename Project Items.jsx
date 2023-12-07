@@ -1,5 +1,5 @@
 /**
- * @title Rename Selected Project Items
+ * @name Rename Selected Project Items
  * @version 1.0
  * @author Kyle Martinez <www.kyle-martinez.com>
  *

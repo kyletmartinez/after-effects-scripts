@@ -1,5 +1,5 @@
 /**
- * @title Invert Selected Keyframes
+ * @name Invert Selected Keyframes
  * @version 1.2
  * @author Kyle Martinez <www.kyle-martinez.com>
  *

@@ -1,5 +1,5 @@
 /**
- * @title Toggle Onion Skinning
+ * @name Toggle Onion Skinning
  * @version 1.3
  * @author Kyle Martinez <www.kyle-martinez.com>
  *

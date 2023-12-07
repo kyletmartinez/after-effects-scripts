@@ -1,5 +1,5 @@
 /**
- * @title Round Position
+ * @name Round Position
  * @version 1.0
  * @author Kyle Martinez <www.kyle-martinez.com>
  *

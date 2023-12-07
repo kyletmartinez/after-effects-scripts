@@ -1,5 +1,5 @@
 /**
- * @title Save Frame as PNG
+ * @name Save Frame as PNG
  * @version 1.2
  * @author Kyle Martinez <www.kyle-martinez.com>
  *

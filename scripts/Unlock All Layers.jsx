@@ -1,5 +1,5 @@
 /**
- * @title Unlock All Layers
+ * @name Unlock All Layers
  * @version 1.0
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
