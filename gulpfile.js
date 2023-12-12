@@ -8,7 +8,7 @@ gulp.task("docs", (done) => {
     jsdoc2md.render({
         template: fs.readFileSync("./template.hbs", "utf8"),
         helper: "./replace.js",
-        files: "../scripts/*.jsx"})
+        files: "./scripts/*.jsx"})
     .then(output => fs.writeFileSync("./README.md", output));
     return done();
 })
