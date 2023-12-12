@@ -1,0 +1,8 @@
+{
+  "name": "after-effects-scripts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "author": "@kyletmartinez",
+  "license": "ISC"
+}
