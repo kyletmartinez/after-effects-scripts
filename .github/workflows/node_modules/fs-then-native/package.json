@@ -1,0 +1,31 @@
+{
+  "name": "fs-then-native",
+  "author": "Lloyd Brookes <75pound@gmail.com>",
+  "version": "2.0.0",
+  "description": "Wraps the Node.js fs library with a Promise API using whichever `Promise` implementation is available",
+  "repository": "https://github.com/75lb/fs-then-native.git",
+  "license": "MIT",
+  "main": "lib/fs-then-native",
+  "keywords": [
+    "fs",
+    "then",
+    "promise",
+    "native",
+    "promises",
+    "readFile",
+    "writeFile"
+  ],
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "scripts": {
+    "test": "test-runner test/*.js",
+    "docs": "jsdoc2md -t jsdoc2md/README.hbs lib/*.js > README.md; echo",
+    "cover": "istanbul cover ./node_modules/.bin/test-runner test/*.js && cat coverage/lcov.info | ./node_modules/.bin/coveralls && rm -rf coverage; echo"
+  },
+  "devDependencies": {
+    "coveralls": "^2.11.16",
+    "rimraf": "^2.5.4",
+    "test-runner": "^0.3.0"
+  }
+}

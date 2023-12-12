@@ -1,0 +1,33 @@
+{
+  "name": "stream-connect",
+  "author": "Lloyd Brookes <75pound@gmail.com>",
+  "version": "1.0.2",
+  "description": "Connects an arbitrary number of streams into a single, combined stream",
+  "repository": "https://github.com/75lb/stream-connect.git",
+  "license": "MIT",
+  "main": "./lib/stream-connect.js",
+  "keywords": [
+    "connect",
+    "combine",
+    "stream",
+    "streams",
+    "transform"
+  ],
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "tape test/*.js",
+    "docs": "jsdoc2md -t jsdoc2md/README.hbs lib/*.js > README.md; echo",
+    "cover": "istanbul cover ./node_modules/.bin/tape test/*.js && cat coverage/lcov.info | ./node_modules/.bin/coveralls && rm -rf coverage; echo"
+  },
+  "devDependencies": {
+    "coveralls": "^2.11.6",
+    "jsdoc-to-markdown": "^1.1.1",
+    "stream-via": "^0.1.1",
+    "tape": "^4.0.0"
+  },
+  "dependencies": {
+    "array-back": "^1.0.2"
+  }
+}

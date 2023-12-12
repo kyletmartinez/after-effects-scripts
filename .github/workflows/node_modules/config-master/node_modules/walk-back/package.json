@@ -1,0 +1,31 @@
+{
+  "name": "walk-back",
+  "author": "Lloyd Brookes <75pound@gmail.com>",
+  "version": "2.0.1",
+  "description": "Walk up the directory tree until the specified path is found.",
+  "repository": "https://github.com/75lb/walk-back.git",
+  "license": "MIT",
+  "main": "./lib/walk-back.js",
+  "keywords": [
+    "walk",
+    "up",
+    "back",
+    "filesystem",
+    "fs",
+    "find",
+    "file",
+    "search",
+    "system"
+  ],
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "tape test/*.js",
+    "docs": "jsdoc2md -t jsdoc2md/README.hbs lib/*.js > README.md; echo"
+  },
+  "devDependencies": {
+    "jsdoc-to-markdown": "^1.3.6",
+    "tape": "^4.5.1"
+  }
+}
