@@ -1,1 +1,0 @@
-cmd_Release/fse.node := c++ -bundle -framework CoreFoundation -framework CoreServices -undefined dynamic_lookup -Wl,-search_paths_first -mmacosx-version-min=11.0 -arch arm64 -L./Release -stdlib=libc++  -o Release/fse.node Release/obj.target/fse/fsevents.o 
