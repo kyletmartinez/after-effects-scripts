@@ -13,5 +13,9 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 12
+
+      - name: Install node
         run: npm ci
+
+      - name: Run gulp
         run: gulp
