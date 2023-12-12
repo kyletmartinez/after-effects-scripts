@@ -21,7 +21,7 @@
     var cameraLayer = layers.addCamera("Camera 1", centerPoint);
     var cameraControllerLayer = layers.addNull();
     cameraLayer.parent = cameraControllerLayer;
-    var position = [0, 0, -(comp.width / 0.72)];
+    var position = [0, 0, (comp.width / 0.72) * -1];
     cameraLayer.transform.position.setValue(position);
     cameraControllerLayer.name = "Camera Controller";
     cameraControllerLayer.threeDLayer = true;
