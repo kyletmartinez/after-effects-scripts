@@ -1,6 +1,6 @@
 /**
  * @name Add Camera With Controller
- * @version 1.0
+ * @version 1.1
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Add a camera and 3D null as a controller to the current composition.
@@ -26,5 +26,6 @@
     cameraControllerLayer.name = "Camera Controller";
     cameraControllerLayer.threeDLayer = true;
     cameraControllerLayer.source.name = "Camera Controller";
+    cameraControllerLayer.transform.position.dimensionsSeparated = true;
     app.endUndoGroup();
 })();

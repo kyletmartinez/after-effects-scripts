@@ -1,6 +1,6 @@
 /**
  * @name Rename Selected Project Items
- * @version 1.0
+ * @version 1.1
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Rename selected project items and append zero padded numbers.
@@ -24,9 +24,14 @@
     var project = app.project;
     var selectedItems = project.selection;
     var numSelectedItems = selectedItems.length;
-    for (var s = 0; s < numSelectedItems; s++) {
-        var item = selectedItems[s];
-        item.name = "Green Ray " + padStart(s + 1);
+    if (numSelectedItems > 0) {
+        var newName = prompt("Name", "");
+        if (newName !== null && newName.length > 0) {
+            for (var s = 0; s < numSelectedItems; s++) {
+                var item = selectedItems[s];
+                item.name = newName + padStart(s + 1);
+            }
+        }
     }
     app.endUndoGroup();
 })()

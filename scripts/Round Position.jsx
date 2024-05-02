@@ -36,4 +36,5 @@
             layer.transform.position.setValue(newPosition);    
         }
     }
+    app.endUndoGroup();
 })();

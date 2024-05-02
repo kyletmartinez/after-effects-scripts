@@ -55,4 +55,5 @@
     } else {
         targetLayer.transform.position.setValue(newPosition);    
     }
+    app.endUndoGroup();
 })();
