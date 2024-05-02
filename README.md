@@ -183,6 +183,11 @@ Multiply selected keyframe values by a provided value.
 Append ".value;" to the end of the expression on selected properties. Typically used
 immediately after using the pickwhip to quickly set the expression.
 
+#### [Parent Newton Layers](/scripts/Parent%20Newton%20Layers.jsx)
+
+For each selected layers, parent the closest layer in composition space. Typically
+used for prepping artwork for Motion Botique's Newton plugin.
+
 #### [Parent Selected Layers to Layers Below](/scripts/Parent%20Selected%20Layers%20to%20Layers%20Below.jsx)
 
 Parent each selected layer to the layer directly below it.
@@ -216,13 +221,13 @@ Rename the current composition to the same name as the project.
 Rename the first layer in each selected composition to match the name of the
 composition.
 
-#### [Rename Layer Source](/scripts/Rename%20Layer%20Source.jsx)
-
-Rename the source of the currently selected layer.
-
 #### [Rename Selected Project Items](/scripts/Rename%20Selected%20Project%20Items.jsx)
 
 Rename selected project items and append zero padded numbers.
+
+#### [Rename Selected Layer Sources](/scripts/Rename%20Selected%20Layer%20Sources.jsx)
+
+Rename the source of the currently selected layer.
 
 #### [Rename Selected Layers With Text](/scripts/Rename%20Selected%20Layers%20With%20Text.jsx)
 
@@ -230,7 +235,8 @@ Rename selected layers and append each character along with character count.
 
 #### [Rename Selected Layers](/scripts/Rename%20Selected%20Layers.jsx)
 
-Rename selected layers and append zero padded numbers.
+Rename selected layers and append zero padded numbers. Selecting a single layer
+will not append zero padded numbers.
 
 #### [Rename Source to Layer Name](/scripts/Rename%20Source%20to%20Layer%20Name.jsx)
 
@@ -263,6 +269,10 @@ Select all layers parented to the currently selected layer.
 
 Select all layers in a composition that are not a null layer.
 
+#### [Select Layers Below Matte](/scripts/Select%20Layers%20Below%20Matte.jsx)
+
+Select layers below any layer with label 16 (Black).
+
 #### [Selected Unparented Layers](/scripts/Selected%20Unparented%20Layers.jsx)
 
 Select all unparented layers in the current composition.
@@ -286,7 +296,7 @@ a Luma Inverted track matte type.
 Set the last selected layer to the average position of all other layers. Hold the
 ALT key to set the first selected layers to the average position of all other layers.
 
-#### [Shift Selected Layers](/scripts/Shift%20Selected%20Layers.jsx)
+#### [Shift Start Time For Selected Layers](/scripts/Shift%20Start%20Time%20For%20Selected%20Layers.jsx)
 
 Shift all selected layers to the Current Time Indicator as a group while maintaining
 relative timing.
