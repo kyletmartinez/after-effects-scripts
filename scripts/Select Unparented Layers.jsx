@@ -1,6 +1,6 @@
 /**
  * @name Selected Unparented Layers
- * @version 1.0
+ * @version 1.1
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Select all unparented layers in the current composition.
@@ -21,4 +21,4 @@
         var layer = layers[l];
         layer.selected = (layer.parent === null);
     }
-})()
+})();

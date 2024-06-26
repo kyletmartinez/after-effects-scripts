@@ -1,6 +1,6 @@
 /**
  * @name Version Up Comps
- * @version 1.0
+ * @version 1.1
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Typically my main compositions will end in a version number "_v05". This script
@@ -37,4 +37,4 @@
         }
     }
     app.endUndoGroup(); 
-})()
+})();

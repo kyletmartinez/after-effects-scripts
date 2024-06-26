@@ -1,6 +1,6 @@
 /**
  * @name Set Selected Layer Track Matte To Layer Above It
- * @version 1.0
+ * @version 1.1
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Set the track matte for all selected layers to the layer above it. Currently uses
@@ -25,4 +25,4 @@
         layer.setTrackMatte(layers[layer.index - 1], TrackMatteType.LUMA_INVERTED);
     }
     app.endUndoGroup();
-})()
+})();

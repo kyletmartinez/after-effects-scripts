@@ -1,6 +1,6 @@
 /**
  * @name Select All Non-Null Layers
- * @version 1.0
+ * @version 1.1
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Select all layers in a composition that are not a null layer.
@@ -30,4 +30,4 @@
 	} finally {
 		app.endUndoGroup();
 	}
-})()
+})();

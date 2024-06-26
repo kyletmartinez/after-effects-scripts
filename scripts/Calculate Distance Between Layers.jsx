@@ -1,6 +1,6 @@
 /**
  * @name Calculate Distance Between Layers
- * @version 1.0
+ * @version 1.1
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Calculate the distance between any two layers. Two 2D layers will result in 2D
@@ -39,15 +39,16 @@
     var altKey = ScriptUI.environment.keyboardState.altKey;
     var comp = app.project.activeItem;
     var layers = comp.selectedLayers;
-    var numLayers = layers.length;
     var layerA = layers[0];
     var layerB = layers[1];
+    var a = null;
+    var b = null;
     if (altKey === false) {
-        var a = getPosition(layerA, "world");
-        var b = getPosition(layerB, "world");
+        a = getPosition(layerA, "world");
+        b = getPosition(layerB, "world");
     } else {
-        var a = getPosition(layerA, "composition");
-        var b = getPosition(layerB, "composition");
+        a = getPosition(layerA, "composition");
+        b = getPosition(layerB, "composition");
     }
     var x = Math.pow(b[0] - a[0], 2);
     var y = Math.pow(b[1] - a[1], 2);

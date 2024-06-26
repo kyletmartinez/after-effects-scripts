@@ -1,6 +1,6 @@
 /**
  * @name Change Nested Composition Background
- * @version 1.0
+ * @version 1.1
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Change the background color of the current composition using a hexcode. All nested
@@ -43,7 +43,7 @@
         var r = (hexInt >> 16) & 255;
         var g = (hexInt >> 8) & 255;
         var b = hexInt & 255;
-        return {red: r, green: g, blue: b}
+        return {red: r, green: g, blue: b};
     }
 
     app.beginUndoGroup("Change Nested Composition Background");
@@ -55,4 +55,4 @@
         changeCompBackgroundColor(comp, aeColor);
     }
     app.endUndoGroup();
-})()
+})();

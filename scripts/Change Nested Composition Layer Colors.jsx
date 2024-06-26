@@ -1,6 +1,6 @@
 /**
  * @name Change Nested Composition Layer Colors
- * @version 1.0
+ * @version 1.1
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Set the label color of all layers in the current composition to "None." All nested
@@ -31,4 +31,4 @@
     var comp = app.project.activeItem;
     changeLayerColors(comp);
     app.endUndoGroup();
-})()
+})();

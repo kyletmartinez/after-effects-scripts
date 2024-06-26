@@ -1,6 +1,6 @@
 /**
  * @name Set To Average Position
- * @version 1.0
+ * @version 1.1
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Set the last selected layer to the average position of all other layers. Hold the
@@ -21,7 +21,7 @@
             total += arr[i];
         }
         return total / arr.length;
-    };
+    }
 
     app.beginUndoGroup("Set To Average Position");
     var altKey = ScriptUI.environment.keyboardState.altKey;

@@ -1,6 +1,6 @@
 /**
  * @name Change Nested Composition Duration
- * @version 1.1
+ * @version 1.2
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Change the composition and all layers to the given duration. All nested precomps
@@ -24,7 +24,7 @@
             layer.locked = false;
             if (layer.source instanceof CompItem) {
                 changeCompDuration(layer.source, duration);
-            } 
+            }
             layer.outPoint = comp.duration;
         }
     }
@@ -39,4 +39,4 @@
         }
     }
     app.endUndoGroup();
-})()
+})();

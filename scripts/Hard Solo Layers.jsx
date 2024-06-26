@@ -1,6 +1,6 @@
 /**
  * @name Hard Solo Layers
- * @version 1.2
+ * @version 1.3
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Disable (toggle the eyeball icon) on all unselected layers.

@@ -1,6 +1,6 @@
 /**
  * @name Rename Source to Layer Name
- * @version 1.3
+ * @version 1.4
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Rename the source of the selected layer to match.
@@ -20,10 +20,9 @@
         for (var l = numLayers; l > 0; l--) {
             var layer = layers[l];
             if (layer.source === source) {
-                break;
+                return layer;
             }
         }
-        return layer;
     }
 
     app.beginUndoGroup("Rename Source to Layer Name");

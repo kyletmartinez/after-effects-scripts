@@ -1,6 +1,6 @@
 /**
  * @name Parent Newton Layers
- * @version 1.0
+ * @version 1.1
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description For each selected layers, parent the closest layer in composition space. Typically
@@ -53,4 +53,4 @@
         selectedLayer.parent = parentLayer;
     }
     app.endUndoGroup();
-})()
+})();

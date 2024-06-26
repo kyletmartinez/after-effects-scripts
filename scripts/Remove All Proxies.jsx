@@ -1,6 +1,6 @@
 /**
  * @name Remove All Proxies
- * @version 1.0
+ * @version 1.2
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Remove all proxies set within the project.
@@ -13,7 +13,6 @@
  * "A rising tide lifts all boats." - John F. Kennedy, 1963
  */
 
-
 (function() {
     try {
         app.beginUndoGroup("Remove All Proxies");
@@ -24,7 +23,7 @@
             var item = items[p];
             if (item instanceof CompItem) {
                 if (item.useProxy === true) {
-                    item.setProxyToNone()
+                    item.setProxyToNone();
                 }
             }
         }
@@ -33,4 +32,4 @@
     } finally {
         app.endUndoGroup();
     }
-})()
+})();

@@ -1,6 +1,6 @@
 /**
  * @name Add Composition Guides
- * @version 1.0
+ * @version 1.1
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Add a 16x9 fuscia rectangle shape layer with guide layer enable to serve as a guide
@@ -30,4 +30,4 @@
     stroke.property("ADBE Vector Stroke Color").setValue([1,0,1,1]);
     stroke.property("ADBE Vector Stroke Width").setValue(20);
     app.endUndoGroup();
-})()
+})();

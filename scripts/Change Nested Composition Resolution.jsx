@@ -1,6 +1,6 @@
 /**
  * @name Change Nested Composition Resolution
- * @version 1.0
+ * @version 1.1
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Change the composition resolution factor. All nested precomps
@@ -37,4 +37,4 @@
         }
     }
     app.endUndoGroup();
-})()
+})();

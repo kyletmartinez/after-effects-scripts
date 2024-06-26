@@ -1,6 +1,6 @@
 /**
  * @name Select All Children
- * @version 1.0
+ * @version 1.2
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Select all layers parented to the currently selected layer.
@@ -16,7 +16,7 @@
 (function() {
     function getParentLayer(layer) {
         while (layer.parent !== null) {
-            layer = layer.parent
+            layer = layer.parent;
         }
         return layer;
     }
@@ -43,4 +43,4 @@
     } finally {
         app.endUndoGroup();
     }
-})()
+})();

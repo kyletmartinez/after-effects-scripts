@@ -1,6 +1,6 @@
 /**
  * @name Toggle Difference Blend Mode
- * @version 1.0
+ * @version 1.1
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Toggle the blend mode of the selected layers between Normal and Difference. Hold the
@@ -38,4 +38,4 @@
         }
     }
     app.endUndoGroup();
-})()
+})();

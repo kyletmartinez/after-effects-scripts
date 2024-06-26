@@ -1,6 +1,6 @@
 /**
  * @name Add Marker(s) At Out Point(s)
- * @version 1.0
+ * @version 1.1
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Add a composition marker at each outpoint of every layer in the composition.
@@ -25,4 +25,4 @@
         comp.markerProperty.setValueAtTime(time, marker);
     }
     app.endUndoGroup();
-})()
+})();

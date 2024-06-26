@@ -1,6 +1,6 @@
 /**
  * @name Randomize Selected Keyframe Values
- * @version 1.2
+ * @version 1.3
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Randomize the value for selected 1 dimensional keyframes.
@@ -32,7 +32,6 @@
         for (var p = 0; p < numProperties; p++) {
             var property = properties[p];
             if (property.propertyValueType === PropertyValueType.OneD) {
-                var property = properties[p];
                 var keys = property.selectedKeys;
                 var numKeys = keys.length;
                 for (var k = 0; k < numKeys; k++) {

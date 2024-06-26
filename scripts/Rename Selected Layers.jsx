@@ -1,6 +1,6 @@
 /**
  * @name Rename Selected Layers
- * @version 1.6
+ * @version 1.7
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Rename selected layers and append zero padded numbers. Selecting a single layer

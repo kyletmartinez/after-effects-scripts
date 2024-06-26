@@ -1,6 +1,6 @@
 /**
  * @name Lock All Null Layers
- * @version 1.0
+ * @version 1.1
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Lock all layers in a composition that are a null layer.
@@ -14,15 +14,15 @@
  */
 
 (function() {
-	app.beginUndoGroup("Lock All Null Layers")
-	var comp = app.project.activeItem;
-	var layers = comp.layers;
-	var numLayers = layers.length;
-	for (var l = 1; l <= numLayers; l++) {
-		var layer = layers[l];
-		if (layer.nullLayer === true) {
-			layer.locked = true;
-		}
-	}
-	app.endUndoGroup()
-})()
+    app.beginUndoGroup("Lock All Null Layers");
+    var comp = app.project.activeItem;
+    var layers = comp.layers;
+    var numLayers = layers.length;
+    for (var l = 1; l <= numLayers; l++) {
+        var layer = layers[l];
+        if (layer.nullLayer === true) {
+            layer.locked = true;
+        }
+    }
+    app.endUndoGroup();
+})();

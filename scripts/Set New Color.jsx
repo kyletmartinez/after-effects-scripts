@@ -1,6 +1,6 @@
 /**
  * @name Set New Color
- * @version 1.3
+ * @version 1.4
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Set new color based on original color, blend mode, and opacity.
@@ -20,31 +20,32 @@
     };
 
     function calculateMultiply(a, b) {
-        var r = a[0] * b[0];
-        var g = a[1] * b[1];
-        var b = a[2] * b[2];
-        return [r, g, b, 1];
+        var rr = a[0] * b[0];
+        var gg = a[1] * b[1];
+        var bb = a[2] * b[2];
+        return [rr, gg, bb, 1];
     }
 
     function calculateScreen(a, b) {
-        var r = 1 - ((1 - a[0]) * (1 - b[0]));
-        var g = 1 - ((1 - a[1]) * (1 - b[1]));
-        var b = 1 - ((1 - a[2]) * (1 - b[2]));
-        return [r, g, b, 1];
+        var rr = 1 - ((1 - a[0]) * (1 - b[0]));
+        var gg = 1 - ((1 - a[1]) * (1 - b[1]));
+        var bb = 1 - ((1 - a[2]) * (1 - b[2]));
+        return [rr, gg, bb, 1];
     }
 
     function calculateAlpha(a, b, o) {
-        var r = ((b[0] * o) + ((a[0] * 1) * (1 - o))) / (o + (1 * (1 - o)));
-        var g = ((b[1] * o) + ((a[1] * 1) * (1 - o))) / (o + (1 * (1 - o)));
-        var b = ((b[2] * o) + ((a[2] * 1) * (1 - o))) / (o + (1 * (1 - o)));
-        return [r, g, b, 1];
+        var rr = ((b[0] * o) + ((a[0] * 1) * (1 - o))) / (o + (1 * (1 - o)));
+        var gg = ((b[1] * o) + ((a[1] * 1) * (1 - o))) / (o + (1 * (1 - o)));
+        var bb = ((b[2] * o) + ((a[2] * 1) * (1 - o))) / (o + (1 * (1 - o)));
+        return [rr, gg, bb, 1];
     }
 
     function calculateColor(colorA, blendMode, opacity) {
+      var colorB = colorA;
         if (blendMode === BlendMode.MULTIPLY) {
-            var colorB = calculateMultiply(colorA, colorA);
+            colorB = calculateMultiply(colorA, colorA);
         } else if (blendMode === BlendMode.SCREEN) {
-            var colorB = calculateScreen(colorA, colorA);
+            colorB = calculateScreen(colorA, colorA);
         }
         return calculateAlpha(colorA, colorB, opacity);
     }
@@ -107,7 +108,7 @@
             blendMode = blendModes[this.selection.index];
             newColor = calculateColor(oldColor, blendMode, opacity);
             buildPreview(preview, oldColor, newColor);
-        }
+        };
 
         var opacityRow = settings.add("group");
         opacityRow.alignChildren = ["left", "middle"];
@@ -123,7 +124,7 @@
             opacity = Math.floor(this.value) / 100;
             newColor = calculateColor(oldColor, blendMode, opacity);
             buildPreview(preview, oldColor, newColor);
-        }
+        };
 
         var opacityValue = opacityRow.add("statictext", undefined, "100%");
 

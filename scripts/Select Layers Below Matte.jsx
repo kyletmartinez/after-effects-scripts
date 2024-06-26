@@ -1,6 +1,6 @@
 /**
  * @name Select Layers Below Matte
- * @version 1.0
+ * @version 1.1
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Select layers below any layer with label 16 (Black).
@@ -24,4 +24,4 @@
         layers[i + 1].selected = selected;
     }
     app.endUndoGroup();
-})()
+})();

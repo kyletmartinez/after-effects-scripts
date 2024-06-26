@@ -1,6 +1,6 @@
 /**
  * @name Add Selected Properties to Essential Graphics Panel
- * @version 1.0
+ * @version 1.1
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Add all selected properties to Essential Graphics Panel using effect names instead
@@ -31,7 +31,7 @@
             isExpressionControl = true;
         }
         return isExpressionControl;
-    };
+    }
 
     app.beginUndoGroup("Add Selected Properties to Essential Graphics Panel");
     var comp = app.project.activeItem;

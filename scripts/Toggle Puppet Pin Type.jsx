@@ -1,6 +1,6 @@
 /**
  * @name Toggle Puppet Pin Type
- * @version 1.0
+ * @version 1.1
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Toggle selected puppet pins between Position type and Advanced type.
@@ -30,4 +30,4 @@
         }
     }
     app.endUndoGroup();
-})()
+})();

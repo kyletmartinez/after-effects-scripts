@@ -1,6 +1,6 @@
 /**
  * @name Add Expression to Selected Properties
- * @version 1.0
+ * @version 1.1
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Add an expression to all selected properties.
@@ -14,15 +14,15 @@
  */
 
 (function() {
-    app.beginUndoGroup("Add Expression to Selected Properties")
+    app.beginUndoGroup("Add Expression to Selected Properties");
     var comp = app.project.activeItem;
     var properties = comp.selectedProperties;
     var numProperties = properties.length;
     for (var i = 0; i < numProperties; i++) {
         var property = properties[i];
         if (property.canSetExpression == true) {
-            property.expression = 'posterizeTime(12); loopIn("cycle") + loopOut("cycle") - value;'
+            property.expression = 'posterizeTime(12); loopIn("cycle") + loopOut("cycle") - value;';
         }
     }
     app.endUndoGroup();
-})()
+})();

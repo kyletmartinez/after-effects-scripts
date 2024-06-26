@@ -1,6 +1,6 @@
 /**
  * @name Expose Essential Properties to Essential Graphics Panel
- * @version 1.0
+ * @version 1.1
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Essential Properties from a nested composition can not be directly added to the
@@ -69,4 +69,4 @@
         }
     }
     app.endUndoGroup();
-})()
+})();

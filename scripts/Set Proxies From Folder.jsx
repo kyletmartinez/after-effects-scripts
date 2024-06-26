@@ -1,6 +1,6 @@
 /**
  * @name Set Proxies From Folder
- * @version 1.0
+ * @version 1.1
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Automatically set proxies to all rendered MOV files in a folder that match
@@ -16,7 +16,7 @@
 
 (function() {
     function getActiveFiles() {
-        var activeFiles = {}
+        var activeFiles = {};
         var folder = Folder.selectDialog();
         var files = folder.getFiles();
         var numFiles = files.length;
@@ -30,7 +30,7 @@
 
     try {
         app.beginUndoGroup("Set Proxies From Folder");
-        var activeFiles = getActiveFiles()
+        var activeFiles = getActiveFiles();
         var project = app.project;
         var items = project.items;
         var numItems = items.length;
@@ -49,4 +49,4 @@
     } finally {
         app.endUndoGroup();
     }
-})()
+})();

@@ -1,6 +1,6 @@
 /**
  * @name Rename Selected Project Items
- * @version 1.1
+ * @version 1.2
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Rename selected project items and append zero padded numbers.
@@ -34,4 +34,4 @@
         }
     }
     app.endUndoGroup();
-})()
+})();

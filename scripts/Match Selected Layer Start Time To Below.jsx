@@ -1,6 +1,6 @@
 /**
  * @name Match Selected Layer Start Time To Below
- * @version 1.0
+ * @version 1.1
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Match the start time of all selected layers to the layer directly below it.
@@ -24,4 +24,4 @@
         layer.startTime = nextLayer.startTime;
     }
     app.endUndoGroup();
-})()
+})();

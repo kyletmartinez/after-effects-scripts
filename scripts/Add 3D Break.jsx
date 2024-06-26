@@ -1,6 +1,6 @@
 /**
  * @name Add 3D Break
- * @version 1.0
+ * @version 1.1
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Add an adjustment layer above the currently selected layer to break the 3D space of
@@ -30,7 +30,6 @@
     var numSelectedLayers = selectedLayers.length;
     var idx = Math.min.apply(Math, selectedLayers.map(function(layer) { return layer.index; }));
     var oldLayer = (numSelectedLayers >= 1) ? layers[idx] : layers[1];
-    var pixelAspect = comp.pixelAspect;
     var newLayer = layers.addSolid([1, 1, 1], "3D Break", comp.width, comp.height, comp.pixelAspect);
     newLayer.adjustmentLayer = true;
     newLayer.moveBefore(oldLayer);
