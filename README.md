@@ -133,6 +133,11 @@ Cycle the composition background color between black, gray, and white.
 Disable all of the specified effects in the project. Alt + click to enable. Add
 additional effects to be checked into the matchNames object.
 
+#### [Export Path Points (v1.0)](/scripts/Export%20Path%20Points.jsx)
+
+Export path points for a selected path property. Currently outputs a text file
+straight to the desktop.
+
 #### [Expose Essential Properties to Essential Graphics Panel (v1.1)](/scripts/Expose%20Essential%20Properties%20to%20Essential%20Graphics%20Panel.jsx)
 
 Essential Properties from a nested composition can not be directly added to the
@@ -140,6 +145,11 @@ Essential Graphic Panel of the parent composition. Instead, run this script to e
 Essential Properties by using an intermediate expression controller. Select a layer to add all
 properterties or select specific properties to add them. This script does not currently support
 Dropdown Menu Control.
+
+#### [Fix Turbulent Displace (v1.0)](/scripts/Fix%20Turbulent%20Displace.jsx)
+
+Iterate recursively through all precomps and all layers to change the Size property
+of all Turbulent Displace effects.
 
 #### [Force Composition Panel Refresh (v1.2)](/scripts/Force%20Composition%20Panel%20Refresh.jsx)
 
@@ -212,6 +222,10 @@ Randomize the value for selected 1 dimensional keyframes.
 
 Remove all proxies set within the project.
 
+#### [Rename Arm Puppet Pins (v1.0)](/scripts/Rename%20Arm%20Puppet%20Pins.jsx)
+
+Rename selected puppet pins added to arm layers in preparation for Duik
+
 #### [Rename Composition to File Name (v1.1)](/scripts/Rename%20Composition%20to%20File%20Name.jsx)
 
 Rename the current composition to the same name as the project.
@@ -282,6 +296,11 @@ eyeball icon is toggled OFF.
 
 Select layers below any layer with label 16 (Black).
 
+#### [Select Random Layers (v1.0)](/scripts/Select%20Random%20Layers.jsx)
+
+Randomly select layers from a given composition. Layer selection is currently skewed
+towards 20% layer selection rather than 50% layer selection.
+
 #### [Selected Unparented Layers (v1.1)](/scripts/Selected%20Unparented%20Layers.jsx)
 
 Select all unparented layers in the current composition.
@@ -294,6 +313,11 @@ Set new color based on original color, blend mode, and opacity.
 
 Automatically set proxies to all rendered MOV files in a folder that match
 compositions within the project.
+
+#### [Set Random Z Position (v1.0)](/scripts/Set%20Random%20Z%20Position.jsx)
+
+Set the Z Position of all selected layers to a random value between RANDOM\_MIN and
+RANDOM\_MAX.
 
 #### [Set Selected Layer Track Matte To Layer Above It (v1.1)](/scripts/Set%20Selected%20Layer%20Track%20Matte%20To%20Layer%20Above%20It.jsx)
 
