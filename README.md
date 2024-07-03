@@ -184,6 +184,11 @@ Match the start time of all selected layers to the layer directly below it.
 Set the track matte of a layer to the layer above it using the specified track matte
 type. Change TRACK\_MATTE\_TYPE to any matte type or to none.
 
+#### [Merge Imported Selected Items (v1.0)](/scripts/Merge%20Imported%20Selected%20Items.jsx)
+
+Attempt to move all selected and newly imported items into their matching and
+previously existing folders.
+
 #### [Multiply Selected Keyframes (v1.0)](/scripts/Multiply%20Selected%20Keyframes.jsx)
 
 Multiply selected keyframe values by a provided value.
