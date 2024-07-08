@@ -175,6 +175,10 @@ Lock all layers in a composition that are a null layer.
 
 Convert selected keyframes into hold keyframes.
 
+#### [Match Selected Layer In Time To Below (v1.0)](/scripts/Match%20Selected%20Layer%20In%20Time%20To%20Below.jsx)
+
+Match the in point of all selected layers to the layer directly below it.
+
 #### [Match Selected Layer Start Time To Below (v1.1)](/scripts/Match%20Selected%20Layer%20Start%20Time%20To%20Below.jsx)
 
 Match the start time of all selected layers to the layer directly below it.
