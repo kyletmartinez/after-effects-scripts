@@ -314,6 +314,20 @@ towards 20% layer selection rather than 50% layer selection.
 
 Select all unparented layers in the current composition.
 
+#### [Set All Item Lables to None (v1.0)](/scripts/Set%20All%20Item%20Lables%20to%20None.jsx)
+
+Reset the label colors for all items in the active project as None.
+
+#### [Set All Layer Labels to None (v1.0)](/scripts/Set%20All%20Layer%20Labels%20to%20None.jsx)
+
+Reset the label colors for all layers in the active composition as None.
+
+#### [Set All Track Matte Layers to Black (v1.0)](/scripts/Set%20All%20Track%20Matte%20Layers%20to%20Black.jsx)
+
+Reset the label colors for all track matte layers in the active composition as label
+number 16. Label number 16 is Black (#FFFFFF) in my label preferences and is always used for
+track matte layers.
+
 #### [Set New Color (v1.4)](/scripts/Set%20New%20Color.jsx)
 
 Set new color based on original color, blend mode, and opacity.
