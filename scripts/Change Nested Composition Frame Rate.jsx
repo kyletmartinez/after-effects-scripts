@@ -1,6 +1,6 @@
 /**
  * @name Change Nested Composition Frame Rate
- * @version 1.1
+ * @version 1.2
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Change the composition and all layers to the given frame rate. All nested precomps
@@ -31,7 +31,7 @@
     app.beginUndoGroup("Change Nested Composition Frame Rate");
     var newFrameRateString = prompt("New Frame Rate (Frames)", "");
     if (newFrameRateString !== null && newFrameRateString.length > 0) {
-        var frameRateInt = parseInt(newFrameRateString);
+        var frameRateInt = parseFloat(newFrameRateString);
         if (isNaN(frameRateInt) === false) {
             var comp = app.project.activeItem;
             changeCompFrameRate(comp, frameRateInt);
