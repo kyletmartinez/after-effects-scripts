@@ -1,6 +1,6 @@
 /**
  * @name Make Hold Keyframes
- * @version 1.3
+ * @version 1.4
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Convert selected keyframes into hold keyframes.
@@ -13,36 +13,29 @@
  * "A rising tide lifts all boats." - John F. Kennedy, 1963
  */
 
-(function() {
-    function makeHoldKeyframe (property, key) {
-        var hold = KeyframeInterpolationType.HOLD;
-        property.setInterpolationTypeAtKey(key, hold, hold);
-    }
+(function makeHoldKeyframes() {
+    var HOLD = KeyframeInterpolationType.HOLD;
 
-    function findSelectedKeyframes (property) {
+    function setKeyframesToHold(property) {
         var keys = property.selectedKeys;
         var numKeys = keys.length;
         for (var k = 0; k < numKeys; k++) {
-            var key = keys[k];
-            makeHoldKeyframe(property, key);
+            var index = keys[k];
+            property.setInterpolationTypeAtKey(index, HOLD, HOLD);
         }
     }
 
-    function findSelectedProperties (comp) {
-        var properties = comp.selectedProperties;
-        var numProperties = properties.length;
-        for (var p = 0; p < numProperties; p++) {
-            var property = properties[p];
-            if (property.canVaryOverTime === true) {
-                findSelectedKeyframes(property);
+    app.beginUndoGroup("Make Hold Keyframe(s)");
+    var comp = app.project.activeItem;
+    var properties = comp.selectedProperties;
+    var numProperties = properties.length;
+    for (var p = 0; p < numProperties; p++) {
+        var property = properties[p];
+        if (property.propertyType === PropertyType.PROPERTY) {
+            if (property.isTimeVarying === true) {
+                setKeyframesToHold(property);
             }
         }
-    }
-
-    app.beginUndoGroup("Make Hold Keyframes");
-    var comp = app.project.activeItem;
-    if (comp !== null && (comp instanceof CompItem)) {
-        findSelectedProperties(comp);
     }
     app.endUndoGroup();
 })();
