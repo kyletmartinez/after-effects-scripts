@@ -1,6 +1,6 @@
 /**
  * @name Add Composition Guides
- * @version 1.1
+ * @version 1.2
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Add a 16x9 fuscia rectangle shape layer with guide layer enable to serve as a guide
@@ -14,7 +14,7 @@
  * "A rising tide lifts all boats." - John F. Kennedy, 1963
  */
 
-(function() {
+(function addCompositionGuides() {
     app.beginUndoGroup("Add Composition Guides");
     var comp = app.project.activeItem;
     var layer = comp.layers.addShape();

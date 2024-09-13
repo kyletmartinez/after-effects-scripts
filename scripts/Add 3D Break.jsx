@@ -1,6 +1,6 @@
 /**
  * @name Add 3D Break
- * @version 1.1
+ * @version 1.2
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Add an adjustment layer above the currently selected layer to break the 3D space of
@@ -14,7 +14,7 @@
  * "A rising tide lifts all boats." - John F. Kennedy, 1963
  */
 
-(function() {
+(function addThreeDBreak() {
     Array.prototype.map = function (callback) {
         var array = [];
         for (var i = 0; i < this.length; i++) {

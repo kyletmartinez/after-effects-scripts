@@ -1,6 +1,6 @@
 /**
  * @name Add Camera With Controller
- * @version 1.1
+ * @version 1.2
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Add a camera and 3D null as a controller to the current composition.
@@ -13,7 +13,7 @@
  * "A rising tide lifts all boats." - John F. Kennedy, 1963
  */
 
-(function() {
+(function addCameraWithController() {
     app.beginUndoGroup("Add Camera With Controller");
     var comp = app.project.activeItem;
     var layers = comp.layers;
