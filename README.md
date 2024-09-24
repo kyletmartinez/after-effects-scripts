@@ -108,10 +108,24 @@ Clean out the Render Queue.
 Clean unused items from any selected folders. Remove empty folders unless they are
 top level.
 
+#### [Copy Composition Markers To Layer (v1.0)](/scripts/Copy%20Composition%20Markers%20To%20Layer.jsx)
+
+Copy all markers (duration, comments, and labels) from the current composition to
+the currently selected layer.
+
+Counterpart scripts to "Copy Layer Makers to Composition.jsx"
+
 #### [Copy Composition Work Area (v1.2)](/scripts/Copy%20Composition%20Work%20Area.jsx)
 
 Copy the Work Area from the active composition. Hold the ALT key to paste the copied
 Work Area to the active composition.
+
+#### [Copy Layer Makers To Composition (v1.0)](/scripts/Copy%20Layer%20Makers%20To%20Composition.jsx)
+
+Copy all markers (duration, comments, and labels) from the currently selected
+layer to the current composition.
+
+Counterpart scripts to "Copy Composition Markers To Layer.jsx"
 
 #### [Create Eye Rig (v1.1)](/scripts/Create%20Eye%20Rig.jsx)
 
