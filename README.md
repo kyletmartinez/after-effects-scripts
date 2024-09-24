@@ -6,16 +6,16 @@ To run the script natively in After Effects use `File > Script > Run Script File
 
 ## Scripts
 
-#### [Add 3D Break (v1.1)](/scripts/Add%203D%20Break.jsx)
+#### [Add 3D Break (v1.2)](/scripts/Add%203D%20Break.jsx)
 
 Add an adjustment layer above the currently selected layer to break the 3D space of
 After Effects. If no layers are selected the adjustment layer will be added at the top.
 
-#### [Add Camera With Controller (v1.1)](/scripts/Add%20Camera%20With%20Controller.jsx)
+#### [Add Camera With Controller (v1.2)](/scripts/Add%20Camera%20With%20Controller.jsx)
 
 Add a camera and 3D null as a controller to the current composition.
 
-#### [Add Composition Guides (v1.1)](/scripts/Add%20Composition%20Guides.jsx)
+#### [Add Composition Guides (v1.2)](/scripts/Add%20Composition%20Guides.jsx)
 
 Add a 16x9 fuscia rectangle shape layer with guide layer enable to serve as a guide
 for compositions with larger or smaller dimensions. Helpful with precomposed character rigs.
@@ -80,7 +80,7 @@ precomps will be affected as well (and precomps within those precomps and so on)
 Change the composition and all layers to the given duration. All nested precomps
 will be affected as well (and precomps within those precomps and so on).
 
-#### [Change Nested Composition Frame Rate (v1.1)](/scripts/Change%20Nested%20Composition%20Frame%20Rate.jsx)
+#### [Change Nested Composition Frame Rate (v1.2)](/scripts/Change%20Nested%20Composition%20Frame%20Rate.jsx)
 
 Change the composition and all layers to the given frame rate. All nested precomps
 will be affected as well (and precomps within those precomps and so on).
@@ -171,7 +171,7 @@ Lock every layer in every conmposition in the project.
 
 Lock all layers in a composition that are a null layer.
 
-#### [Make Hold Keyframes (v1.3)](/scripts/Make%20Hold%20Keyframes.jsx)
+#### [Make Hold Keyframes (v1.4)](/scripts/Make%20Hold%20Keyframes.jsx)
 
 Convert selected keyframes into hold keyframes.
 
@@ -182,11 +182,6 @@ Match the in point of all selected layers to the layer directly below it.
 #### [Match Selected Layer Start Time To Below (v1.1)](/scripts/Match%20Selected%20Layer%20Start%20Time%20To%20Below.jsx)
 
 Match the start time of all selected layers to the layer directly below it.
-
-#### [Matte Selected Layers to Layer Above (v1.0)](/scripts/Matte%20Selected%20Layers%20to%20Layer%20Above.jsx)
-
-Set the track matte of a layer to the layer above it using the specified track matte
-type. Change TRACK\_MATTE\_TYPE to any matte type or to none.
 
 #### [Merge Imported Selected Items (v1.0)](/scripts/Merge%20Imported%20Selected%20Items.jsx)
 
@@ -281,7 +276,13 @@ Set the Work Area to cover the entire composition.
 
 Round the position values of selected layers to the nearest whole number.
 
-#### [Save Frame as PNG (v1.3)](/scripts/Save%20Frame%20as%20PNG.jsx)
+#### [Round Selected Keyframe Value (v1.0)](/scripts/Round%20Selected%20Keyframe%20Value.jsx)
+
+Round the values for all selected keyframes to the nearest whole number. Currently
+works with 1 dimensional properties (Opacity, Rotation, etc.), 2 dimensional properties
+(2D Scale, 2D Position, etc.), and 3 dimensional properties (3D Scale, 3D Position, etc.).
+
+#### [Save Frame as PNG (v1.4)](/scripts/Save%20Frame%20as%20PNG.jsx)
 
 Save the current frame as a PNG to the desktop. This does support transparency but
 the image is not amazing quality.
@@ -304,6 +305,11 @@ eyeball icon is toggled OFF.
 #### [Select Layers Below Matte (v1.1)](/scripts/Select%20Layers%20Below%20Matte.jsx)
 
 Select layers below any layer with label 16 (Black).
+
+#### [Select Parent Layer (v1.0)](/scripts/Select%20Parent%20Layer.jsx)
+
+If there is only one layer selected, and the selected layer has a parent layer, then
+unlock and select the parent layer.
 
 #### [Select Random Layers (v1.0)](/scripts/Select%20Random%20Layers.jsx)
 
