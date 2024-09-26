@@ -409,6 +409,11 @@ Toggle selected puppet pins between Position type and Advanced type.
 
 Toggle the expressions for selected properties
 
+#### [Toggle Transparency Grid Preferences (v1.0)](/scripts/Toggle%20Transparency%20Grid%20Preferences.jsx)
+
+Sometimes the transparency grid colors are too agressive and the grid size is too
+small. Toggle between the default preferences and a custom "dark mode" with larger grid cells.
+
 #### [Unlock All Layers (v1.0)](/scripts/Unlock%20All%20Layers.jsx)
 
 Unlock every layer in every conmposition in the project.
