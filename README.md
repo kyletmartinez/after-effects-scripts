@@ -147,6 +147,13 @@ Cycle the composition background color between black, gray, and white.
 Disable all of the specified effects in the project. Alt + click to enable. Add
 additional effects to be checked into the matchNames object.
 
+#### [Duplicate Selected Layer (v1.0)](/scripts/Duplicate%20Selected%20Layer.jsx)
+
+Exactly like selected layer and hitting CMD/CTRL + D. But instead of moving the
+duplicated layer above the selected layer, move the duplicated layer below the selected layer.
+This script currently only supports duplicating the first selected layer and will ignore any
+other selected layers.
+
 #### [Export Path Points (v1.0)](/scripts/Export%20Path%20Points.jsx)
 
 Export path points for a selected path property. Currently outputs a text file
