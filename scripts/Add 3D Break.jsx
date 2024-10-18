@@ -1,6 +1,6 @@
 /**
  * @name Add 3D Break
- * @version 1.2
+ * @version 1.3
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Add an adjustment layer above the currently selected layer to break the 3D space of
@@ -15,24 +15,26 @@
  */
 
 (function addThreeDBreak() {
-    Array.prototype.map = function (callback) {
-        var array = [];
-        for (var i = 0; i < this.length; i++) {
-            array.push(callback(this[i]));
-        }
-        return array;
-    };
-
     app.beginUndoGroup("Add 3D Break");
     var comp = app.project.activeItem;
-    var layers = comp.layers;
+    var color = [0.5, 0.5, 0.5];
+    var name = "=== 3D Break ===";
+    var width = comp.width;
+    var height = comp.height;
+    var pixelAspect = comp.pixelAspect;
+    var duration = comp.duration;
+    var index = 1;
     var selectedLayers = comp.selectedLayers;
     var numSelectedLayers = selectedLayers.length;
-    var idx = Math.min.apply(Math, selectedLayers.map(function(layer) { return layer.index; }));
-    var oldLayer = (numSelectedLayers >= 1) ? layers[idx] : layers[1];
-    var newLayer = layers.addSolid([1, 1, 1], "3D Break", comp.width, comp.height, comp.pixelAspect);
+    if (numSelectedLayers !== 0) {
+        selectedLayers.sort(function(a, b) {
+            return a.index - b.index;
+        });
+        index = selectedLayers[0].index;
+    }
+    var oldLayer = comp.layers[index];
+    var newLayer = comp.layers.addSolid(color, name, width, height, pixelAspect, duration);
     newLayer.adjustmentLayer = true;
     newLayer.moveBefore(oldLayer);
-    newLayer.name = "=== 3D Break ===";
     app.endUndoGroup();
 })();
