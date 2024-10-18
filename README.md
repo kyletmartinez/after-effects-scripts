@@ -6,7 +6,7 @@ To run the script natively in After Effects use `File > Script > Run Script File
 
 ## Scripts
 
-#### [Add 3D Break (v1.2)](/scripts/Add%203D%20Break.jsx)
+#### [Add 3D Break (v1.3)](/scripts/Add%203D%20Break.jsx)
 
 Add an adjustment layer above the currently selected layer to break the 3D space of
 After Effects. If no layers are selected the adjustment layer will be added at the top.
@@ -32,13 +32,19 @@ Add the Fill effect to all selected layers while cycling through red, green, blu
 
 Add a composition marker at each outpoint of every layer in the composition.
 
-#### [Add Markers to Selected Layers (v1.3)](/scripts/Add%20Markers%20to%20Selected%20Layers.jsx)
+#### [Add Markers to Selected Layers (v1.4)](/scripts/Add%20Markers%20to%20Selected%20Layers.jsx)
 
 Add a new maker to all selected layers with an optional comment.
 
-#### [Add Posterize Time (v1.0)](/scripts/Add%20Posterize%20Time.jsx)
+#### [Add Posterize Time Adjustment Layer (v1.1)](/scripts/Add%20Posterize%20Time%20Adjustment%20Layer.jsx)
 
-Add an adjustment layer with the Posterize Time effect to the current composition.
+Add an adjustment layer to the current composition to cut the framerate in half.
+Animation will now happen on 2s.
+
+#### [Add Posterize Time Expression (v1.0)](/scripts/Add%20Posterize%20Time%20Expression.jsx)
+
+Add an expression to all selected properties to cut the framerate in half.
+Animation will now happen on 2s. Existing expressions will be preserved.
 
 #### [Add Selected Properties to Essential Graphics Panel (v1.1)](/scripts/Add%20Selected%20Properties%20to%20Essential%20Graphics%20Panel.jsx)
 
@@ -48,10 +54,6 @@ of property names for expression controls.
 #### [Add Visibility Controller (v1.1)](/scripts/Add%20Visibility%20Controller.jsx)
 
 Add a checkbox that controls the visibility (opacity) for a selected layer.
-
-#### [Append Posterize Time (v1.0)](/scripts/Append%20Posterize%20Time.jsx)
-
-Appends "posterizeTime(12);" to properties with existing expressions.
 
 #### [Calculate Difference Between Keyframe Values (v1.0)](/scripts/Calculate%20Difference%20Between%20Keyframe%20Values.jsx)
 
@@ -127,7 +129,7 @@ layer to the current composition.
 
 Counterpart scripts to "Copy Composition Markers To Layer.jsx"
 
-#### [Create Eye Rig (v1.1)](/scripts/Create%20Eye%20Rig.jsx)
+#### [Create Eye Rig (v1.2)](/scripts/Create%20Eye%20Rig.jsx)
 
 Used specifically for a current project. Creates an eye rig for a selected eye
 layer. Probably pretty usless outside of this specific use case but has some nice code to
@@ -310,7 +312,7 @@ the image is not amazing quality.
 
 Output will match the following format: "Comp Name YYYY-MM-DD HH.MM.SS AM.png"
 
-#### [Select All Children (v1.2)](/scripts/Select%20All%20Children.jsx)
+#### [Select All Children (v1.3)](/scripts/Select%20All%20Children.jsx)
 
 Select all layers parented to the currently selected layer.
 
