@@ -169,6 +169,11 @@ Essential Properties by using an intermediate expression controller. Select a la
 properterties or select specific properties to add them. This script does not currently support
 Dropdown Menu Control.
 
+#### [Find Specific Effect (v1.0)](/scripts/Find%20Specific%20Effect.jsx)
+
+Find all instances of a specific effect in the current project and alert the layer
+which the effect is applied. Searching is done via matchName for better specificity.
+
 #### [Fix Turbulent Displace (v1.0)](/scripts/Fix%20Turbulent%20Displace.jsx)
 
 Iterate recursively through all precomps and all layers to change the Size property
