@@ -191,7 +191,7 @@ Disable (toggle the eyeball icon) on all unselected layers.
 
 Invert selected keyframe values.
 
-#### [Lock All Layers (v1.3)](/scripts/Lock%20All%20Layers.jsx)
+#### [Lock All Layers (v1.4)](/scripts/Lock%20All%20Layers.jsx)
 
 Lock every layer in every conmposition in the project.
 
