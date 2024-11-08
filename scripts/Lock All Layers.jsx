@@ -1,6 +1,6 @@
 /**
  * @name Lock All Layers
- * @version 1.3
+ * @version 1.4
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Lock every layer in every conmposition in the project.
@@ -19,6 +19,7 @@
         var numLayers = layers.length;
         for (var l = 1; l <= numLayers; l++) {
             var layer = layers[l];
+            layer.selected = false;
             layer.locked = true;
         }
     }
