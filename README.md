@@ -381,6 +381,11 @@ RANDOM\_MAX.
 Set the track matte for all selected layers to the layer above it. Currently uses
 a Luma Inverted track matte type.
 
+#### [Set Simple Time Remap Loop (v1.0)](/scripts/Set%20Simple%20Time%20Remap%20Loop.jsx)
+
+Automatically enable Time Remapping, set the appropriate keyframes, and apply the
+loopOut() expression to correctly loop a layer.
+
 #### [Set To Average Position (v1.1)](/scripts/Set%20To%20Average%20Position.jsx)
 
 Set the last selected layer to the average position of all other layers. Hold the
@@ -399,6 +404,11 @@ to stick properly to a layer.
 #### [Swap Property (v1.1)](/scripts/Swap%20Property.jsx)
 
 Swap the values of two selected properties. They must be the same property type.
+
+#### [Swap Selected Property Values (v1.0)](/scripts/Swap%20Selected%20Property%20Values.jsx)
+
+For each selected property, swap the property values. For example, use this script
+to swap the X and Y size for a rectangle shape layer.
 
 #### [Toggle Difference Blend Mode (v1.1)](/scripts/Toggle%20Difference%20Blend%20Mode.jsx)
 
