@@ -1,6 +1,6 @@
 /**
  * @name Add Camera With Controller
- * @version 1.2
+ * @version 2.0
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Add a camera and 3D null as a controller to the current composition.
@@ -9,7 +9,8 @@
  * no event shall the author be held liable for any damages arising in any way from the use of this
  * script.
  *
- * In other words, I'm just trying to help make life as an animator easier
+ * In other words, I'm just trying to help make life as an animator easier.
+ *
  * "A rising tide lifts all boats." - John F. Kennedy, 1963
  */
 

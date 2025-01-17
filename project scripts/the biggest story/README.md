@@ -12,6 +12,12 @@ Comb throught the entire project looking for all compositions with names that ma
 the correct pattern and add them to the Render Queue. Each item in the Render Queue will output
 two files to the desktop: a ProRes 422 HQ MOV and a PNG Sequence.
 
+#### [Create Eye Rig (v1.2)](/scripts/Create%20Eye%20Rig.jsx)
+
+Used specifically for a current project. Creates an eye rig for a selected eye
+layer. Probably pretty usless outside of this specific use case but has some nice code to
+steal for future scripts.
+
 #### [Merge Imported Project File (v1.0)](/scripts/Merge%20Imported%20Project%20File.jsx)
 
 Select the folder for the imported project file and merge it by moving items from

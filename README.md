@@ -11,7 +11,7 @@ To run the script natively in After Effects use `File > Script > Run Script File
 Add an adjustment layer above the currently selected layer to break the 3D space of
 After Effects. If no layers are selected the adjustment layer will be added at the top.
 
-#### [Add Camera With Controller (v1.2)](/scripts/Add%20Camera%20With%20Controller.jsx)
+#### [Add Camera With Controller (v2.0)](/scripts/Add%20Camera%20With%20Controller.jsx)
 
 Add a camera and 3D null as a controller to the current composition.
 
@@ -51,9 +51,9 @@ Animation will now happen on 2s. Existing expressions will be preserved.
 Add all selected properties to Essential Graphics Panel using effect names instead
 of property names for expression controls.
 
-#### [Add Visibility Controller (v1.1)](/scripts/Add%20Visibility%20Controller.jsx)
+#### [Add Visibility Controller (v2.0)](/scripts/Add%20Visibility%20Controller.jsx)
 
-Add a checkbox that controls the visibility (opacity) for a selected layer.
+Add a checkbox that controls the visibility, using opacity, for a selected layer.
 
 #### [Calculate Difference Between Keyframe Values (v1.0)](/scripts/Calculate%20Difference%20Between%20Keyframe%20Values.jsx)
 
@@ -129,12 +129,6 @@ layer to the current composition.
 
 Counterpart scripts to "Copy Composition Markers To Layer.jsx"
 
-#### [Create Eye Rig (v1.2)](/scripts/Create%20Eye%20Rig.jsx)
-
-Used specifically for a current project. Creates an eye rig for a selected eye
-layer. Probably pretty usless outside of this specific use case but has some nice code to
-steal for future scripts.
-
 #### [Create Text Layers From File (v1.0)](/scripts/Create%20Text%20Layers%20From%20File.jsx)
 
 Add a new Text Layer in the current composition for each line of text in the file in
@@ -156,10 +150,9 @@ duplicated layer above the selected layer, move the duplicated layer below the s
 This script currently only supports duplicating the first selected layer and will ignore any
 other selected layers.
 
-#### [Export Path Points (v1.0)](/scripts/Export%20Path%20Points.jsx)
+#### [Export Path Points (v2.0)](/scripts/Export%20Path%20Points.jsx)
 
-Export path points for a selected path property. Currently outputs a text file
-straight to the desktop.
+Export path points for the select path property to a text file on the Desktop.
 
 #### [Expose Essential Properties to Essential Graphics Panel (v1.1)](/scripts/Expose%20Essential%20Properties%20to%20Essential%20Graphics%20Panel.jsx)
 
@@ -186,6 +179,14 @@ Force the Composition Panel to refresh the current frame.
 #### [Hard Solo Layers (v1.3)](/scripts/Hard%20Solo%20Layers.jsx)
 
 Disable (toggle the eyeball icon) on all unselected layers.
+
+#### [Increment Composition Versions (v2.0)](/scripts/Increment%20Composition%20Versions.jsx)
+
+Increment any version numbers found in the name of all compositions in the current
+project.
+
+Typically my main compositions will end in a version number "\_v05". This script
+will automatically version-up any comp with a version number such as "\_v06".
 
 #### [Invert Selected Keyframes (v1.2)](/scripts/Invert%20Selected%20Keyframes.jsx)
 
@@ -426,10 +427,6 @@ Toggle onion skinning in the current composition.
 
 Toggle selected puppet pins between Position type and Advanced type.
 
-#### [Toggle Selected Property Expressions (v1.1)](/scripts/Toggle%20Selected%20Property%20Expressions.jsx)
-
-Toggle the expressions for selected properties
-
 #### [Toggle Transparency Grid Preferences (v1.0)](/scripts/Toggle%20Transparency%20Grid%20Preferences.jsx)
 
 Sometimes the transparency grid colors are too agressive and the grid size is too
@@ -438,11 +435,6 @@ small. Toggle between the default preferences and a custom "dark mode" with larg
 #### [Unlock All Layers (v2.0)](/scripts/Unlock%20All%20Layers.jsx)
 
 Unlock all layers in all conmpositions in the current project.
-
-#### [Version Up Comps (v1.1)](/scripts/Version%20Up%20Comps.jsx)
-
-Typically my main compositions will end in a version number "\_v05". This script
-will automatically version-up any comp with a version number such as "\_v06".
 
 #### [Zero Position (v2.1)](/scripts/Zero%20Position.jsx)
 

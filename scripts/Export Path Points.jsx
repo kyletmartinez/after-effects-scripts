@@ -1,20 +1,20 @@
 /**
  * @name Export Path Points
- * @version 1.0
+ * @version 2.0
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
- * @description Export path points for a selected path property. Currently outputs a text file
- * straight to the desktop.
+ * @description Export path points for the select path property to a text file on the Desktop.
  *
  * @license This script is provided "as is," without warranty of any kind, expressed or implied. In
  * no event shall the author be held liable for any damages arising in any way from the use of this
  * script.
  *
- * In other words, I'm just trying to help make life as an animator easier
+ * In other words, I'm just trying to help make life as an animator easier.
+ *
  * "A rising tide lifts all boats." - John F. Kennedy, 1963
  */
 
-(function() {
+(function exportPathPoints() {
     var comp = app.project.activeItem;
     var properties = comp.selectedProperties;
     var numProperties = properties.length;
@@ -31,7 +31,7 @@
             }
             vertices.push(vertices.shift());
             var str = JSON.stringify(vertices);
-            var file = new File(Folder.desktop.fsName + "/Path Points.txt");
+            var file = new File(Folder.desktop.fsName + "/points.txt");
             file.open("w");
             file.write("var points = " + str + ";");
             file.close();
