@@ -1,35 +1,28 @@
 /**
  * @name Remove All Proxies
- * @version 1.2
+ * @version 2.0
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
- * @description Remove all proxies set within the project.
+ * @description Remove all proxies within the current project.
  *
  * @license This script is provided "as is," without warranty of any kind, expressed or implied. In
  * no event shall the author be held liable for any damages arising in any way from the use of this
  * script.
  *
- * In other words, I'm just trying to help make life as an animator easier
+ * In other words, I'm just trying to help make life as an animator easier.
+ *
  * "A rising tide lifts all boats." - John F. Kennedy, 1963
  */
 
-(function() {
-    try {
-        app.beginUndoGroup("Remove All Proxies");
-        var project = app.project;
-        var items = project.items;
-        var numItems = items.length;
-        for (var p = 1; p <= numItems; p++) {
-            var item = items[p];
-            if (item instanceof CompItem) {
-                if (item.useProxy === true) {
-                    item.setProxyToNone();
-                }
-            }
+(function removeAllProxies() {
+    app.beginUndoGroup("Remove All Proxies");
+    var project = app.project;
+    var items = project.items;
+    for (var i = project.numItems; i > 0; i--) {
+        var item = items[i];
+        if (item instanceof CompItem && item.useProxy) {
+            item.setProxyToNone();
         }
-    } catch (err) {
-        alert(err);
-    } finally {
-        app.endUndoGroup();
     }
+    app.endUndoGroup();
 })();

@@ -1,37 +1,37 @@
 /**
  * @name Lock All Layers
- * @version 1.4
+ * @version 2.0
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
- * @description Lock every layer in every conmposition in the project.
+ * @description Lock all layers in all conmpositions in the current project.
  *
  * @license This script is provided "as is," without warranty of any kind, expressed or implied. In
  * no event shall the author be held liable for any damages arising in any way from the use of this
  * script.
  *
- * In other words, I'm just trying to help make life as an animator easier
+ * In other words, I'm just trying to help make life as an animator easier.
+ *
  * "A rising tide lifts all boats." - John F. Kennedy, 1963
  */
 
-(function() {
-    function lockAllLayers (comp) {
+(function lockAllLayers() {
+
+    function lockAllCompositionLayers(comp) {
         var layers = comp.layers;
-        var numLayers = layers.length;
-        for (var l = 1; l <= numLayers; l++) {
-            var layer = layers[l];
+        for (var i = comp.numLayers; i > 0; i--) {
+            var layer = layers[i];
             layer.selected = false;
             layer.locked = true;
         }
     }
 
-    app.beginUndoGroup("Lock Layer(s)");
+    app.beginUndoGroup("Lock All Layer(s)");
     var project = app.project;
     var items = project.items;
-    var numItems = items.length;
-    for (var i = 1; i <= numItems; i++) {
+    for (var i = project.numItems; i > 0; i--) {
         var item = items[i];
         if (item instanceof CompItem) {
-            lockAllLayers(item);
+            lockAllCompositionLayers(item);
         }
     }
     app.endUndoGroup();

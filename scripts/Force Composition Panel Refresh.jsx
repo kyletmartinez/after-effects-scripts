@@ -1,6 +1,6 @@
 /**
  * @name Force Composition Panel Refresh
- * @version 1.2
+ * @version 2.0
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Force the Composition Panel to refresh the current frame.
@@ -9,14 +9,13 @@
  * no event shall the author be held liable for any damages arising in any way from the use of this
  * script.
  *
- * In other words, I'm just trying to help make life as an animator easier
+ * In other words, I'm just trying to help make life as an animator easier.
+ *
  * "A rising tide lifts all boats." - John F. Kennedy, 1963
  */
 
-(function() {
+(function forceCompositionPanelRefresh() {
     var comp = app.project.activeItem;
-    if (comp !== null && (comp instanceof CompItem)) {
-        comp.motionBlur = !comp.motionBlur;
-        comp.motionBlur = !comp.motionBlur;
-    }
+    comp.motionBlur = !comp.motionBlur;
+    comp.motionBlur = !comp.motionBlur;
 })();
