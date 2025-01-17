@@ -184,9 +184,6 @@ Disable (toggle the eyeball icon) on all unselected layers.
 Increment any version numbers found in the name of all compositions in the current
 project.
 
-Typically my main compositions will end in a version number "\_v05". This script
-will automatically version-up any comp with a version number such as "\_v06".
-
 #### [Invert Selected Keyframes (v1.2)](/scripts/Invert%20Selected%20Keyframes.jsx)
 
 Invert selected keyframe values.
@@ -328,9 +325,11 @@ Select any unlocked layer parented to the selected layer in the current composit
 
 Select any unlocked layer in the current composition that is disabled.
 
-#### [Select Layers Below Matte (v1.1)](/scripts/Select%20Layers%20Below%20Matte.jsx)
+#### [Select Layers Below Label (v2.0)](/scripts/Select%20Layers%20Below%20Label.jsx)
 
-Select layers below any layer with label 16 (Black).
+Select all layers in the current composition that are directly below a layer with
+the label color 16. In my preferences label 16 is Black (#FFFFFF) and is always used for track
+mattes.
 
 #### [Select Non-Null Layers (v2.0)](/scripts/Select%20Non-Null%20Layers.jsx)
 
@@ -340,10 +339,9 @@ Select any unlocked layer in the current composition not created as a null objec
 
 Select the parent of the currently selected layer.
 
-#### [Select Random Layers (v1.0)](/scripts/Select%20Random%20Layers.jsx)
+#### [Select Random Layers (v2.0)](/scripts/Select%20Random%20Layers.jsx)
 
-Randomly select layers from a given composition. Layer selection is currently skewed
-towards 20% layer selection rather than 50% layer selection.
+Randomly select any unlocked layer in the current composition.
 
 #### [Select Unparented Layers (v2.0)](/scripts/Select%20Unparented%20Layers.jsx)
 

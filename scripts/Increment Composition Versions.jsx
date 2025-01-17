@@ -6,9 +6,6 @@
  * @description Increment any version numbers found in the name of all compositions in the current
  * project.
  *
- * Typically my main compositions will end in a version number "_v05". This script
- * will automatically version-up any comp with a version number such as "_v06".
- *
  * @license This script is provided "as is," without warranty of any kind, expressed or implied. In
  * no event shall the author be held liable for any damages arising in any way from the use of this
  * script.
