@@ -101,7 +101,7 @@ Rename all the layers within all nested compositions.
 Change the composition resolution factor. All nested precomps
 will be affected as well (and precomps within those precomps and so on).
 
-#### [Clean Render Queue (v1.3)](/scripts/Clean%20Render%20Queue.jsx)
+#### [Clean Render Queue (v2.0)](/scripts/Clean%20Render%20Queue.jsx)
 
 Clean out the Render Queue.
 
@@ -140,7 +140,7 @@ steal for future scripts.
 Add a new Text Layer in the current composition for each line of text in the file in
 the selected text file.
 
-#### [Cycle Composition Background Color (v1.2)](/scripts/Cycle%20Composition%20Background%20Color.jsx)
+#### [Cycle Composition Background Color (v2.0)](/scripts/Cycle%20Composition%20Background%20Color.jsx)
 
 Cycle the composition background color between black, gray, and white.
 
@@ -179,7 +179,7 @@ which the effect is applied. Searching is done via matchName for better specific
 Iterate recursively through all precomps and all layers to change the Size property
 of all Turbulent Displace effects.
 
-#### [Force Composition Panel Refresh (v1.2)](/scripts/Force%20Composition%20Panel%20Refresh.jsx)
+#### [Force Composition Panel Refresh (v2.0)](/scripts/Force%20Composition%20Panel%20Refresh.jsx)
 
 Force the Composition Panel to refresh the current frame.
 
@@ -191,9 +191,9 @@ Disable (toggle the eyeball icon) on all unselected layers.
 
 Invert selected keyframe values.
 
-#### [Lock All Layers (v1.4)](/scripts/Lock%20All%20Layers.jsx)
+#### [Lock All Layers (v2.0)](/scripts/Lock%20All%20Layers.jsx)
 
-Lock every layer in every conmposition in the project.
+Lock all layers in all conmpositions in the current project.
 
 #### [Lock All Null Layers (v1.1)](/scripts/Lock%20All%20Null%20Layers.jsx)
 
@@ -250,17 +250,17 @@ Randomly shift the start time of all selected layers within a provided range.
 
 Randomize the value for selected 1 dimensional keyframes.
 
-#### [Remove All Proxies (v1.2)](/scripts/Remove%20All%20Proxies.jsx)
+#### [Remove All Proxies (v2.0)](/scripts/Remove%20All%20Proxies.jsx)
 
-Remove all proxies set within the project.
+Remove all proxies within the current project.
 
 #### [Rename Arm Puppet Pins (v1.0)](/scripts/Rename%20Arm%20Puppet%20Pins.jsx)
 
 Rename selected puppet pins added to arm layers in preparation for Duik
 
-#### [Rename Composition to File Name (v1.1)](/scripts/Rename%20Composition%20to%20File%20Name.jsx)
+#### [Rename Composition to File Name (v2.0)](/scripts/Rename%20Composition%20to%20File%20Name.jsx)
 
-Rename the current composition to the same name as the project.
+Rename the composition to match the name of the project file.
 
 #### [Rename First Layer to Composition Name (v1.0)](/scripts/Rename%20First%20Layer%20to%20Composition%20Name.jsx)
 
@@ -296,7 +296,7 @@ Rename the source of the selected layer to match.
 
 Replace text in the name of all selected project items.
 
-#### [Reset Composition Work Area (v1.2)](/scripts/Reset%20Composition%20Work%20Area.jsx)
+#### [Reset Composition Work Area (v2.0)](/scripts/Reset%20Composition%20Work%20Area.jsx)
 
 Set the Work Area to cover the entire composition.
 
@@ -317,50 +317,47 @@ the image is not amazing quality.
 
 Output will match the following format: "Comp Name YYYY-MM-DD HH.MM.SS AM.png"
 
-#### [Select All Children (v1.3)](/scripts/Select%20All%20Children.jsx)
+#### [Select All Children (v2.0)](/scripts/Select%20All%20Children.jsx)
 
-Select all layers parented to the currently selected layer.
+Select any unlocked layer parented to the selected layer in the current composition.
 
-#### [Select All Non-Null Layers (v1.1)](/scripts/Select%20All%20Non-Null%20Layers.jsx)
+#### [Select Disable Layers (v2.0)](/scripts/Select%20Disable%20Layers.jsx)
 
-Select all layers in a composition that are not a null layer.
-
-#### [Select Disable Layers (v1.1)](/scripts/Select%20Disable%20Layers.jsx)
-
-Select all layers in the current composition that are disabled. Disabled means the
-eyeball icon is toggled OFF.
+Select any unlocked layer in the current composition that is disabled.
 
 #### [Select Layers Below Matte (v1.1)](/scripts/Select%20Layers%20Below%20Matte.jsx)
 
 Select layers below any layer with label 16 (Black).
 
-#### [Select Parent Layer (v1.0)](/scripts/Select%20Parent%20Layer.jsx)
+#### [Select Non-Null Layers (v2.0)](/scripts/Select%20Non-Null%20Layers.jsx)
 
-If there is only one layer selected, and the selected layer has a parent layer, then
-unlock and select the parent layer.
+Select any unlocked layer in the current composition not created as a null object.
+
+#### [Select Parent Layer (v2.0)](/scripts/Select%20Parent%20Layer.jsx)
+
+Select the parent of the currently selected layer.
 
 #### [Select Random Layers (v1.0)](/scripts/Select%20Random%20Layers.jsx)
 
 Randomly select layers from a given composition. Layer selection is currently skewed
 towards 20% layer selection rather than 50% layer selection.
 
-#### [Selected Unparented Layers (v1.1)](/scripts/Selected%20Unparented%20Layers.jsx)
+#### [Select Unparented Layers (v2.0)](/scripts/Select%20Unparented%20Layers.jsx)
 
-Select all unparented layers in the current composition.
+Select any unlocked layer in the current composition without a parent.
 
-#### [Set All Item Lables to None (v1.0)](/scripts/Set%20All%20Item%20Lables%20to%20None.jsx)
+#### [Set All Item Labels To None (v2.0)](/scripts/Set%20All%20Item%20Labels%20To%20None.jsx)
 
-Reset the label colors for all items in the active project as None.
+Set the label for all items in the current project to None.
 
-#### [Set All Layer Labels to None (v1.0)](/scripts/Set%20All%20Layer%20Labels%20to%20None.jsx)
+#### [Set All Layer Labels To None (v2.0)](/scripts/Set%20All%20Layer%20Labels%20To%20None.jsx)
 
-Reset the label colors for all layers in the active composition as None.
+Set the label for all layers in the current composition to None.
 
-#### [Set All Track Matte Layers to Black (v1.0)](/scripts/Set%20All%20Track%20Matte%20Layers%20to%20Black.jsx)
+#### [Set All Track Matte Labels (v2.0)](/scripts/Set%20All%20Track%20Matte%20Labels.jsx)
 
-Reset the label colors for all track matte layers in the active composition as label
-number 16. Label number 16 is Black (#FFFFFF) in my label preferences and is always used for
-track matte layers.
+Set the label color for all track matte layers in the active composition to 16. In
+my preferences label 16 is Black (#FFFFFF) and is always used for track mattes.
 
 #### [Set New Color (v1.4)](/scripts/Set%20New%20Color.jsx)
 
@@ -438,9 +435,9 @@ Toggle the expressions for selected properties
 Sometimes the transparency grid colors are too agressive and the grid size is too
 small. Toggle between the default preferences and a custom "dark mode" with larger grid cells.
 
-#### [Unlock All Layers (v1.0)](/scripts/Unlock%20All%20Layers.jsx)
+#### [Unlock All Layers (v2.0)](/scripts/Unlock%20All%20Layers.jsx)
 
-Unlock every layer in every conmposition in the project.
+Unlock all layers in all conmpositions in the current project.
 
 #### [Version Up Comps (v1.1)](/scripts/Version%20Up%20Comps.jsx)
 
