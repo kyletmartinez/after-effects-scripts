@@ -67,10 +67,9 @@ layer and one 3D layer will result in 3D distance (world space). Hold the ALT ke
 result to be 2D distance (composition space). Forcing 2D distance (composition space) will result
 in the optical distance between two layers.
 
-#### [Center Composition (v1.3)](/scripts/Center%20Composition.jsx)
+#### [Center Composition (v2.0)](/scripts/Center%20Composition.jsx)
 
-Center the composition in the Composition Panel. Hold the ALT key or SHIFT key for
-other zoom levels.
+Center the composition in the Composition Panel. Hold ALT or SHIFT for other values.
 
 #### [Change Nested Composition Background (v1.1)](/scripts/Change%20Nested%20Composition%20Background.jsx)
 
@@ -280,14 +279,17 @@ Rename the source of the currently selected layer.
 
 Rename the sources of the currently selected layers.
 
+#### [Rename Selected Layers With Letters (v2.0)](/scripts/Rename%20Selected%20Layers%20With%20Letters.jsx)
+
+Rename the selected layers append letters as needed.
+
+#### [Rename Selected Layers With Numbers (v2.0)](/scripts/Rename%20Selected%20Layers%20With%20Numbers.jsx)
+
+Rename the selected layers appending zero-padded numbers as needed.
+
 #### [Rename Selected Layers With Text (v1.0)](/scripts/Rename%20Selected%20Layers%20With%20Text.jsx)
 
 Rename selected layers and append each character along with character count.
-
-#### [Rename Selected Layers (v1.7)](/scripts/Rename%20Selected%20Layers.jsx)
-
-Rename selected layers and append zero padded numbers. Selecting a single layer
-will not append zero padded numbers.
 
 #### [Rename Source to Layer Name (v1.4)](/scripts/Rename%20Source%20to%20Layer%20Name.jsx)
 
