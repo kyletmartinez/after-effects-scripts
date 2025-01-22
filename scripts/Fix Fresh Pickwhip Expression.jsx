@@ -1,6 +1,6 @@
 /**
  * @name Fix Fresh Pickwhip Expression
- * @version 1.1
+ * @version 2.0
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Append ".value;" to the end of an expression recently set with the pickwhip.

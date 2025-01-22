@@ -153,7 +153,7 @@ Dropdown Menu Control.
 Find all instances of a specific efffect in the current project. Add additional
 effects to be checked to the `MatchNames` object.
 
-#### [Fix Fresh Pickwhip Expression (v1.1)](/scripts/Fix%20Fresh%20Pickwhip%20Expression.jsx)
+#### [Fix Fresh Pickwhip Expression (v2.0)](/scripts/Fix%20Fresh%20Pickwhip%20Expression.jsx)
 
 Append `.value;` to the end of an expression recently set with the pickwhip.
 
@@ -381,10 +381,9 @@ size values for a rectangle shape layer.
 Toggle the blend mode of the selected layers to `Difference`. Hold the `ALT` key to
 toggle back to `Normal`.
 
-#### [Toggle Maintain Scale Expression (v1.0)](/scripts/Toggle%20Maintain%20Scale%20Expression.jsx)
+#### [Toggle Maintain Scale Expression (v2.0)](/scripts/Toggle%20Maintain%20Scale%20Expression.jsx)
 
-Disable or enable an expression that maintains the visual scale of a layer as it's
-positioned in Z Space.
+Toggle an expression that maintains visual scale for layer regardless of Z position.
 
 #### [Toggle Onion Skinning (v1.3)](/scripts/Toggle%20Onion%20Skinning.jsx)
 

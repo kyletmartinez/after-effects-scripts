@@ -1,28 +1,27 @@
 /**
  * @name Toggle Maintain Scale Expression
- * @version 1.0
+ * @version 2.0
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
- * @description Disable or enable an expression that maintains the visual scale of a layer as it's
- * positioned in Z Space.
+ * @description Toggle an expression that maintains visual scale for layer regardless of Z position.
  *
  * @license This script is provided "as is," without warranty of any kind, expressed or implied. In
  * no event shall the author be held liable for any damages arising in any way from the use of this
  * script.
  *
- * In other words, I'm just trying to help make life as an animator easier
- * "A rising tide lifts all boats." - John F. Kennedy, 1963
+ * I'm just trying to help make life as an After Effects animator a little easier.
  */
 
-(function() {
-    function disableScaleExpression (layer) {
+(function toggleMaintainScaleExpression() {
+
+    function disableScaleExpression(layer) {
         var scaleProperty = layer.transform.scale;
         var scaleValue = scaleProperty.value;
         scaleProperty.expression = "";
         scaleProperty.setValue(scaleValue);
     }
 
-    function enableScaleExpression (layer) {
+    function enableScaleExpression(layer) {
         var scaleProperty = layer.transform.scale;
         var scaleValue = scaleProperty.value[0];
         var positionValue = layer.transform.position.value[2];
@@ -32,8 +31,12 @@
         }
         var value = scaleValue / (1 + (positionValue / zoomValue));
         scaleProperty.setValue([value, value, value]);
-        scaleProperty.expression = ["try { var zoom = thisComp.activeCamera.cameraOption.zoom; } catch (e) { var zoom = thisComp.width / 0.72; }",
-                                    "value * (1 + (transform.position[2] / zoom));"].join("\n");
+        scaleProperty.expression = [
+            "var zoom = (thisComp.activeCamera) ?",
+            "thisComp.activeCamera.cameraOption.zoom :",
+            "thisComp.width / 0.72;",
+            "value * (1 + (transform.position[2] / zoom));"
+        ].join(" ");
     }
 
     app.beginUndoGroup("Toggle Maintain Scale Expression");

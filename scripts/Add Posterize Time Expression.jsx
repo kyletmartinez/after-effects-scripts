@@ -15,12 +15,13 @@
 
 (function addPosterizeTimeExpression() {
 
-    function addExpression(property, fps) {
+    function addExpression (property, fps) {
         var newExpression = "posterizeTime(" + fps + "); value;";
         if (property.expression.length === 0) {
             property.expression = newExpression;
         } else {
-            var divider = (exp.includes("\r") || exp.includes("\n")) ? "\n" : " ";
+            var oldExpression = property.expression;
+            var divider = (oldExpression.includes("\r")) ? "\n" : " ";
             property.expression = newExpression + divider + oldExpression;
         }
     }
