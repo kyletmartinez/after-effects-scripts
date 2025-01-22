@@ -9,20 +9,16 @@
  * no event shall the author be held liable for any damages arising in any way from the use of this
  * script.
  *
- * In other words, I'm just trying to help make life as an animator easier.
- *
- * "A rising tide lifts all boats." - John F. Kennedy, 1963
+ * I'm just trying to help make life as an After Effects animator a little easier.
  */
 
 (function selectParentLayer() {
     var comp = app.project.activeItem;
     var selectedLayers = comp.selectedLayers;
-    if (selectedLayers.length === 1) {
-        var layer = selectedLayers[0];
-        if (layer.parent) {
-            layer.selected = false;
-            layer.parent.locked = false;
-            layer.parent.selected = true;
-        }
+    var layer = selectedLayers[0];
+    if (layer.parent) {
+        layer.selected = false;
+        layer.parent.locked = false;
+        layer.parent.selected = true;
     }
 })();

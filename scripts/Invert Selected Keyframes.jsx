@@ -1,6 +1,6 @@
 /**
  * @name Invert Selected Keyframes
- * @version 1.2
+ * @version 2.0
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Invert selected keyframe values.
@@ -9,40 +9,34 @@
  * no event shall the author be held liable for any damages arising in any way from the use of this
  * script.
  *
- * In other words, I'm just trying to help make life as an animator easier
- * "A rising tide lifts all boats." - John F. Kennedy, 1963
+ * I'm just trying to help make life as an After Effects animator a little easier.
  */
 
-(function() {
-    function invertKeyframe (property, key) {
-        var value = property.keyValue(key) * -1;
-        property.setValueAtKey(key, value);
-    }
+(function invertSelectedKeyframes() {
 
-    function findSelectedKeyframes (property) {
-        var keys = property.selectedKeys;
-        var numKeys = keys.length;
-        for (var k = 0; k < numKeys; k++) {
-            var key = keys[k];
-            invertKeyframe(property, key);
+    function iterateThroughKeyframes(property, keyframes) {
+        var numKeys = keyframes.length;
+        for (var k = 0; k < numKeys; k += 1) {
+            var key = keyframes[k];
+            var value = property.keyValue(key) * -1;
+            property.setValueAtKey(key, value);
         }
     }
 
-    function findSelectedProperties (comp) {
-        var properties = comp.selectedProperties;
+    function iterateThroughProperties(properties) {
         var numProperties = properties.length;
-        for (var p = 0; p < numProperties; p++) {
+        for (var p = 0; p < numProperties; p += 1) {
             var property = properties[p];
             if (property.canVaryOverTime === true) {
-                findSelectedKeyframes(property);
+                var keyframes = property.selectedKeys;
+                iterateThroughKeyframes(property, keyframes);
             }
         }
     }
 
-    app.beginUndoGroup("Invert Selected Keyframes");
+    app.beginUndoGroup("Invert Selected Keyframe(s)");
     var comp = app.project.activeItem;
-    if (comp !== null && (comp instanceof CompItem)) {
-        findSelectedProperties(comp);
-    }
+    var properties = comp.selectedProperties;
+    iterateThroughProperties(properties);
     app.endUndoGroup();
 })();

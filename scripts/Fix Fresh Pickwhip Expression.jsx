@@ -1,25 +1,23 @@
 /**
- * @name OCD Expression Fix
+ * @name Fix Fresh Pickwhip Expression
  * @version 1.1
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
- * @description Append ".value;" to the end of the expression on selected properties. Typically used
- * immediately after using the pickwhip to quickly set the expression.
+ * @description Append ".value;" to the end of an expression recently set with the pickwhip.
  *
  * @license This script is provided "as is," without warranty of any kind, expressed or implied. In
  * no event shall the author be held liable for any damages arising in any way from the use of this
  * script.
  *
- * In other words, I'm just trying to help make life as an animator easier
- * "A rising tide lifts all boats." - John F. Kennedy, 1963
+ * I'm just trying to help make life as an After Effects animator a little easier.
  */
 
-(function() {
+(function fixFreshPickwhipExpression() {
     var comp = app.project.activeItem;
     var properties = comp.selectedProperties;
     var numProperties = properties.length;
-    for (var i = 0; i < numProperties; i++) {
-        var property = properties[i];
+    for (var p = 0; p < numProperties; p++) {
+        var property = properties[p];
         if (property.canSetExpression == true) {
             if (property.expressionEnabled == true) {
                 property.expression = property.expression + ".value;";

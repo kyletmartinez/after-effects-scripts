@@ -1,6 +1,6 @@
 # After Effects Scripts
 
-A collection of helpful scripts for After Effects that run natively or with a 3rd party script launcher..
+A collection of helpful scripts for After Effects that run natively or with a 3rd party script launcher.
 
 To run the script natively in After Effects use `File > Script > Run Script File...` and choose this script.
 
@@ -17,6 +17,11 @@ two files to the desktop: a ProRes 422 HQ MOV and a PNG Sequence.
 Used specifically for a current project. Creates an eye rig for a selected eye
 layer. Probably pretty usless outside of this specific use case but has some nice code to
 steal for future scripts.
+
+#### [Fix Turbulent Displace (v1.0)](/scripts/Fix%20Turbulent%20Displace.jsx)
+
+Iterate recursively through all precomps and all layers to change the Size property
+of all Turbulent Displace effects.
 
 #### [Merge Imported Project File (v1.0)](/scripts/Merge%20Imported%20Project%20File.jsx)
 
@@ -98,6 +103,6 @@ layers are ASCENDING shot numbers.
 #### [Update Turbulent Displace Expression (v1.3)](/scripts/Update%20Turbulent%20Displace%20Expression.jsx)
 
 Comb throught the entire project looking for all instances of Turbulent Displace and
-update the old expression on "Random Seed" with a new expression to avoid a visible "jump" at the
+update the old expression on `Random Seed` with a new expression to avoid a visible `jump` at the
 beginning of every composition.
 

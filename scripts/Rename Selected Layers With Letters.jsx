@@ -9,9 +9,7 @@
  * no event shall the author be held liable for any damages arising in any way from the use of this
  * script.
  *
- * In other words, I'm just trying to help make life as an animator easier.
- *
- * "A rising tide lifts all boats." - John F. Kennedy, 1963
+ * I'm just trying to help make life as an After Effects animator a little easier.
  */
 
 (function renameLayersWithLetters() {
@@ -21,8 +19,8 @@
     }
 
     function renameLayers(layers, numLayers, name) {
-        for (var i = 0; i < numLayers; i++) {
-            layers[i].name = name + " " + getLetter(i + 1);
+        for (var l = 0; l < numLayers; l++) {
+            layers[l].name = name + " " + getLetter(l + 1);
         }
     }
 

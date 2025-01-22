@@ -1,6 +1,6 @@
 /**
  * @name Add 3D Break
- * @version 1.3
+ * @version 2.0
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Add an adjustment layer above the currently selected layer to break the 3D space of
@@ -10,8 +10,7 @@
  * no event shall the author be held liable for any damages arising in any way from the use of this
  * script.
  *
- * In other words, I'm just trying to help make life as an animator easier
- * "A rising tide lifts all boats." - John F. Kennedy, 1963
+ * I'm just trying to help make life as an After Effects animator a little easier.
  */
 
 (function addThreeDBreak() {
@@ -32,9 +31,10 @@
         });
         index = selectedLayers[0].index;
     }
-    var oldLayer = comp.layers[index];
     var newLayer = comp.layers.addSolid(color, name, width, height, pixelAspect, duration);
     newLayer.adjustmentLayer = true;
-    newLayer.moveBefore(oldLayer);
+    if (comp.numLayers > 0) {
+        newLayer.moveBefore(comp.layers[index]);
+    }
     app.endUndoGroup();
 })();

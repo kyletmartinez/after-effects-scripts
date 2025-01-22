@@ -1,6 +1,6 @@
 /**
- * @name Parent Selected Layers to Layers Below
- * @version 1.0
+ * @name Parent Selected Layers To Layers Below
+ * @version 2.0
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Parent each selected layer to the layer directly below it.
@@ -9,20 +9,17 @@
  * no event shall the author be held liable for any damages arising in any way from the use of this
  * script.
  *
- * In other words, I'm just trying to help make life as an animator easier
- * "A rising tide lifts all boats." - John F. Kennedy, 1963
+ * I'm just trying to help make life as an After Effects animator a little easier.
  */
 
-(function() {
-    app.beginUndoGroup("Parent Selected Layers to Layers Below");
+(function parentSelectedLayersToLayersBelow() {
+    app.beginUndoGroup("Parent Selected Layers To Layers Below");
     var comp = app.project.activeItem;
-    var layers = comp.layers;
-    var selectedLayers = comp.selectedLayers;
-    var numSelectedLayers = selectedLayers.length;
-    for (var i = 0; i < numSelectedLayers; i++) {
-        var selectedLayer = selectedLayers[i];
-        var selectedIndex = selectedLayer.index;
-        selectedLayer.parent = layers[selectedIndex + 1];
+    var layers = comp.selectedLayers;
+    var numLayers = layers.length;
+    for (var l = 0; l < numLayers; l++) {
+        var layer = layers[l];
+        layer.parent = comp.layers[layer.index + 1];
     }
     app.endUndoGroup();
 })();

@@ -1,6 +1,6 @@
 /**
  * @name Zero Position
- * @version 2.1
+ * @version 2.0
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Zero out the position of all selected layers.
@@ -9,12 +9,12 @@
  * no event shall the author be held liable for any damages arising in any way from the use of this
  * script.
  *
- * In other words, I'm just trying to help make life as an animator easier
- * "A rising tide lifts all boats." - John F. Kennedy, 1963
+ * I'm just trying to help make life as an After Effects animator a little easier.
  */
 
-(function() {
-    function addZeroPositionToLayer (comp, layer) {
+(function addZeroPosition() {
+
+    function addZeroPositionToLayer(comp, layer) {
         var positionValue = layer.transform.position.value;
         var zeroLayer = comp.layers.addShape();
         zeroLayer.name = "z_" + layer.name;
@@ -29,8 +29,7 @@
         layer.parent = zeroLayer;
     }
 
-    function addZeroPositionToLayers (comp, selectedIndices) {
-        app.beginUndoGroup("Add Zero Position");
+    function addZeroPositionToLayers(comp, selectedIndices) {
         var numIndices = selectedIndices.length;
         for (var i = 0; i < numIndices; i++) {
             var index = selectedIndices[i];
@@ -38,10 +37,9 @@
             addZeroPositionToLayer(comp, layer);
         }
         comp.hideShyLayers = true;
-        app.endUndoGroup();
     }
 
-    function saveSelectedLayerIndicies (comp) {
+    function saveSelectedLayerIndicies(comp) {
         var selectedIndices = [];
         var layers = comp.selectedLayers;
         var numLayers = layers.length;
@@ -53,8 +51,8 @@
         addZeroPositionToLayers(comp, selectedIndices);
     }
 
+    app.beginUndoGroup("Add Zero Position");
     var comp = app.project.activeItem;
-    if (comp !== null && (comp instanceof CompItem)) {
-        saveSelectedLayerIndicies(comp);
-    }
+    saveSelectedLayerIndicies(comp);
+    app.endUndoGroup();
 })();

@@ -25,7 +25,7 @@
     app.beginUndoGroup("Randomize Layer Start Time");
     var comp = app.project.activeItem;
     if (comp !== null && (comp instanceof CompItem)) {
-        var range = parseInt(prompt("Range (Frames)", ""));
+        var range = parseInt(prompt("Range (Frames)", ""), 10);
         if (isNaN(range) === false) {
             var layers = comp.selectedLayers;
             var numLayers = layers.length;

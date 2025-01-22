@@ -9,16 +9,14 @@
  * no event shall the author be held liable for any damages arising in any way from the use of this
  * script.
  *
- * In other words, I'm just trying to help make life as an animator easier.
- *
- * "A rising tide lifts all boats." - John F. Kennedy, 1963
+ * I'm just trying to help make life as an After Effects animator a little easier.
  */
 
 (function selectNonNullLayers() {
     var comp = app.project.activeItem;
     var layers = comp.layers;
-    for (var i = comp.numLayers; i > 0; i--) {
-        var layer = layers[i];
+    for (var l = comp.numLayers; l > 0; l--) {
+        var layer = layers[l];
         if (!layer.locked) {
             layer.selected = !layer.nullLayer;
         }

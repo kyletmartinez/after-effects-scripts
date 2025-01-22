@@ -1,40 +1,32 @@
 /**
  * @name Toggle Difference Blend Mode
- * @version 1.1
+ * @version 2.0
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
- * @description Toggle the blend mode of the selected layers between Normal and Difference. Hold the
- * ALT key to force all selected layers to Normal blend mode. Hold the SHIFT key to force all
- * selected layers to Difference blend mode.
+ * @description Toggle the blend mode of the selected layers to "Difference". Hold the "ALT" key to
+ * toggle back to "Normal".
  *
  * @license This script is provided "as is," without warranty of any kind, expressed or implied. In
  * no event shall the author be held liable for any damages arising in any way from the use of this
  * script.
  *
- * In other words, I'm just trying to help make life as an animator easier
- * "A rising tide lifts all boats." - John F. Kennedy, 1963
+ * I'm just trying to help make life as an After Effects animator a little easier.
  */
 
-(function() {
-    app.beginUndoGroup("Toggle Blend Mode");
+(function toggleDifferenceBlendMode() {
+
     var altKey = ScriptUI.environment.keyboardState.altKey;
-    var shiftKey = ScriptUI.environment.keyboardState.shiftKey;
+
+    app.beginUndoGroup("Toggle Difference Blend Mode");
     var comp = app.project.activeItem;
-    var selectedLayers = comp.selectedLayers;
-    var numSelectedLayers = selectedLayers.length;
-    for (var l = 0; l < numSelectedLayers; l++) {
-        var currentLayer = selectedLayers[l];
-        var currentBlendMode = currentLayer.blendingMode;
-        if (altKey === true && shiftKey === false) {
-            currentLayer.blendingMode = BlendingMode.NORMAL;
-        } else if (altKey === false && shiftKey === true) {
-            currentLayer.blendingMode = BlendingMode.DIFFERENCE;
+    var layers = comp.selectedLayers;
+    var numLayers = layers.length;
+    for (var l = 0; l < numLayers; l++) {
+        var layer = layers[l];
+        if (altKey) {
+            layer.blendingMode = BlendingMode.NORMAL;
         } else {
-            if (currentBlendMode === BlendingMode.NORMAL) {
-                currentLayer.blendingMode = BlendingMode.DIFFERENCE;
-            } else if (currentBlendMode === BlendingMode.DIFFERENCE) {
-                currentLayer.blendingMode = BlendingMode.NORMAL;
-            }
+            layer.blendingMode = BlendingMode.DIFFERENCE;
         }
     }
     app.endUndoGroup();

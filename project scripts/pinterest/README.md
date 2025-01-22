@@ -1,6 +1,6 @@
 # After Effects Scripts
 
-A collection of helpful scripts for After Effects that run natively or with a 3rd party script launcher..
+A collection of helpful scripts for After Effects that run natively or with a 3rd party script launcher.
 
 To run the script natively in After Effects use `File > Script > Run Script File...` and choose this script.
 

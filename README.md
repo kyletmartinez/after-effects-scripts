@@ -1,12 +1,12 @@
 # After Effects Scripts
 
-A collection of helpful scripts for After Effects that run natively or with a 3rd party script launcher..
+A collection of helpful scripts for After Effects that run natively or with a 3rd party script launcher.
 
 To run the script natively in After Effects use `File > Script > Run Script File...` and choose this script.
 
 ## Scripts
 
-#### [Add 3D Break (v1.3)](/scripts/Add%203D%20Break.jsx)
+#### [Add 3D Break (v2.0)](/scripts/Add%203D%20Break.jsx)
 
 Add an adjustment layer above the currently selected layer to break the 3D space of
 After Effects. If no layers are selected the adjustment layer will be added at the top.
@@ -15,41 +15,45 @@ After Effects. If no layers are selected the adjustment layer will be added at t
 
 Add a camera and 3D null as a controller to the current composition.
 
-#### [Add Composition Guides (v1.2)](/scripts/Add%20Composition%20Guides.jsx)
+#### [Add Composition Guide (v2.0)](/scripts/Add%20Composition%20Guide.jsx)
 
-Add a 16x9 fuscia rectangle shape layer with guide layer enable to serve as a guide
-for compositions with larger or smaller dimensions. Helpful with precomposed character rigs.
+Add a 16x9 fuscia rectangle shape layer to act as a guide. Helpful with things like
+precomposed character rigs.
 
-#### [Add Expression to Selected Properties (v1.1)](/scripts/Add%20Expression%20to%20Selected%20Properties.jsx)
+#### [Add Fill With Color Cycle (v2.0)](/scripts/Add%20Fill%20With%20Color%20Cycle.jsx)
 
-Add an expression to all selected properties.
+Add the Fill effect to all selected layers while cycling through `red`, `green`,`blue`, `yellow`, `magenta`, and `cyan`.
 
-#### [Add Fill With Color Cycle (v1.1)](/scripts/Add%20Fill%20With%20Color%20Cycle.jsx)
+#### [Add Markers At Out Points (v2.0)](/scripts/Add%20Markers%20At%20Out%20Points.jsx)
 
-Add the Fill effect to all selected layers while cycling through red, green, blue,yellow, magenta, and cyan.
+Add a composition marker at the out point of each layer in the composition.
 
-#### [Add Marker(s) At Out Point (v1.1)](/scripts/Add%20Marker(s)%20At%20Out%20Point.jsx)
+#### [Add Markers to Selected Layers (v2.0)](/scripts/Add%20Markers%20to%20Selected%20Layers.jsx)
 
-Add a composition marker at each outpoint of every layer in the composition.
+Add a marker to all selected layers with an optional comment.
 
-#### [Add Markers to Selected Layers (v1.4)](/scripts/Add%20Markers%20to%20Selected%20Layers.jsx)
+#### [Add Posterize Time Adjustment Layer (v2.0)](/scripts/Add%20Posterize%20Time%20Adjustment%20Layer.jsx)
 
-Add a new maker to all selected layers with an optional comment.
+Add `Posterize Time` adjustment layer to the current composition. Default `Frame
+Rate` will be half the current frame rate.
 
-#### [Add Posterize Time Adjustment Layer (v1.1)](/scripts/Add%20Posterize%20Time%20Adjustment%20Layer.jsx)
+#### [Add Posterize Time Expression (v2.0)](/scripts/Add%20Posterize%20Time%20Expression.jsx)
 
-Add an adjustment layer to the current composition to cut the framerate in half.
-Animation will now happen on 2s.
+Add `posterizeTime(fps)` expression to all selected properties. Default `fps` will
+be half the current frame rate and existing expressions will be preserved.
 
-#### [Add Posterize Time Expression (v1.0)](/scripts/Add%20Posterize%20Time%20Expression.jsx)
+#### [Add Properties To Essential Graphics (v2.0)](/scripts/Add%20Properties%20To%20Essential%20Graphics.jsx)
 
-Add an expression to all selected properties to cut the framerate in half.
-Animation will now happen on 2s. Existing expressions will be preserved.
+Add all selected properties to Essential Graphics Panel. If any properties belong to
+a native After Effects expression controller then use the effect name instead.
 
-#### [Add Selected Properties to Essential Graphics Panel (v1.1)](/scripts/Add%20Selected%20Properties%20to%20Essential%20Graphics%20Panel.jsx)
-
-Add all selected properties to Essential Graphics Panel using effect names instead
-of property names for expression controls.
+* `Angle Control`
+* `Checkbox Control`
+* `Color Control`
+* `Dropdown Menu Control`
+* `Layer Control`
+* `Point Control`
+* `Slider Control`
 
 #### [Add Visibility Controller (v2.0)](/scripts/Add%20Visibility%20Controller.jsx)
 
@@ -67,38 +71,27 @@ layer and one 3D layer will result in 3D distance (world space). Hold the ALT ke
 result to be 2D distance (composition space). Forcing 2D distance (composition space) will result
 in the optical distance between two layers.
 
+#### [Calculate Frames To Selected Keyframe (v2.0)](/scripts/Calculate%20Frames%20To%20Selected%20Keyframe.jsx)
+
+Calculate and alert the amount of time, in frames instead of seconds, between the
+currently selected keyframe and the Current Time Indicator.
+
 #### [Center Composition (v2.0)](/scripts/Center%20Composition.jsx)
 
-Center the composition in the Composition Panel. Hold ALT or SHIFT for other values.
+Center the composition in the Composition Panel. Hold the `ALT` key or `SHIFT` key
+for other values.
 
-#### [Change Nested Composition Background (v1.1)](/scripts/Change%20Nested%20Composition%20Background.jsx)
+#### [Change Nested Composition Background (v2.0)](/scripts/Change%20Nested%20Composition%20Background.jsx)
 
-Change the background color of the current composition using a hexcode. All nested
-precomps will be affected as well (and precomps within those precomps and so on).
+Change the background color of the current composition and all nested compositions.
 
-#### [Change Nested Composition Duration (v1.2)](/scripts/Change%20Nested%20Composition%20Duration.jsx)
+#### [Change Nested Composition Duration (v2.0)](/scripts/Change%20Nested%20Composition%20Duration.jsx)
 
-Change the composition and all layers to the given duration. All nested precomps
-will be affected as well (and precomps within those precomps and so on).
+Change the duration of the current composition and all nested compositions.
 
-#### [Change Nested Composition Frame Rate (v1.2)](/scripts/Change%20Nested%20Composition%20Frame%20Rate.jsx)
+#### [Change Nested Composition Frame Rate (v2.0)](/scripts/Change%20Nested%20Composition%20Frame%20Rate.jsx)
 
-Change the composition and all layers to the given frame rate. All nested precomps
-will be affected as well (and precomps within those precomps and so on).
-
-#### [Change Nested Composition Layer Colors (v1.1)](/scripts/Change%20Nested%20Composition%20Layer%20Colors.jsx)
-
-Set the label color of all layers in the current composition to "None." All nested
-precomps will be affected as well (and precomps within those precomps and so on).
-
-#### [Change Nested Composition Layer Names (v1.1)](/scripts/Change%20Nested%20Composition%20Layer%20Names.jsx)
-
-Rename all the layers within all nested compositions.
-
-#### [Change Nested Composition Resolution (v1.1)](/scripts/Change%20Nested%20Composition%20Resolution.jsx)
-
-Change the composition resolution factor. All nested precomps
-will be affected as well (and precomps within those precomps and so on).
+Change the frame rate of the current composition and all nested compositions.
 
 #### [Clean Render Queue (v2.0)](/scripts/Clean%20Render%20Queue.jsx)
 
@@ -109,49 +102,41 @@ Clean out the Render Queue.
 Clean unused items from any selected folders. Remove empty folders unless they are
 top level.
 
-#### [Copy Composition Markers To Layer (v1.0)](/scripts/Copy%20Composition%20Markers%20To%20Layer.jsx)
+#### [Copy Composition Markers To Layer (v2.0)](/scripts/Copy%20Composition%20Markers%20To%20Layer.jsx)
 
-Copy all markers (duration, comments, and labels) from the current composition to
-the currently selected layer.
+Copy all markers from the current composition to the currently selected layer
+including duration, comments, and labels.
 
-Counterpart scripts to "Copy Layer Makers to Composition.jsx"
+Sister script to: `Copy Layer Makers to Composition.jsx`
 
-#### [Copy Composition Work Area (v1.2)](/scripts/Copy%20Composition%20Work%20Area.jsx)
+#### [Copy Layer Makers To Composition (v2.0)](/scripts/Copy%20Layer%20Makers%20To%20Composition.jsx)
 
-Copy the Work Area from the active composition. Hold the ALT key to paste the copied
-Work Area to the active composition.
+Copy all markers from the currently selected layer to the current composition
+including duration, comments, and labels.
 
-#### [Copy Layer Makers To Composition (v1.0)](/scripts/Copy%20Layer%20Makers%20To%20Composition.jsx)
+Sister script to: `Copy Composition Markers To Layer.jsx`
 
-Copy all markers (duration, comments, and labels) from the currently selected
-layer to the current composition.
+#### [Create Text Layers From File (v2.0)](/scripts/Create%20Text%20Layers%20From%20File.jsx)
 
-Counterpart scripts to "Copy Composition Markers To Layer.jsx"
-
-#### [Create Text Layers From File (v1.0)](/scripts/Create%20Text%20Layers%20From%20File.jsx)
-
-Add a new Text Layer in the current composition for each line of text in the file in
-the selected text file.
+Add a Text Layer to the current composition for each line in the selected text file.
 
 #### [Cycle Composition Background Color (v2.0)](/scripts/Cycle%20Composition%20Background%20Color.jsx)
 
-Cycle the composition background color between black, gray, and white.
+Cycle the composition background color between `black`, `gray`, and `white`.
 
-#### [Disable Specified Effects (v1.0)](/scripts/Disable%20Specified%20Effects.jsx)
+#### [Toggle Specific Effects (v2.0)](/scripts/Toggle%20Specific%20Effects.jsx)
 
-Disable all of the specified effects in the project. Alt + click to enable. Add
-additional effects to be checked into the matchNames object.
+Disable all specified effects in the current project. Hold the `ALT` key to enable.
+Add additional effects to be checked to the `MatchNames` object.
 
-#### [Duplicate Selected Layer (v1.0)](/scripts/Duplicate%20Selected%20Layer.jsx)
+#### [Duplicate Selected Layer (v2.0)](/scripts/Duplicate%20Selected%20Layer.jsx)
 
-Exactly like selected layer and hitting CMD/CTRL + D. But instead of moving the
-duplicated layer above the selected layer, move the duplicated layer below the selected layer.
-This script currently only supports duplicating the first selected layer and will ignore any
-other selected layers.
+Duplicate the selected layer exactly like pressing `CMD/CTRL + D` but move the new
+layer directly below the selected layer instead of above it.
 
 #### [Export Path Points (v2.0)](/scripts/Export%20Path%20Points.jsx)
 
-Export path points for the select path property to a text file on the Desktop.
+Export path points for the select path property to a text file on the desktop.
 
 #### [Expose Essential Properties to Essential Graphics Panel (v1.1)](/scripts/Expose%20Essential%20Properties%20to%20Essential%20Graphics%20Panel.jsx)
 
@@ -161,30 +146,29 @@ Essential Properties by using an intermediate expression controller. Select a la
 properterties or select specific properties to add them. This script does not currently support
 Dropdown Menu Control.
 
-#### [Find Specific Effect (v1.0)](/scripts/Find%20Specific%20Effect.jsx)
+#### [Find Specific Effect (v2.0)](/scripts/Find%20Specific%20Effect.jsx)
 
-Find all instances of a specific effect in the current project and alert the layer
-which the effect is applied. Searching is done via matchName for better specificity.
+Find all instances of a specific efffect in the current project. Add additional
+effects to be checked to the `MatchNames` object.
 
-#### [Fix Turbulent Displace (v1.0)](/scripts/Fix%20Turbulent%20Displace.jsx)
+#### [Fix Fresh Pickwhip Expression (v1.1)](/scripts/Fix%20Fresh%20Pickwhip%20Expression.jsx)
 
-Iterate recursively through all precomps and all layers to change the Size property
-of all Turbulent Displace effects.
+Append `.value;` to the end of an expression recently set with the pickwhip.
 
 #### [Force Composition Panel Refresh (v2.0)](/scripts/Force%20Composition%20Panel%20Refresh.jsx)
 
 Force the Composition Panel to refresh the current frame.
 
-#### [Hard Solo Layers (v1.3)](/scripts/Hard%20Solo%20Layers.jsx)
+#### [Hard Solo Layers (v2.0)](/scripts/Hard%20Solo%20Layers.jsx)
 
-Disable (toggle the eyeball icon) on all unselected layers.
+Disable all selected layers.
 
 #### [Increment Composition Versions (v2.0)](/scripts/Increment%20Composition%20Versions.jsx)
 
 Increment any version numbers found in the name of all compositions in the current
 project.
 
-#### [Invert Selected Keyframes (v1.2)](/scripts/Invert%20Selected%20Keyframes.jsx)
+#### [Invert Selected Keyframes (v2.0)](/scripts/Invert%20Selected%20Keyframes.jsx)
 
 Invert selected keyframe values.
 
@@ -192,42 +176,32 @@ Invert selected keyframe values.
 
 Lock all layers in all conmpositions in the current project.
 
-#### [Lock All Null Layers (v1.1)](/scripts/Lock%20All%20Null%20Layers.jsx)
-
-Lock all layers in a composition that are a null layer.
-
-#### [Make Hold Keyframes (v1.4)](/scripts/Make%20Hold%20Keyframes.jsx)
+#### [Make Hold Keyframes (v2.0)](/scripts/Make%20Hold%20Keyframes.jsx)
 
 Convert selected keyframes into hold keyframes.
 
-#### [Match Selected Layer In Time To Below (v1.0)](/scripts/Match%20Selected%20Layer%20In%20Time%20To%20Below.jsx)
+#### [Match Selected In Point To Below (v2.0)](/scripts/Match%20Selected%20In%20Point%20To%20Below.jsx)
 
 Match the in point of all selected layers to the layer directly below it.
 
-#### [Match Selected Layer Start Time To Below (v1.1)](/scripts/Match%20Selected%20Layer%20Start%20Time%20To%20Below.jsx)
+#### [Match Selected Start Time To Below (v2.0)](/scripts/Match%20Selected%20Start%20Time%20To%20Below.jsx)
 
 Match the start time of all selected layers to the layer directly below it.
 
-#### [Merge Imported Selected Items (v1.0)](/scripts/Merge%20Imported%20Selected%20Items.jsx)
+#### [Merge Imported Selected Items (v2.0)](/scripts/Merge%20Imported%20Selected%20Items.jsx)
 
-Attempt to move all selected and newly imported items into their matching and
-previously existing folders.
+Merge all imported and selected items in a previously existing and matching folder.
 
-#### [Multiply Selected Keyframes (v1.0)](/scripts/Multiply%20Selected%20Keyframes.jsx)
+#### [Multiply Selected Keyframes (v2.0)](/scripts/Multiply%20Selected%20Keyframes.jsx)
 
 Multiply selected keyframe values by a provided value.
 
-#### [OCD Expression Fix (v1.1)](/scripts/OCD%20Expression%20Fix.jsx)
+#### [Parent Closest Layers (v2.0)](/scripts/Parent%20Closest%20Layers.jsx)
 
-Append ".value;" to the end of the expression on selected properties. Typically used
-immediately after using the pickwhip to quickly set the expression.
+Parent the closest layer in the composition to each selected layer. Calculations
+done in 2D space. Typically used in conjunction with Newton by Motion Botique.
 
-#### [Parent Newton Layers (v1.1)](/scripts/Parent%20Newton%20Layers.jsx)
-
-For each selected layers, parent the closest layer in composition space. Typically
-used for prepping artwork for Motion Botique's Newton plugin.
-
-#### [Parent Selected Layers to Layers Below (v1.0)](/scripts/Parent%20Selected%20Layers%20to%20Layers%20Below.jsx)
+#### [Parent Selected Layers To Layers Below (v2.0)](/scripts/Parent%20Selected%20Layers%20To%20Layers%20Below.jsx)
 
 Parent each selected layer to the layer directly below it.
 
@@ -235,7 +209,7 @@ Parent each selected layer to the layer directly below it.
 
 Posterize all selected keyframes in a composition to be on 2s.
 
-#### [Posterize Start Time (v1.1)](/scripts/Posterize%20Start%20Time.jsx)
+#### [Posterize Layer Start Time (v2.0)](/scripts/Posterize%20Layer%20Start%20Time.jsx)
 
 Posterize the start time of all layers in a composition to be on 2s.
 
@@ -243,38 +217,22 @@ Posterize the start time of all layers in a composition to be on 2s.
 
 Randomly shift the start time of all selected layers within a provided range.
 
-#### [Randomize Selected Keyframe Values (v1.3)](/scripts/Randomize%20Selected%20Keyframe%20Values.jsx)
-
-Randomize the value for selected 1 dimensional keyframes.
-
 #### [Remove All Proxies (v2.0)](/scripts/Remove%20All%20Proxies.jsx)
 
 Remove all proxies within the current project.
 
-#### [Rename Arm Puppet Pins (v1.0)](/scripts/Rename%20Arm%20Puppet%20Pins.jsx)
-
-Rename selected puppet pins added to arm layers in preparation for Duik
-
-#### [Rename Composition to File Name (v2.0)](/scripts/Rename%20Composition%20to%20File%20Name.jsx)
+#### [Rename Composition To File Name (v2.0)](/scripts/Rename%20Composition%20To%20File%20Name.jsx)
 
 Rename the composition to match the name of the project file.
 
-#### [Rename First Layer to Composition Name (v1.0)](/scripts/Rename%20First%20Layer%20to%20Composition%20Name.jsx)
+#### [Rename Puppet Pins For DuIK (v2.0)](/scripts/Rename%20Puppet%20Pins%20For%20DuIK.jsx)
 
-Rename the first layer in each selected composition to match the name of the
-composition.
+Rename selected arm puppet pins in preparation for DuIK. Hold the `ALT` key to
+rename selected leg puppet pins.
 
-#### [Rename Selected Project Items (v1.2)](/scripts/Rename%20Selected%20Project%20Items.jsx)
-
-Rename selected project items and append zero padded numbers.
-
-#### [Rename Selected Layer Source (v1.4)](/scripts/Rename%20Selected%20Layer%20Source.jsx)
+#### [Rename Selected Layer Source (v2.0)](/scripts/Rename%20Selected%20Layer%20Source.jsx)
 
 Rename the source of the currently selected layer.
-
-#### [Rename Selected Layer Sources (v1.2)](/scripts/Rename%20Selected%20Layer%20Sources.jsx)
-
-Rename the sources of the currently selected layers.
 
 #### [Rename Selected Layers With Letters (v2.0)](/scripts/Rename%20Selected%20Layers%20With%20Letters.jsx)
 
@@ -284,38 +242,40 @@ Rename the selected layers append letters as needed.
 
 Rename the selected layers appending zero-padded numbers as needed.
 
-#### [Rename Selected Layers With Text (v1.0)](/scripts/Rename%20Selected%20Layers%20With%20Text.jsx)
+#### [Rename Selected Layers With Text (v2.0)](/scripts/Rename%20Selected%20Layers%20With%20Text.jsx)
 
-Rename selected layers and append each character along with character count.
+Rename the selected layers appending each character and character count as needed.
 
-#### [Rename Source to Layer Name (v1.4)](/scripts/Rename%20Source%20to%20Layer%20Name.jsx)
+#### [Rename Selected Project Items (v2.0)](/scripts/Rename%20Selected%20Project%20Items.jsx)
 
-Rename the source of the selected layer to match.
+Rename selected project items appending zero-padded numbers as needed.
 
-#### [Replace Text in Project Item Name (v1.1)](/scripts/Replace%20Text%20in%20Project%20Item%20Name.jsx)
+#### [Rename Source To Layer Name (v2.0)](/scripts/Rename%20Source%20To%20Layer%20Name.jsx)
 
-Replace text in the name of all selected project items.
+Rename the selected item to match the name of the layer it is used for.
+
+#### [Replace Text in Project Item Name (v2.0)](/scripts/Replace%20Text%20in%20Project%20Item%20Name.jsx)
+
+Replace text in the name of all selected project items. RegEx is accepted.
 
 #### [Reset Composition Work Area (v2.0)](/scripts/Reset%20Composition%20Work%20Area.jsx)
 
 Set the Work Area to cover the entire composition.
 
-#### [Round Position (v1.0)](/scripts/Round%20Position.jsx)
-
-Round the position values of selected layers to the nearest whole number.
-
-#### [Round Selected Keyframe Value (v1.0)](/scripts/Round%20Selected%20Keyframe%20Value.jsx)
+#### [Round Selected Keyframe Values (v2.0)](/scripts/Round%20Selected%20Keyframe%20Values.jsx)
 
 Round the values for all selected keyframes to the nearest whole number. Currently
-works with 1 dimensional properties (Opacity, Rotation, etc.), 2 dimensional properties
-(2D Scale, 2D Position, etc.), and 3 dimensional properties (3D Scale, 3D Position, etc.).
+supports basic properties with 1, 2, or 3 dimensions.
 
-#### [Save Frame as PNG (v1.4)](/scripts/Save%20Frame%20as%20PNG.jsx)
+#### [Round Selected Property Values (v2.0)](/scripts/Round%20Selected%20Property%20Values.jsx)
 
-Save the current frame as a PNG to the desktop. This does support transparency but
-the image is not amazing quality.
+Round the values for all selected properties to the nearest whole number. Currently
+supports basic properties with 1, 2, or 3 dimensions.
 
-Output will match the following format: "Comp Name YYYY-MM-DD HH.MM.SS AM.png"
+#### [Save Frame As PNG (v2.0)](/scripts/Save%20Frame%20As%20PNG.jsx)
+
+Save the current frame as a PNG to the desktop. Output will match the following
+format: `Composition Name YYYY-MM-DD HH.MM.SS AM.png`
 
 #### [Select All Children (v2.0)](/scripts/Select%20All%20Children.jsx)
 
@@ -328,7 +288,7 @@ Select any unlocked layer in the current composition that is disabled.
 #### [Select Layers Below Label (v2.0)](/scripts/Select%20Layers%20Below%20Label.jsx)
 
 Select all layers in the current composition that are directly below a layer with
-the label color 16. In my preferences label 16 is Black (#FFFFFF) and is always used for track
+the label color `16`. In my preferences label 16 is Black `#000000` and is always used for track
 mattes.
 
 #### [Select Non-Null Layers (v2.0)](/scripts/Select%20Non-Null%20Layers.jsx)
@@ -349,70 +309,73 @@ Select any unlocked layer in the current composition without a parent.
 
 #### [Set All Item Labels To None (v2.0)](/scripts/Set%20All%20Item%20Labels%20To%20None.jsx)
 
-Set the label for all items in the current project to None.
+Set the label for all items in the current project to `None` or label `0`.
 
 #### [Set All Layer Labels To None (v2.0)](/scripts/Set%20All%20Layer%20Labels%20To%20None.jsx)
 
-Set the label for all layers in the current composition to None.
+Set the label for all layers in the current composition to `None` or label `0`.
 
 #### [Set All Track Matte Labels (v2.0)](/scripts/Set%20All%20Track%20Matte%20Labels.jsx)
 
-Set the label color for all track matte layers in the active composition to 16. In
-my preferences label 16 is Black (#FFFFFF) and is always used for track mattes.
+Set the label color for all track matte layers in the active composition to `16`. In
+my preferences label 16 is Black `#000000` and is always used for track mattes.
 
-#### [Set New Color (v1.4)](/scripts/Set%20New%20Color.jsx)
+#### [Set New Color (v2.0)](/scripts/Set%20New%20Color.jsx)
 
-Set new color based on original color, blend mode, and opacity.
+Select a color property and set a new color based on the original color, blend mode,
+and opacity. Colors are calculated using the After Effects order of operations. Supports the
+following blend modes:
 
-#### [Set Proxies From Folder (v1.1)](/scripts/Set%20Proxies%20From%20Folder.jsx)
+* `Multiply`
+* `Screen`
 
-Automatically set proxies to all rendered MOV files in a folder that match
-compositions within the project.
+#### [Set Proxies From Folder (v2.0)](/scripts/Set%20Proxies%20From%20Folder.jsx)
 
-#### [Set Random Z Position (v1.0)](/scripts/Set%20Random%20Z%20Position.jsx)
+Set proxies for all compositions within the project.
 
-Set the Z Position of all selected layers to a random value between RANDOM\_MIN and
-RANDOM\_MAX.
-
-#### [Set Selected Layer Track Matte To Layer Above It (v1.1)](/scripts/Set%20Selected%20Layer%20Track%20Matte%20To%20Layer%20Above%20It.jsx)
-
-Set the track matte for all selected layers to the layer above it. Currently uses
-a Luma Inverted track matte type.
-
-#### [Set Simple Time Remap Loop (v1.0)](/scripts/Set%20Simple%20Time%20Remap%20Loop.jsx)
+#### [Set Simple Time Remap Loop (v2.0)](/scripts/Set%20Simple%20Time%20Remap%20Loop.jsx)
 
 Automatically enable Time Remapping, set the appropriate keyframes, and apply the
-loopOut() expression to correctly loop a layer.
+`loopOut()` expression to correctly loop a layer.
 
 #### [Set To Average Position (v1.1)](/scripts/Set%20To%20Average%20Position.jsx)
 
 Set the last selected layer to the average position of all other layers. Hold the
 ALT key to set the first selected layers to the average position of all other layers.
 
-#### [Shift Start Time For Selected Layers (v1.4)](/scripts/Shift%20Start%20Time%20For%20Selected%20Layers.jsx)
+#### [Set Track Matte To Above (v2.0)](/scripts/Set%20Track%20Matte%20To%20Above.jsx)
 
-Shift all selected layers to the Current Time Indicator as a group while maintaining
-relative timing.
+Set the track matte for all selected layers to the layer above it.
 
-#### [Stick Effect to Layer (v1.2)](/scripts/Stick%20Effect%20to%20Layer.jsx)
+* `TrackMatteType.ALPHA`
+* `TrackMatteType.ALPHA\_INVERTED`
+* `TrackMatteType.LUMA`
+* `TrackMatteType.LUMA\_INVERTED`
+* `TrackMatteType.NO\_TRACK\_MATTE`
 
-Force effects wih selected position properties such as CC Bend It or Gradient Ramp
-to stick properly to a layer.
+#### [Shift Layer Start Time (v2.0)](/scripts/Shift%20Layer%20Start%20Time.jsx)
 
-#### [Swap Property (v1.1)](/scripts/Swap%20Property.jsx)
+Shift the start of a group of selected layers to the current time while maintaining
+relative timing within the group.
 
-Swap the values of two selected properties. They must be the same property type.
+#### [Stick Effect To Layer (v2.0)](/scripts/Stick%20Effect%20To%20Layer.jsx)
 
-#### [Swap Selected Property Values (v1.0)](/scripts/Swap%20Selected%20Property%20Values.jsx)
+Help effects with position properties such as `CC Bend It` or `Gradient Ramp` stick
+properly to a layer.
 
-For each selected property, swap the property values. For example, use this script
-to swap the X and Y size for a rectangle shape layer.
+#### [Swap Property Values (v2.0)](/scripts/Swap%20Property%20Values.jsx)
 
-#### [Toggle Difference Blend Mode (v1.1)](/scripts/Toggle%20Difference%20Blend%20Mode.jsx)
+Swap the values of two selected properties with the same property type.
 
-Toggle the blend mode of the selected layers between Normal and Difference. Hold the
-ALT key to force all selected layers to Normal blend mode. Hold the SHIFT key to force all
-selected layers to Difference blend mode.
+#### [Swap Property Dimensions (v2.0)](/scripts/Swap%20Property%20Dimensions.jsx)
+
+Swap the dimension values for all selected properties. For example, swap the x and y
+size values for a rectangle shape layer.
+
+#### [Toggle Difference Blend Mode (v2.0)](/scripts/Toggle%20Difference%20Blend%20Mode.jsx)
+
+Toggle the blend mode of the selected layers to `Difference`. Hold the `ALT` key to
+toggle back to `Normal`.
 
 #### [Toggle Maintain Scale Expression (v1.0)](/scripts/Toggle%20Maintain%20Scale%20Expression.jsx)
 
@@ -423,20 +386,20 @@ positioned in Z Space.
 
 Toggle onion skinning in the current composition.
 
-#### [Toggle Puppet Pin Type (v1.1)](/scripts/Toggle%20Puppet%20Pin%20Type.jsx)
+#### [Toggle Puppet Pin Types (v2.0)](/scripts/Toggle%20Puppet%20Pin%20Types.jsx)
 
-Toggle selected puppet pins between Position type and Advanced type.
+Toggle the types of selected puppet pins between `Position` and `Advanced`.
 
-#### [Toggle Transparency Grid Preferences (v1.0)](/scripts/Toggle%20Transparency%20Grid%20Preferences.jsx)
+#### [Transfer Composition Work Area (v2.0)](/scripts/Transfer%20Composition%20Work%20Area.jsx)
 
-Sometimes the transparency grid colors are too agressive and the grid size is too
-small. Toggle between the default preferences and a custom "dark mode" with larger grid cells.
+Copy the Work Area from the current composition. Hold the `ALT` key to paste a
+copied Work Area to the current composition.
 
 #### [Unlock All Layers (v2.0)](/scripts/Unlock%20All%20Layers.jsx)
 
 Unlock all layers in all conmpositions in the current project.
 
-#### [Zero Position (v2.1)](/scripts/Zero%20Position.jsx)
+#### [Zero Position (v2.0)](/scripts/Zero%20Position.jsx)
 
 Zero out the position of all selected layers.
 

@@ -1,42 +1,41 @@
 /**
  * @name Rename Selected Layers With Text
- * @version 1.0
+ * @version 2.0
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
- * @description Rename selected layers and append each character along with character count.
+ * @description Rename the selected layers appending each character and character count as needed.
  *
  * @license This script is provided "as is," without warranty of any kind, expressed or implied. In
  * no event shall the author be held liable for any damages arising in any way from the use of this
  * script.
  *
- * In other words, I'm just trying to help make life as an animator easier
- * "A rising tide lifts all boats." - John F. Kennedy, 1963
+ * I'm just trying to help make life as an After Effects animator a little easier.
  */
 
-(function() {
-    function renameSelectedLayers (layers, numLayers, newName) {
-        var characters = {};
-        app.beginUndoGroup("Rename Layer(s)");
-        for (var l = 0; l < numLayers; l++) {
-            var layer = layers[l];
-            var character = newName.charAt(l).toUpperCase();
-            if (characters.hasOwnProperty(character) === true) {
-                characters[character] = characters[character] + 1;
-            } else {
-                characters[character] = 1;
+(function renameLayersWithText() {
+
+    function renameLayers(layers, numLayers, newName) {
+        var characterCount = {};
+        if (numLayers === newName.length) {
+            for (var l = 0; l < numLayers; l++) {
+                var character = newName.charAt(l).toUpperCase();
+                var count = characterCount[character] || 1;
+                layers[l].name = newName + " " + character + count;
+                characterCount[character] = count + 1;
             }
-            layer.name = newName + " " + character + characters[character];
         }
-        app.endUndoGroup();
     }
 
+    app.beginUndoGroup("Rename Layer(s) With Text");
     var comp = app.project.activeItem;
     var layers = comp.selectedLayers;
     var numLayers = layers.length;
     if (numLayers > 0) {
-        var newName = prompt("Name", "");
+        var oldName = layers[0].name;
+        var newName = prompt("Rename Layer(s) With Text", oldName);
         if (newName !== null && newName.length > 0) {
-            renameSelectedLayers(layers, numLayers, newName);
+            renameLayers(layers, numLayers, newName);
         }
     }
+    app.endUndoGroup();
 })();

@@ -1,22 +1,19 @@
 /**
- * @name Save Frame as PNG
- * @version 1.4
+ * @name Save Frame As PNG
+ * @version 2.0
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
- * @description Save the current frame as a PNG to the desktop. This does support transparency but
- * the image is not amazing quality.
- *
- * Output will match the following format: "Comp Name YYYY-MM-DD HH.MM.SS AM.png"
+ * @description Save the current frame as a PNG to the desktop. Output will match the following
+ * format: "Composition Name YYYY-MM-DD HH.MM.SS AM.png"
  *
  * @license This script is provided "as is," without warranty of any kind, expressed or implied. In
  * no event shall the author be held liable for any damages arising in any way from the use of this
  * script.
  *
- * In other words, I'm just trying to help make life as an animator easier
- * "A rising tide lifts all boats." - John F. Kennedy, 1963
+ * I'm just trying to help make life as an After Effects animator a little easier.
  */
 
-(function() {
+(function saveFrameAsPNG() {
     function getDate(date) {
         var year = date.getFullYear().toString();
         var month = date.getMonth().toString();

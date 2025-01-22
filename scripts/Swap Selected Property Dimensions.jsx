@@ -1,9 +1,10 @@
 /**
- * @name Make Hold Keyframes
+ * @name Swap Property Dimensions
  * @version 2.0
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
- * @description Convert selected keyframes into hold keyframes.
+ * @description Swap the dimension values for all selected properties. For example, swap the x and y
+ * size values for a rectangle shape layer.
  *
  * @license This script is provided "as is," without warranty of any kind, expressed or implied. In
  * no event shall the author be held liable for any damages arising in any way from the use of this
@@ -12,27 +13,25 @@
  * I'm just trying to help make life as an After Effects animator a little easier.
  */
 
-(function makeHoldKeyframes() {
-    var HOLD = KeyframeInterpolationType.HOLD;
+(function swapSelectedPropertyDimensions() {
 
-    function setKeyframesToHold(property) {
-        var keys = property.selectedKeys;
-        var numKeys = keys.length;
-        for (var k = 0; k < numKeys; k++) {
-            var index = keys[k];
-            property.setInterpolationTypeAtKey(index, HOLD, HOLD);
-        }
+    function swapPropertyDimensions(property) {
+        var value = property.value.reverse();
+        property.setValue(value);
     }
 
-    app.beginUndoGroup("Make Hold Keyframe(s)");
+    app.beginUndoGroup("Swap Property Dimensions");
     var comp = app.project.activeItem;
     var properties = comp.selectedProperties;
     var numProperties = properties.length;
     for (var p = 0; p < numProperties; p++) {
         var property = properties[p];
         if (property.propertyType === PropertyType.PROPERTY) {
-            if (property.isTimeVarying === true) {
-                setKeyframesToHold(property);
+            switch (property.propertyValueType) {
+                case PropertyValueType.TwoD:
+                case PropertyValueType.TwoD_SPATIAL:
+                    swapPropertyDimensions(property);
+                    break;
             }
         }
     }

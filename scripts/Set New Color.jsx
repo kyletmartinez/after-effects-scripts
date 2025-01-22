@@ -1,19 +1,23 @@
 /**
  * @name Set New Color
- * @version 1.4
+ * @version 2.0
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
- * @description Set new color based on original color, blend mode, and opacity.
+ * @description Select a color property and set a new color based on the original color, blend mode,
+ * and opacity. Colors are calculated using the After Effects order of operations. Supports the
+ * following blend modes:
+ *
+ * * "Multiply"
+ * * "Screen"
  *
  * @license This script is provided "as is," without warranty of any kind, expressed or implied. In
  * no event shall the author be held liable for any damages arising in any way from the use of this
  * script.
  *
- * In other words, I'm just trying to help make life as an animator easier
- * "A rising tide lifts all boats." - John F. Kennedy, 1963
+ * I'm just trying to help make life as an After Effects animator a little easier.
  */
 
-(function() {
+(function setNewColor() {
     var BlendMode = {
         "MULTIPLY": 1000,
         "SCREEN": 2000

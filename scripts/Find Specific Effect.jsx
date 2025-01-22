@@ -1,61 +1,54 @@
 /**
  * @name Find Specific Effect
- * @version 1.0
+ * @version 2.0
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
- * @description Find all instances of a specific effect in the current project and alert the layer
- * which the effect is applied. Searching is done via matchName for better specificity.
+ * @description Find all instances of a specific efffect in the current project. Add additional
+ * effects to be checked to the "MatchNames" object.
  *
  * @license This script is provided "as is," without warranty of any kind, expressed or implied. In
  * no event shall the author be held liable for any damages arising in any way from the use of this
  * script.
  *
- * In other words, I'm just trying to help make life as an animator easier
- * "A rising tide lifts all boats." - John F. Kennedy, 1963
+ * I'm just trying to help make life as an After Effects animator a little easier.
  */
 
-(function findSpecificEffect() {
+(function findSpecificEffects() {
 
-    var EFFECT_MATCH_NAME = "ADBE Gaussian Blur 2";
+    var MatchNames = {
+        "ADBE Gaussian Blur 2": "Gaussian Blur"
+    };
 
-    function getEffects(layer) {
+    function checkMatchName(layer, effect) {
+        if (MatchNames.hasOwnProperty(effect.matchName)) {
+            alert(layer.name + ": " + effect.matchName);
+        }
+    }
+
+    function iterateThroughEffects(layer) {
         var effects = layer.property("ADBE Effect Parade");
-        var numEffects = effects.numProperties;
-        for (var e = 1; e <= numEffects; e++) {
-            var effect = effects.property(e);
-            if (effect.matchName === EFFECT_MATCH_NAME) {
-                alert(layer.name + ": " + effect.matchName);
+        if (effects !== null) {
+            for (var e = effects.numProperties; e > 0; e--) {
+                var effect = effects.property(e);
+                checkMatchName(layer, effect);
             }
         }
     }
 
-    function getAVlayers(composition) {
-        var layers = composition.layers;
-        var numLayers = layers.length;
-        for (var l = 1; l <= numLayers; l++) {
+    function iterateThroughLayers(comp) {
+        var layers = comp.layers;
+        for (var l = comp.numLayers; l > 0; l--) {
             var layer = layers[l];
-            if (layer instanceof AVLayer) {
-                getEffects(layer);
-            }
-            if (layer instanceof ShapeLayer) {
-                getEffects(layer);
-            }
-            if (layer instanceof TextLayer) {
-                getEffects(layer);
-            }
+            iterateThroughEffects(layer);
         }
     }
 
-    function getCompositionItems(project) {
-        var items = project.items;
-        var numItems = items.length;
-        for (var i = 1; i <= numItems; i++) {
-            var item = items[i];
-            if (item instanceof CompItem) {
-                getAVlayers(item);
-            }
+    var project = app.project;
+    var items = project.items;
+    for (var i = project.numItems; i > 0; i--) {
+        var item = items[i];
+        if (item instanceof CompItem) {
+            iterateThroughLayers(item);
         }
     }
-
-    getCompositionItems(app.project);
 })();

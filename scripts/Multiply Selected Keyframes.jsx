@@ -1,6 +1,6 @@
 /**
  * @name Multiply Selected Keyframes
- * @version 1.0
+ * @version 2.0
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Multiply selected keyframe values by a provided value.
@@ -9,11 +9,10 @@
  * no event shall the author be held liable for any damages arising in any way from the use of this
  * script.
  *
- * In other words, I'm just trying to help make life as an animator easier
- * "A rising tide lifts all boats." - John F. Kennedy, 1963
+ * I'm just trying to help make life as an After Effects animator a little easier.
  */
 
-(function() {
+(function multiplySelectedKeyframes() {
     function multiplyKeyframe(property, key, multiplier) {
         var value = property.keyValue(key) * multiplier;
         property.setValueAtKey(key, value);
@@ -41,12 +40,10 @@
 
     app.beginUndoGroup("Multiply Selected Keyframes");
     var comp = app.project.activeItem;
-    if (comp !== null && (comp instanceof CompItem)) {
-        var multiplierString = prompt("Multiplier?", "2");
-        if (multiplierString !== null && multiplierString.length > 0) {
-            var multiplier = parseFloat(multiplierString);
-            findSelectedProperties(comp, multiplier, multiplier);
-        }
+    var multiplierString = prompt("Multiplier?", "2");
+    if (multiplierString !== null && multiplierString.length > 0) {
+        var multiplier = parseFloat(multiplierString);
+        findSelectedProperties(comp, multiplier);
     }
     app.endUndoGroup();
 })();

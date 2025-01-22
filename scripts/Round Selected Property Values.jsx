@@ -1,9 +1,9 @@
 /**
- * @name Round Selected Keyframe Values
+ * @name Round Selected Property Values
  * @version 2.0
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
- * @description Round the values for all selected keyframes to the nearest whole number. Currently
+ * @description Round the values for all selected properties to the nearest whole number. Currently
  * supports basic properties with 1, 2, or 3 dimensions.
  *
  * @license This script is provided "as is," without warranty of any kind, expressed or implied. In
@@ -13,7 +13,7 @@
  * I'm just trying to help make life as an After Effects animator a little easier.
  */
 
-(function roundSelectedKeyframeValues() {
+(function roundSelectedPropertyValues() {
 
     function roundValue(oldValue) {
         return Math.round(oldValue);
@@ -28,29 +28,24 @@
         return newValues;
     }
 
-    function roundKeyframeValues(property) {
+    function roundPropertyValues(property) {
         var propertyValueType = property.propertyValueType;
-        var keys = property.selectedKeys;
-        var numKeys = keys.length;
-        for (var k = 0; k < numKeys; k++) {
-            var index = keys[k];
-            var oldKeyValue = property.keyValue(index);
-            var newKeyValue = oldKeyValue;
-            switch (propertyValueType) {
-                case PropertyValueType.OneD:
-                    newKeyValue = roundValue(oldKeyValue);
-                    break;
-                case PropertyValueType.TwoD:
-                case PropertyValueType.TwoD_SPATIAL:
-                case PropertyValueType.ThreeD:
-                case PropertyValueType.ThreeD_SPATIAL:
-                    newKeyValue = roundValues(oldKeyValue);
-                    break;
-                default:
-                    break;
-            }
-            property.setValueAtKey(index, newKeyValue);
+        var oldValue = property.value;
+        var newValue = oldValue;
+        switch (propertyValueType) {
+            case PropertyValueType.OneD:
+                newValue = roundValue(oldValue);
+                break;
+            case PropertyValueType.TwoD:
+            case PropertyValueType.TwoD_SPATIAL:
+            case PropertyValueType.ThreeD:
+            case PropertyValueType.ThreeD_SPATIAL:
+                newValue = roundValues(oldValue);
+                break;
+            default:
+                break;
         }
+        property.setValue(newValue);
     }
 
     app.beginUndoGroup("Round Selected Keyframe Value(s)");
@@ -60,8 +55,8 @@
     for (var p = 0; p < numProperties; p++) {
         var property = properties[p];
         if (property.propertyType === PropertyType.PROPERTY) {
-            if (property.isTimeVarying === true) {
-                roundKeyframeValues(property);
+            if (property.isTimeVarying === false) {
+                roundPropertyValues(property);
             }
         }
     }

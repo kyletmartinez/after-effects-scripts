@@ -1,20 +1,19 @@
 /**
- * @name Toggle Puppet Pin Type
- * @version 1.1
+ * @name Toggle Puppet Pin Types
+ * @version 2.0
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
- * @description Toggle selected puppet pins between Position type and Advanced type.
+ * @description Toggle the types of selected puppet pins between "Position" and "Advanced".
  *
  * @license This script is provided "as is," without warranty of any kind, expressed or implied. In
  * no event shall the author be held liable for any damages arising in any way from the use of this
  * script.
  *
- * In other words, I'm just trying to help make life as an animator easier
- * "A rising tide lifts all boats." - John F. Kennedy, 1963
+ * I'm just trying to help make life as an After Effects animator a little easier.
  */
 
-(function() {
-    app.beginUndoGroup("Toggle Puppet Pin Type");
+(function togglePuppetPinTypes() {
+    app.beginUndoGroup("Toggle Puppet Pin Type(s)");
     var comp = app.project.activeItem;
     var properties = comp.selectedProperties;
     var numProperties = properties.length;

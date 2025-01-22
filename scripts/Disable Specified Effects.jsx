@@ -1,59 +1,56 @@
 /**
- * @name Disable Specified Effects
- * @version 1.0
+ * @name Toggle Specific Effects
+ * @version 2.0
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
- * @description Disable all of the specified effects in the project. Alt + click to enable. Add
- * additional effects to be checked into the matchNames object.
+ * @description Disable all specified effects in the current project. Hold the "ALT" key to enable.
+ * Add additional effects to be checked to the "MatchNames" object.
  *
  * @license This script is provided "as is," without warranty of any kind, expressed or implied. In
  * no event shall the author be held liable for any damages arising in any way from the use of this
  * script.
  *
- * In other words, I'm just trying to help make life as an animator easier
- * "A rising tide lifts all boats." - John F. Kennedy, 1963
+ * I'm just trying to help make life as an After Effects animator a little easier.
  */
 
-(function() {
-    var matchNames = {
+(function toggleSpecificEffects() {
+
+    var MatchNames = {
         "ADBE Turbulent Displace": "Turbulent Displace"
     };
 
-    function checkAllMatchnames (effect, enabled) {
-        if (matchNames.hasOwnProperty(effect.matchName) === true) {
-            effect.enabled = enabled;
+    function checkMatchName(effect, altKey) {
+        if (MatchNames.hasOwnProperty(effect.matchName)) {
+            effect.enabled = (altKey) ? true : false;
         }
     }
 
-    function checkAllEffects (layer, enabled) {
+    function iterateThroughEffects(layer, altKey) {
         var effects = layer.property("ADBE Effect Parade");
         if (effects !== null) {
-            var numEffects = effects.numProperties;
-            for (var e = 1; e <= numEffects; e++) {
+            for (var e = effects.numProperties; e > 0; e--) {
                 var effect = effects.property(e);
-                checkAllMatchnames(effect, enabled);
+                checkMatchName(effect, altKey);
             }
         }
     }
 
-    function checkAllLayers (comp, enabled) {
+    function iterateThroughLayers(comp, altKey) {
         var layers = comp.layers;
-        var numLayers = layers.length;
-        for (var l = 1; l <= numLayers; l++) {
+        for (var l = comp.numLayers; l > 0; l--) {
             var layer = layers[l];
-            checkAllEffects(layer, enabled);
+            iterateThroughEffects(layer, altKey);
         }
     }
 
-    app.beginUndoGroup("Disable Effect(s)");
-    var enabled = ScriptUI.environment.keyboardState.altKey;
+    app.beginUndoGroup("Toggle Effects");
+    var altKey = ScriptUI.environment.keyboardState.altKey;
     var project = app.project;
     var items = project.items;
-    var numItems = items.length;
-    for (var i = 1; i <= numItems; i++) {
+    for (var i = project.numItems; i > 0; i--) {
         var item = items[i];
         if (item instanceof CompItem) {
-            checkAllLayers(item, enabled);
+            iterateThroughLayers(item, altKey);
         }
     }
     app.endUndoGroup();
