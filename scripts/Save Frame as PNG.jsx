@@ -4,7 +4,9 @@
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Save the current frame as a PNG to the desktop. Output will match the following
- * format: "Composition Name YYYY-MM-DD HH.MM.SS AM.png"
+ * format:
+ *
+ * "Composition Name YYYY-MM-DD HH.MM.SS AM.png"
  *
  * @license This script is provided "as is," without warranty of any kind, expressed or implied. In
  * no event shall the author be held liable for any damages arising in any way from the use of this

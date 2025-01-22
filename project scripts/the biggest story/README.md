@@ -1,8 +1,10 @@
 # After Effects Scripts
 
-A collection of helpful scripts for After Effects that run natively or with a 3rd party script launcher.
+A collection of helpful workflow scripts for After Effects that either run natively right from the After Effects menu or partner well with 3rd party tools from [aescripts + aeplugins](https://aescripts.com/) such as [KBar3](https://aescripts.com/kbar/), [Tool Launcher](https://aescripts.com/tool-launcher/), [Quick Menu 3](https://aescripts.com/quick-menu/).
 
-To run the script natively in After Effects use `File > Script > Run Script File...` and choose this script.
+I also have a free tool for After Effects called [Atheneum](https://github.com/kyletmartinez/atheneum-for-after-effects) which I personally use with this script collection.
+
+To run a script natively in After Effects use `File > Script > Run Script File...` and choose the script.
 
 ## Scripts
 
@@ -43,22 +45,22 @@ Correct and matching file stuctures are expected:
 |   |   +-- Precomps
 |   |   |   +-- Misc
 |   |   |   |   |-- Animatic
-|   |   |-- tbs\_ch\_101\_sh\_01\_v01
+|   |   |-- tbs_ch_101_sh_01_v01
 |   +-- Footage
-|   |   |-- tbs\_ch\_101\_edit\_v1.mp4
+|   |   |-- tbs_ch_101_edit_v1.mp4
 |   +-- Ray Palette Comps
 |   |   |-- Ray - The Biggest Story
 |   +-- Solids
-|   +-- tbs\_ch\_101\_sh\_02\_v01 [SELECTED]
+|   +-- tbs_ch_101_sh_02_v01 [SELECTED]
 |   |   +-- Assets
 |   |   +-- Audio
 |   |   +-- Compositions
 |   |   |   +-- Precomps
 |   |   |   |   +-- Misc
 |   |   |   |   |   |-- Animatic
-|   |   |   |-- tbs\_ch\_101\_sh\_02\_v01
+|   |   |   |-- tbs_ch_101_sh_02_v01
 |   |   +-- Footage
-|   |   |   |-- tbs\_ch\_101\_edit\_v1.mp4
+|   |   |   |-- tbs_ch_101_edit_v1.mp4
 |   |   +-- Ray Palette Comps
 |   |   |   |-- Ray - The Biggest Story
 |   |   +-- Solids
@@ -75,10 +77,10 @@ Resulting file structure:
 |   |   |   +-- Misc
 |   |   |   |   |-- Animatic 01
 |   |   |   |   |-- Animatic 02
-|   |   |-- tbs\_ch\_101\_sh\_01\_v01
-|   |   |-- tbs\_ch\_101\_sh\_02\_v01
+|   |   |-- tbs_ch_101_sh_01_v01
+|   |   |-- tbs_ch_101_sh_02_v01
 |   +-- Footage
-|   |   |-- tbs\_ch\_101\_edit\_v1.mp4
+|   |   |-- tbs_ch_101_edit_v1.mp4
 |   +-- Ray Palette Comps
 |   |   |-- Ray - The Biggest Story
 |   +-- Solids
@@ -91,8 +93,8 @@ expects a correctly prepared base project file: correctly named PROJECT FILE NAM
 named ANIMATION COMPOSITION NAME, correctly named ANIMATIC COMPOSITION NAME, and ANIMATIC layers
 created using Scene Edit Detection.
 
-- PROJECT FILE NAME:          `tbs\_ch\_XX\_sh\_XX\_vXX`
-- ANIMATION COMPOSITION NAME: `tbs\_ch\_XX\_sh\_XX\_vXX`
+- PROJECT FILE NAME:          `tbs_ch_XX_sh_XX_vXX`
+- ANIMATION COMPOSITION NAME: `tbs_ch_XX_sh_XX_vXX`
 - ANIMATIC COMPOSITION NAME:  `Animatic`
 
 PROJECT FILE NAME and ANIMATION COMPOSITION NAME can utilize 2 or 3 digits for chapter number.

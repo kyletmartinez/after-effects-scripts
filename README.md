@@ -1,8 +1,10 @@
 # After Effects Scripts
 
-A collection of helpful scripts for After Effects that run natively or with a 3rd party script launcher.
+A collection of helpful workflow scripts for After Effects that either run natively right from the After Effects menu or partner well with 3rd party tools from [aescripts + aeplugins](https://aescripts.com/) such as [KBar3](https://aescripts.com/kbar/), [Tool Launcher](https://aescripts.com/tool-launcher/), [Quick Menu 3](https://aescripts.com/quick-menu/).
 
-To run the script natively in After Effects use `File > Script > Run Script File...` and choose this script.
+I also have a free tool for After Effects called [Atheneum](https://github.com/kyletmartinez/atheneum-for-after-effects) which I personally use with this script collection.
+
+To run a script natively in After Effects use `File > Script > Run Script File...` and choose the script.
 
 ## Scripts
 
@@ -275,7 +277,9 @@ supports basic properties with 1, 2, or 3 dimensions.
 #### [Save Frame As PNG (v2.0)](/scripts/Save%20Frame%20As%20PNG.jsx)
 
 Save the current frame as a PNG to the desktop. Output will match the following
-format: `Composition Name YYYY-MM-DD HH.MM.SS AM.png`
+format:
+
+`Composition Name YYYY-MM-DD HH.MM.SS AM.png`
 
 #### [Select All Children (v2.0)](/scripts/Select%20All%20Children.jsx)
 
@@ -348,10 +352,10 @@ ALT key to set the first selected layers to the average position of all other la
 Set the track matte for all selected layers to the layer above it.
 
 * `TrackMatteType.ALPHA`
-* `TrackMatteType.ALPHA\_INVERTED`
+* `TrackMatteType.ALPHA_INVERTED`
 * `TrackMatteType.LUMA`
-* `TrackMatteType.LUMA\_INVERTED`
-* `TrackMatteType.NO\_TRACK\_MATTE`
+* `TrackMatteType.LUMA_INVERTED`
+* `TrackMatteType.NO_TRACK_MATTE`
 
 #### [Shift Layer Start Time (v2.0)](/scripts/Shift%20Layer%20Start%20Time.jsx)
 
