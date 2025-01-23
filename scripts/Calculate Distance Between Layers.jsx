@@ -1,25 +1,31 @@
 /**
  * @name Calculate Distance Between Layers
- * @version 1.1
+ * @version 2.0
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
- * @description Calculate the distance between any two layers. Two 2D layers will result in 2D
- * distance (composition space). Two 3D layers will result in 3D distance (world space). One 2D
- * layer and one 3D layer will result in 3D distance (world space). Hold the ALT key to force the
- * result to be 2D distance (composition space). Forcing 2D distance (composition space) will result
- * in the optical distance between two layers.
+ * @description Calculate the distance between any two layers.
+ *
+ * Distance Types:
+ * * "2D Distance" is the distance between two layers in composition space - the optical distance
+ * * "3D Distance" is the distance between two layers in world space - the literal distance
+ *
+ * Calculation Combinations:
+ * * "2D" and "2D" will default to "2D Distance"
+ * * "3D" and "3D" will default to "3D Distance"
+ * * "2D" and "3D" will default to "3D Distance"
+ *
+ * Hold the "ALT key" to force any combination to calculate "2D Distance".
  *
  * @license This script is provided "as is," without warranty of any kind, expressed or implied. In
  * no event shall the author be held liable for any damages arising in any way from the use of this
  * script.
  *
- * In other words, I'm just trying to help make life as an animator easier
- * "A rising tide lifts all boats." - John F. Kennedy, 1963
+ * I'm just trying to help make life as an After Effects animator a little easier.
  */
 
-(function() {
+(function calculateDistanceBetweenLayers() {
 
-    function getPosition (layer, type) {
+    function getPosition(layer, type) {
         var matchName = (type === "world") ? "ADBE Point3D Control" : "ADBE Point Control";
         var methodName = (type === "world") ? "toWorld" : "toComp";
         var pointControl = layer.property("ADBE Effect Parade").addProperty(matchName);
@@ -43,12 +49,12 @@
     var layerB = layers[1];
     var a = null;
     var b = null;
-    if (altKey === false) {
-        a = getPosition(layerA, "world");
-        b = getPosition(layerB, "world");
-    } else {
+    if (altKey) {
         a = getPosition(layerA, "composition");
         b = getPosition(layerB, "composition");
+    } else {
+        a = getPosition(layerA, "world");
+        b = getPosition(layerB, "world");
     }
     var x = Math.pow(b[0] - a[0], 2);
     var y = Math.pow(b[1] - a[1], 2);

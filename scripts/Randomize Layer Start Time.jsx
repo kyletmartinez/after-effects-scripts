@@ -1,6 +1,6 @@
 /**
  * @name Randomize Layer Start Time
- * @version 1.3
+ * @version 2.0
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Randomly shift the start time of all selected layers within a provided range.
@@ -9,17 +9,18 @@
  * no event shall the author be held liable for any damages arising in any way from the use of this
  * script.
  *
- * In other words, I'm just trying to help make life as an animator easier
- * "A rising tide lifts all boats." - John F. Kennedy, 1963
+ * I'm just trying to help make life as an After Effects animator a little easier.
  */
 
-(function() {
-    function getRandomNumber (min, max) {
-        return Math.random() * (Math.abs(max) + Math.abs(min)) - Math.abs(min);
+(function randomizeLayerStartTime() {
+
+    function getRandomNumber(range) {
+        var num = generateRandomNumber() * range;
+        return (generateRandomNumber() < 0.5) ? num : num * -1;
     }
 
-    function roundToNearestFrame (num, fps) {
-        return Math.round(num * fps) / fps;
+    function roundToNearestFrame(time, frameRate) {
+        return Math.round(time * frameRate) / frameRate;
     }
 
     app.beginUndoGroup("Randomize Layer Start Time");
@@ -32,11 +33,10 @@
             var frameRate = comp.frameRate;
             var frameDuration = comp.frameDuration;
             for (var l = 0; l < numLayers; l++) {
-                var frameOffset = getRandomNumber(-range, range);
+                var frameOffset = getRandomNumber(range);
                 var timeOffset = frameOffset * frameDuration;
                 var roundedTimeOffset = roundToNearestFrame(timeOffset, frameRate);
-                var layer = layers[l];
-                layer.startTime += roundedTimeOffset;
+                layers[l].startTime += roundedTimeOffset;
             }
         }
     }

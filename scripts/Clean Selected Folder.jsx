@@ -1,21 +1,20 @@
 /**
- * @name Clean Selected Folders
- * @version 1.3
+ * @name Clean Selected Folder
+ * @version 2.0
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
- * @description Clean unused items from any selected folders. Remove empty folders unless they are
- * top level.
+ * @description Remove unused items from any selected folders.
  *
  * @license This script is provided "as is," without warranty of any kind, expressed or implied. In
  * no event shall the author be held liable for any damages arising in any way from the use of this
  * script.
  *
- * In other words, I'm just trying to help make life as an animator easier
- * "A rising tide lifts all boats." - John F. Kennedy, 1963
+ * I'm just trying to help make life as an After Effects animator a little easier.
  */
 
-(function() {
-    function cleanSelectedFolder(folder) {
+(function cleanSelectedFolder() {
+
+    function cleanFolder(folder) {
         var itemsCleaned = 0;
         var items = folder.items;
         var numItems = folder.numItems;
@@ -27,7 +26,7 @@
                     itemsCleaned++;
                 }
             } else {
-                while(cleanSelectedFolder(item) === false);
+                while(cleanFolder(item) === false);
                 if (item.numItems === 0) {
                     item.remove();
                 }
@@ -43,7 +42,7 @@
     var numFolders = folders.length;
     for (var f = 0; f < numFolders; f++) {
         var folder = folders[f];
-        while(cleanSelectedFolder(folder) === false);
+        while(cleanFolder(folder) === false);
         if (folder.numItems === 0) {
             if (folder.parentFolder !== rootFolder) {
                 folder.remove();

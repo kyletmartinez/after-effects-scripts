@@ -61,17 +61,27 @@ a native After Effects expression controller then use the effect name instead.
 
 Add a checkbox that controls the visibility, using opacity, for a selected layer.
 
-#### [Calculate Difference Between Keyframe Values (v1.0)](/scripts/Calculate%20Difference%20Between%20Keyframe%20Values.jsx)
+#### [Calculate Difference Between Keyframe Values (v2.0)](/scripts/Calculate%20Difference%20Between%20Keyframe%20Values.jsx)
 
 Calculate the difference between two keyframe values.
 
-#### [Calculate Distance Between Layers (v1.1)](/scripts/Calculate%20Distance%20Between%20Layers.jsx)
+> [!CAUTION]
+> Currently this script only supports 1 dimensional properties.
 
-Calculate the distance between any two layers. Two 2D layers will result in 2D
-distance (composition space). Two 3D layers will result in 3D distance (world space). One 2D
-layer and one 3D layer will result in 3D distance (world space). Hold the ALT key to force the
-result to be 2D distance (composition space). Forcing 2D distance (composition space) will result
-in the optical distance between two layers.
+#### [Calculate Distance Between Layers (v2.0)](/scripts/Calculate%20Distance%20Between%20Layers.jsx)
+
+Calculate the distance between any two layers.
+
+Distance Types:
+* `2D Distance` is the distance between two layers in composition space - the optical distance
+* `3D Distance` is the distance between two layers in world space - the literal distance
+
+Calculation Combinations:
+* `2D` and `2D` will default to `2D Distance`
+* `3D` and `3D` will default to `3D Distance`
+* `2D` and `3D` will default to `3D Distance`
+
+Hold the `ALT key` to force any combination to calculate `2D Distance`.
 
 #### [Calculate Frames To Selected Keyframe (v2.0)](/scripts/Calculate%20Frames%20To%20Selected%20Keyframe.jsx)
 
@@ -99,10 +109,9 @@ Change the frame rate of the current composition and all nested compositions.
 
 Clean out the Render Queue.
 
-#### [Clean Selected Folders (v1.3)](/scripts/Clean%20Selected%20Folders.jsx)
+#### [Clean Selected Folder (v2.0)](/scripts/Clean%20Selected%20Folder.jsx)
 
-Clean unused items from any selected folders. Remove empty folders unless they are
-top level.
+Remove unused items from any selected folders.
 
 #### [Copy Composition Markers To Layer (v2.0)](/scripts/Copy%20Composition%20Markers%20To%20Layer.jsx)
 
@@ -140,13 +149,15 @@ layer directly below the selected layer instead of above it.
 
 Export path points for the select path property to a text file on the desktop.
 
-#### [Expose Essential Properties to Essential Graphics Panel (v1.1)](/scripts/Expose%20Essential%20Properties%20to%20Essential%20Graphics%20Panel.jsx)
+#### [Expose Essential Properties (v2.0)](/scripts/Expose%20Essential%20Properties.jsx)
 
 Essential Properties from a nested composition can not be directly added to the
-Essential Graphic Panel of the parent composition. Instead, run this script to expose those
-Essential Properties by using an intermediate expression controller. Select a layer to add all
-properterties or select specific properties to add them. This script does not currently support
-Dropdown Menu Control.
+Essential Graphic Panel of the parent composition.
+
+Instead, run this script to expose those Essential Properties by using an intermediate expression
+controller. Select a layer to add all properterties or select specific properties to add them.
+
+This script does not currently support `Dropdown Menu Control`.
 
 #### [Find Specific Effect (v2.0)](/scripts/Find%20Specific%20Effect.jsx)
 
@@ -207,15 +218,19 @@ done in 2D space. Typically used in conjunction with Newton by Motion Botique.
 
 Parent each selected layer to the layer directly below it.
 
-#### [Posterize Keyframes (v1.1)](/scripts/Posterize%20Keyframes.jsx)
+#### [Posterize Keyframes (v2.0)](/scripts/Posterize%20Keyframes.jsx)
 
 Posterize all selected keyframes in a composition to be on 2s.
+
+> [!CAUTION]
+> Currently this script does not respect easing, spatial interpolation, temporal interpolation,
+roving keyframes, labels, or anything else. Results will always be linear keyframes.
 
 #### [Posterize Layer Start Time (v2.0)](/scripts/Posterize%20Layer%20Start%20Time.jsx)
 
 Posterize the start time of all layers in a composition to be on 2s.
 
-#### [Randomize Layer Start Time (v1.3)](/scripts/Randomize%20Layer%20Start%20Time.jsx)
+#### [Randomize Layer Start Time (v2.0)](/scripts/Randomize%20Layer%20Start%20Time.jsx)
 
 Randomly shift the start time of all selected layers within a provided range.
 
@@ -342,10 +357,10 @@ Set proxies for all compositions within the project.
 Automatically enable Time Remapping, set the appropriate keyframes, and apply the
 `loopOut()` expression to correctly loop a layer.
 
-#### [Set To Average Position (v1.1)](/scripts/Set%20To%20Average%20Position.jsx)
+#### [Set To Average Position (v2.0)](/scripts/Set%20To%20Average%20Position.jsx)
 
 Set the last selected layer to the average position of all other layers. Hold the
-ALT key to set the first selected layers to the average position of all other layers.
+`ALT` key to set the first selected layer.
 
 #### [Set Track Matte To Above (v2.0)](/scripts/Set%20Track%20Matte%20To%20Above.jsx)
 
@@ -385,9 +400,9 @@ toggle back to `Normal`.
 
 Toggle an expression that maintains visual scale for layer regardless of Z position.
 
-#### [Toggle Onion Skinning (v1.3)](/scripts/Toggle%20Onion%20Skinning.jsx)
+#### [Toggle Onion Skinning (v2.0)](/scripts/Toggle%20Onion%20Skinning.jsx)
 
-Toggle onion skinning in the current composition.
+Toggle onion skinning in the current composition using `CC Wide Time`.
 
 #### [Toggle Puppet Pin Types (v2.0)](/scripts/Toggle%20Puppet%20Pin%20Types.jsx)
 

@@ -1,10 +1,10 @@
 /**
  * @name Set To Average Position
- * @version 1.1
+ * @version 2.0
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Set the last selected layer to the average position of all other layers. Hold the
- * ALT key to set the first selected layers to the average position of all other layers.
+ * "ALT" key to set the first selected layer.
  *
  * @license This script is provided "as is," without warranty of any kind, expressed or implied. In
  * no event shall the author be held liable for any damages arising in any way from the use of this
@@ -14,13 +14,28 @@
  * "A rising tide lifts all boats." - John F. Kennedy, 1963
  */
 
-(function() {
-    function getAverageOfArray (arr) {
-        var total = 0;
-        for (var i = 0; i < arr.length; i++) {
-            total += arr[i];
+(function setToAveragePosition() {
+
+    function getAverage(sum, count) {
+        return sum / count;
+    }
+
+    function getAveragePosition(layers, numLayers) {
+        var xPositionSum = 0;
+        var yPositionSum = 0;
+        var zPositionSum = 0;
+        for (var l = 0; l < numLayers; l++) {
+            var layer = layers[l];
+            var position = layer.transform.position.value;
+            xPositionSum += position[0];
+            yPositionSum += position[1];
+            zPositionSum += position[2];
         }
-        return total / arr.length;
+        return [
+            getAverage(xPositionSum, numLayers),
+            getAverage(yPositionSum, numLayers),
+            getAverage(zPositionSum, numLayers)
+        ];
     }
 
     app.beginUndoGroup("Set To Average Position");
@@ -28,32 +43,16 @@
     var comp = app.project.activeItem;
     var layers = comp.selectedLayers;
     var numLayers = layers.length;
-    var xPositions = [];
-    var yPositions = [];
-    var zPositions = [];
-    var minIndex = (altKey) ? 1 : 0;
-    var maxIndex = (altKey) ? numLayers : numLayers - 1;
-    for (var l = minIndex; l < maxIndex; l++) {
-        var layer = layers[l];
-        var oldPosition = layer.transform.position.value;
-        xPositions.push(oldPosition[0]);
-        yPositions.push(oldPosition[1]);
-        zPositions.push(oldPosition[2]);
-    }
-    var newPosition = [
-        getAverageOfArray(xPositions),
-        getAverageOfArray(yPositions),
-        getAverageOfArray(zPositions)
-    ];
-    var targetLayer = (altKey) ? layers[0] : layers[numLayers - 1];
-    if (targetLayer.transform.position.dimensionsSeparated === true) {
-        targetLayer.transform.xPosition.setValue(newPosition[0]);
-        targetLayer.transform.yPosition.setValue(newPosition[1]);
-        if (targetLayer.threeDLayer === true) {
-            targetLayer.transform.zPosition.setValue(newPosition[2]);
+    var position = getAveragePosition(layers, numLayers);
+    var layer = (altKey) ? layers[0] : layers[numLayers - 1];
+    if (layer.transform.position.dimensionsSeparated === true) {
+        layer.transform.xPosition.setValue(position[0]);
+        layer.transform.yPosition.setValue(position[1]);
+        if (layer.threeDLayer === true) {
+            layer.transform.zPosition.setValue(position[2]);
         }
     } else {
-        targetLayer.transform.position.setValue(newPosition);    
+        layer.transform.position.setValue(position);
     }
     app.endUndoGroup();
 })();
