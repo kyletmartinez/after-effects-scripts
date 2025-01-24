@@ -255,7 +255,7 @@ Rename the source of the currently selected layer.
 
 Rename the selected layers append letters as needed.
 
-#### [Rename Selected Layers With Numbers (v2.0)](/scripts/Rename%20Selected%20Layers%20With%20Numbers.jsx)
+#### [Rename Selected Layers With Numbers (v2.1)](/scripts/Rename%20Selected%20Layers%20With%20Numbers.jsx)
 
 Rename the selected layers appending zero-padded numbers as needed.
 
@@ -263,7 +263,7 @@ Rename the selected layers appending zero-padded numbers as needed.
 
 Rename the selected layers appending each character and character count as needed.
 
-#### [Rename Selected Project Items (v2.0)](/scripts/Rename%20Selected%20Project%20Items.jsx)
+#### [Rename Selected Project Items (v2.1)](/scripts/Rename%20Selected%20Project%20Items.jsx)
 
 Rename selected project items appending zero-padded numbers as needed.
 
