@@ -1,6 +1,6 @@
 /**
  * @name Rename Selected Project Items
- * @version 2.0
+ * @version 2.1
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Rename selected project items appending zero-padded numbers as needed.
@@ -14,11 +14,9 @@
 
 (function renameProjectItems() {
 
-    if (!String.prototype.padStart) {
-        String.prototype.padStart = function(length, pad) {
-            return Array(Math.max(length - this.length + 1, 0)).join(pad) + String(this);
-        };
-    }
+    String.prototype.padStart = function(length, pad) {
+        return Array(Math.max(length - this.length + 1, 0)).join(pad) + String(this);
+    };
 
     function getLength(numLayers) {
         return Math.max(numLayers.toString().length, 2);
