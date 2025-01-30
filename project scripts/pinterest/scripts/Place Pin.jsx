@@ -1,6 +1,6 @@
 /**
  * @name Place Pin
- * @version 1.0
+ * @version 1.1
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Assist with pin placement based on gutter width. Ensure that each pin is parented to
@@ -39,9 +39,9 @@
         var currentPinHeight = getPinHeight(layer.source) / 2;
         var parentPinHeight = getPinHeight(layer.parent.source) / 2;
         var parentCompHeight = layer.parent.source.height / 2;
-        var gutterInt = parseInt(gutter);
+        var gutterInt = parseInt(gutter, 10);
         var yPosition = parentCompHeight + currentPinHeight + parentPinHeight + gutterInt;
         layer.transform.yPosition.setValue(yPosition);
         app.endUndoGroup();
-   }
+    }
 })();

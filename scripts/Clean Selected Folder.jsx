@@ -1,6 +1,6 @@
 /**
  * @name Clean Selected Folder
- * @version 2.0
+ * @version 2.1
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Remove unused items from any selected folders.
@@ -23,10 +23,10 @@
             if (!(item instanceof FolderItem)) {
                 if (item.usedIn.length === 0) {
                     item.remove();
-                    itemsCleaned++;
+                    itemsCleaned += 1;
                 }
             } else {
-                while(cleanFolder(item) === false);
+                while (cleanFolder(item) === false);
                 if (item.numItems === 0) {
                     item.remove();
                 }
@@ -42,7 +42,7 @@
     var numFolders = folders.length;
     for (var f = 0; f < numFolders; f++) {
         var folder = folders[f];
-        while(cleanFolder(folder) === false);
+        while (cleanFolder(folder) === false);
         if (folder.numItems === 0) {
             if (folder.parentFolder !== rootFolder) {
                 folder.remove();

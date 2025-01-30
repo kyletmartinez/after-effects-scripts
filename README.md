@@ -22,7 +22,7 @@ Add a camera and 3D null as a controller to the current composition.
 Add a 16x9 fuscia rectangle shape layer to act as a guide. Helpful with things like
 precomposed character rigs.
 
-#### [Add Fill With Color Cycle (v2.0)](/scripts/Add%20Fill%20With%20Color%20Cycle.jsx)
+#### [Add Fill With Color Cycle (v2.1)](/scripts/Add%20Fill%20With%20Color%20Cycle.jsx)
 
 Add the Fill effect to all selected layers while cycling through `red`, `green`,`blue`, `yellow`, `magenta`, and `cyan`.
 
@@ -39,7 +39,7 @@ Add a marker to all selected layers with an optional comment.
 Add `Posterize Time` adjustment layer to the current composition. Default `Frame
 Rate` will be half the current frame rate.
 
-#### [Add Posterize Time Expression (v2.0)](/scripts/Add%20Posterize%20Time%20Expression.jsx)
+#### [Add Posterize Time Expression (v2.1)](/scripts/Add%20Posterize%20Time%20Expression.jsx)
 
 Add `posterizeTime(fps)` expression to all selected properties. Default `fps` will
 be half the current frame rate and existing expressions will be preserved.
@@ -61,14 +61,14 @@ a native After Effects expression controller then use the effect name instead.
 
 Add a checkbox that controls the visibility, using opacity, for a selected layer.
 
-#### [Calculate Difference Between Keyframe Values (v2.0)](/scripts/Calculate%20Difference%20Between%20Keyframe%20Values.jsx)
+#### [Calculate Difference Between Keyframe Values (v2.1)](/scripts/Calculate%20Difference%20Between%20Keyframe%20Values.jsx)
 
 Calculate the difference between two keyframe values.
 
 > [!CAUTION]
 > Currently this script only supports 1 dimensional properties.
 
-#### [Calculate Distance Between Layers (v2.0)](/scripts/Calculate%20Distance%20Between%20Layers.jsx)
+#### [Calculate Distance Between Layers (v2.1)](/scripts/Calculate%20Distance%20Between%20Layers.jsx)
 
 Calculate the distance between any two layers.
 
@@ -101,7 +101,7 @@ Change the background color of the current composition and all nested compositio
 
 Change the duration of the current composition and all nested compositions.
 
-#### [Change Nested Composition Frame Rate (v2.0)](/scripts/Change%20Nested%20Composition%20Frame%20Rate.jsx)
+#### [Change Nested Composition Frame Rate (v2.1)](/scripts/Change%20Nested%20Composition%20Frame%20Rate.jsx)
 
 Change the frame rate of the current composition and all nested compositions.
 
@@ -109,7 +109,7 @@ Change the frame rate of the current composition and all nested compositions.
 
 Clean out the Render Queue.
 
-#### [Clean Selected Folder (v2.0)](/scripts/Clean%20Selected%20Folder.jsx)
+#### [Clean Selected Folder (v2.1)](/scripts/Clean%20Selected%20Folder.jsx)
 
 Remove unused items from any selected folders.
 
@@ -135,7 +135,7 @@ Add a Text Layer to the current composition for each line in the selected text f
 
 Cycle the composition background color between `black`, `gray`, and `white`.
 
-#### [Toggle Specific Effects (v2.0)](/scripts/Toggle%20Specific%20Effects.jsx)
+#### [Toggle Specific Effects (v2.1)](/scripts/Toggle%20Specific%20Effects.jsx)
 
 Disable all specified effects in the current project. Hold the `ALT` key to enable.
 Add additional effects to be checked to the `MatchNames` object.
@@ -149,7 +149,7 @@ layer directly below the selected layer instead of above it.
 
 Export path points for the select path property to a text file on the desktop.
 
-#### [Expose Essential Properties (v2.0)](/scripts/Expose%20Essential%20Properties.jsx)
+#### [Expose Essential Properties (v2.1)](/scripts/Expose%20Essential%20Properties.jsx)
 
 Essential Properties from a nested composition can not be directly added to the
 Essential Graphic Panel of the parent composition.
@@ -164,7 +164,7 @@ This script does not currently support `Dropdown Menu Control`.
 Find all instances of a specific efffect in the current project. Add additional
 effects to be checked to the `MatchNames` object.
 
-#### [Fix Fresh Pickwhip Expression (v2.0)](/scripts/Fix%20Fresh%20Pickwhip%20Expression.jsx)
+#### [Fix Fresh Pickwhip Expression (v2.1)](/scripts/Fix%20Fresh%20Pickwhip%20Expression.jsx)
 
 Append `.value;` to the end of an expression recently set with the pickwhip.
 
@@ -176,7 +176,7 @@ Force the Composition Panel to refresh the current frame.
 
 Disable all selected layers.
 
-#### [Increment Composition Versions (v2.0)](/scripts/Increment%20Composition%20Versions.jsx)
+#### [Increment Composition Versions (v2.1)](/scripts/Increment%20Composition%20Versions.jsx)
 
 Increment any version numbers found in the name of all compositions in the current
 project.
@@ -201,7 +201,7 @@ Match the in point of all selected layers to the layer directly below it.
 
 Match the start time of all selected layers to the layer directly below it.
 
-#### [Merge Imported Selected Items (v2.0)](/scripts/Merge%20Imported%20Selected%20Items.jsx)
+#### [Merge Imported Selected Items (v2.1)](/scripts/Merge%20Imported%20Selected%20Items.jsx)
 
 Merge all imported and selected items in a previously existing and matching folder.
 
@@ -209,7 +209,7 @@ Merge all imported and selected items in a previously existing and matching fold
 
 Multiply selected keyframe values by a provided value.
 
-#### [Parent Closest Layers (v2.0)](/scripts/Parent%20Closest%20Layers.jsx)
+#### [Parent Closest Layers (v2.1)](/scripts/Parent%20Closest%20Layers.jsx)
 
 Parent the closest layer in the composition to each selected layer. Calculations
 done in 2D space. Typically used in conjunction with Newton by Motion Botique.
@@ -218,7 +218,7 @@ done in 2D space. Typically used in conjunction with Newton by Motion Botique.
 
 Parent each selected layer to the layer directly below it.
 
-#### [Posterize Keyframes (v2.0)](/scripts/Posterize%20Keyframes.jsx)
+#### [Posterize Keyframes (v2.1)](/scripts/Posterize%20Keyframes.jsx)
 
 Posterize all selected keyframes in a composition to be on 2s.
 
@@ -226,11 +226,11 @@ Posterize all selected keyframes in a composition to be on 2s.
 > Currently this script does not respect easing, spatial interpolation, temporal interpolation,
 roving keyframes, labels, or anything else. Results will always be linear keyframes.
 
-#### [Posterize Layer Start Time (v2.0)](/scripts/Posterize%20Layer%20Start%20Time.jsx)
+#### [Posterize Layer Start Time (v2.1)](/scripts/Posterize%20Layer%20Start%20Time.jsx)
 
 Posterize the start time of all layers in a composition to be on 2s.
 
-#### [Randomize Layer Start Time (v2.0)](/scripts/Randomize%20Layer%20Start%20Time.jsx)
+#### [Randomize Layer Start Time (v2.1)](/scripts/Randomize%20Layer%20Start%20Time.jsx)
 
 Randomly shift the start time of all selected layers within a provided range.
 
@@ -259,7 +259,7 @@ Rename the selected layers append letters as needed.
 
 Rename the selected layers appending zero-padded numbers as needed.
 
-#### [Rename Selected Layers With Text (v2.0)](/scripts/Rename%20Selected%20Layers%20With%20Text.jsx)
+#### [Rename Selected Layers With Text (v2.1)](/scripts/Rename%20Selected%20Layers%20With%20Text.jsx)
 
 Rename the selected layers appending each character and character count as needed.
 
@@ -289,7 +289,7 @@ supports basic properties with 1, 2, or 3 dimensions.
 Round the values for all selected properties to the nearest whole number. Currently
 supports basic properties with 1, 2, or 3 dimensions.
 
-#### [Save Frame As PNG (v2.0)](/scripts/Save%20Frame%20As%20PNG.jsx)
+#### [Save Frame As PNG (v2.1)](/scripts/Save%20Frame%20As%20PNG.jsx)
 
 Save the current frame as a PNG to the desktop. Output will match the following
 format:
@@ -339,7 +339,7 @@ Set the label for all layers in the current composition to `None` or label `0`.
 Set the label color for all track matte layers in the active composition to `16`. In
 my preferences label 16 is Black `#000000` and is always used for track mattes.
 
-#### [Set New Color (v2.0)](/scripts/Set%20New%20Color.jsx)
+#### [Set New Color (v2.1)](/scripts/Set%20New%20Color.jsx)
 
 Select a color property and set a new color based on the original color, blend mode,
 and opacity. Colors are calculated using the After Effects order of operations. Supports the
@@ -348,7 +348,7 @@ following blend modes:
 * `Multiply`
 * `Screen`
 
-#### [Set Proxies From Folder (v2.0)](/scripts/Set%20Proxies%20From%20Folder.jsx)
+#### [Set Proxies From Folder (v2.1)](/scripts/Set%20Proxies%20From%20Folder.jsx)
 
 Set proxies for all compositions within the project.
 
@@ -377,7 +377,7 @@ Set the track matte for all selected layers to the layer above it.
 Shift the start of a group of selected layers to the current time while maintaining
 relative timing within the group.
 
-#### [Stick Effect To Layer (v2.0)](/scripts/Stick%20Effect%20To%20Layer.jsx)
+#### [Stick Effect To Layer (v2.1)](/scripts/Stick%20Effect%20To%20Layer.jsx)
 
 Help effects with position properties such as `CC Bend It` or `Gradient Ramp` stick
 properly to a layer.
@@ -404,7 +404,7 @@ Toggle an expression that maintains visual scale for layer regardless of Z posit
 
 Toggle onion skinning in the current composition using `CC Wide Time`.
 
-#### [Toggle Puppet Pin Types (v2.0)](/scripts/Toggle%20Puppet%20Pin%20Types.jsx)
+#### [Toggle Puppet Pin Types (v2.1)](/scripts/Toggle%20Puppet%20Pin%20Types.jsx)
 
 Toggle the types of selected puppet pins between `Position` and `Advanced`.
 

@@ -1,6 +1,6 @@
 /**
  * @name Parent Closest Layers
- * @version 2.0
+ * @version 2.1
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Parent the closest layer in the composition to each selected layer. Calculations
@@ -16,7 +16,7 @@
 (function parentClosestLayers() {
 
     function getDistance(xOne, yOne, xTwo, yTwo) {
-        return Math.sqrt(Math.pow(xOne - xTwo, 2) + Math.pow(yOne - yTwo , 2));
+        return Math.sqrt(Math.pow(xOne - xTwo, 2) + Math.pow(yOne - yTwo, 2));
     }
 
     function getClosestLayer(comp, currentLayer) {

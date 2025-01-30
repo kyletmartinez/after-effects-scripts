@@ -1,6 +1,6 @@
 /**
  * @name Add Posterize Time Expression
- * @version 2.0
+ * @version 2.1
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Add "posterizeTime(fps)" expression to all selected properties. Default "fps" will
@@ -15,7 +15,7 @@
 
 (function addPosterizeTimeExpression() {
 
-    function addExpression (property, fps) {
+    function addExpression(property, fps) {
         var newExpression = "posterizeTime(" + fps + "); value;";
         if (property.expression.length === 0) {
             property.expression = newExpression;

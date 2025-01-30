@@ -1,6 +1,6 @@
 /**
  * @name Posterize Keyframes
- * @version 2.0
+ * @version 2.1
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Posterize all selected keyframes in a composition to be on 2s.
@@ -24,12 +24,12 @@
     var numProperties = properties.length;
     for (var p = 0; p < numProperties; p++) {
         var property = properties[p];
-        if (property.isTimeVarying == true) {
+        if (property.isTimeVarying === true) {
             for (var k = property.numKeys; k > 0; k--) {
                 var oldTime = property.keyTime(k);
                 var oldValue = property.keyValue(k);
                 var oldFrame = Math.floor(oldTime / frameDuration);
-                if (oldFrame % 2 != 0) {
+                if (oldFrame % 2 !== 0) {
                     property.removeKey(k);
                     var newFrame = oldFrame - 1;
                     var newTime = newFrame * frameDuration;

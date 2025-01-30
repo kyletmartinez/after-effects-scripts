@@ -20,12 +20,12 @@ Used specifically for a current project. Creates an eye rig for a selected eye
 layer. Probably pretty usless outside of this specific use case but has some nice code to
 steal for future scripts.
 
-#### [Fix Turbulent Displace (v1.0)](/scripts/Fix%20Turbulent%20Displace.jsx)
+#### [Fix Turbulent Displace (v1.1)](/scripts/Fix%20Turbulent%20Displace.jsx)
 
 Iterate recursively through all precomps and all layers to change the Size property
 of all Turbulent Displace effects.
 
-#### [Merge Imported Project File (v1.0)](/scripts/Merge%20Imported%20Project%20File.jsx)
+#### [Merge Imported Project File (v1.1)](/scripts/Merge%20Imported%20Project%20File.jsx)
 
 Select the folder for the imported project file and merge it by moving items from
 nested folders within the imported folder to folders of the same name in the original project

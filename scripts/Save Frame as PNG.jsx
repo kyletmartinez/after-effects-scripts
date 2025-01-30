@@ -1,6 +1,6 @@
 /**
  * @name Save Frame As PNG
- * @version 2.0
+ * @version 2.1
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Save the current frame as a PNG to the desktop. Output will match the following
@@ -20,8 +20,8 @@
         var year = date.getFullYear().toString();
         var month = date.getMonth().toString();
         var day = date.getDate().toString();
-        if (month.length == 1) {month = "0" + month;}
-        if (day.length == 1) {day = "0" + day;}
+        month = (month.length === 1) ? "0" + month : month;
+        day = (day.length === 1) ? "0" + day : day;
         return year + "-" + month + "-" + day;
     }
 
@@ -32,9 +32,9 @@
         hours = hours.toString();
         var minutes = date.getMinutes().toString();
         var seconds = date.getSeconds().toString();
-        if (hours.length == 1) { hours = "0" + hours;}
-        if (minutes.length == 1) { minutes = "0" + minutes;}
-        if (seconds.length == 1) { seconds = "0" + seconds;}
+        hours = (hours === 1) ? "0" + hours : hours;
+        minutes = (minutes === 1) ? "0" + minutes : minutes;
+        seconds = (seconds === 1) ? "0" + seconds : seconds;
         return hours + "." + minutes + "." + seconds + " " + daytime;
     }
 
@@ -44,7 +44,7 @@
     var name = comp.name + " " + getDate(date) + " " + getTime(date);
     var path = Folder.desktop.toString();
     var previousResolutionFactor = comp.resolutionFactor;
-    comp.resolutionFactor = [1,1];
+    comp.resolutionFactor = [1, 1];
     comp.saveFrameToPng(time, File(path + "/" + name + ".png"));
     comp.resolutionFactor = previousResolutionFactor;
 })();

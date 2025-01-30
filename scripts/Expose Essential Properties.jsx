@@ -1,6 +1,6 @@
 /**
  * @name Expose Essential Properties
- * @version 2.0
+ * @version 2.1
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Essential Properties from a nested composition can not be directly added to the
@@ -64,7 +64,8 @@
                     var exp = [
                         "effect(\"" + newPropertyName + "\")",
                         "(\"" + newSubPropertyName + "\")",
-                        ".value;"].join("");
+                        ".value;"
+                    ].join("");
                     oldProperty.expression = exp;
                 }
             }

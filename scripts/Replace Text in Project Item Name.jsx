@@ -16,10 +16,14 @@
 (function replaceTextInProjectItemName() {
 
     var oldText = prompt("Old Text", "");
-    if (oldText === null || oldText.length === 0) { return; }
+    if (oldText === null || oldText.length === 0) {
+        return;
+    }
 
     var newText = prompt("New Text", "");
-    if (newText === null) { return; }
+    if (newText === null) {
+        return;
+    }
 
     app.beginUndoGroup("Replace Text in Project Item Name");
     var regex = new RegExp(oldText, "g");

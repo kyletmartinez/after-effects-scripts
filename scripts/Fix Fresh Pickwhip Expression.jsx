@@ -1,6 +1,6 @@
 /**
  * @name Fix Fresh Pickwhip Expression
- * @version 2.0
+ * @version 2.1
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Append ".value;" to the end of an expression recently set with the pickwhip.
@@ -18,8 +18,8 @@
     var numProperties = properties.length;
     for (var p = 0; p < numProperties; p++) {
         var property = properties[p];
-        if (property.canSetExpression == true) {
-            if (property.expressionEnabled == true) {
+        if (property.canSetExpression === true) {
+            if (property.expressionEnabled === true) {
                 property.expression = property.expression + ".value;";
             }
         }

@@ -1,6 +1,6 @@
 /**
  * @name Set New Color
- * @version 2.0
+ * @version 2.1
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Select a color property and set a new color based on the original color, blend mode,
@@ -38,14 +38,14 @@
     }
 
     function calculateAlpha(a, b, o) {
-        var rr = ((b[0] * o) + ((a[0] * 1) * (1 - o))) / (o + (1 * (1 - o)));
-        var gg = ((b[1] * o) + ((a[1] * 1) * (1 - o))) / (o + (1 * (1 - o)));
-        var bb = ((b[2] * o) + ((a[2] * 1) * (1 - o))) / (o + (1 * (1 - o)));
+        var rr = ((b[0] * o) + (a[0] * (1 - o))) / (o + (1 * (1 - o)));
+        var gg = ((b[1] * o) + (a[1] * (1 - o))) / (o + (1 * (1 - o)));
+        var bb = ((b[2] * o) + (a[2] * (1 - o))) / (o + (1 * (1 - o)));
         return [rr, gg, bb, 1];
     }
 
     function calculateColor(colorA, blendMode, opacity) {
-      var colorB = colorA;
+        var colorB = colorA;
         if (blendMode === BlendMode.MULTIPLY) {
             colorB = calculateMultiply(colorA, colorA);
         } else if (blendMode === BlendMode.SCREEN) {
@@ -61,7 +61,8 @@
         var colors = [
             [a, a, 0],
             [a, b, b],
-            [0, b, b]];
+            [0, b, b]
+        ];
         for (var r = 0; r < 3; r++) {
             var row = preview.add("group");
             row.alignChildren = ["left", "top"];
@@ -80,7 +81,7 @@
         preview.layout.layout(true);
     }
 
-    function getNewColor (oldColor) {
+    function getNewColor(oldColor) {
         var blendMode = BlendMode.MULTIPLY;
         var opacity = 1;
         var newColor = calculateColor(oldColor, blendMode, opacity);

@@ -1,6 +1,6 @@
 /**
  * @name Increment Composition Versions
- * @version 2.0
+ * @version 2.1
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Increment any version numbers found in the name of all compositions in the current
@@ -31,10 +31,10 @@
     for (var i = project.numItems; i > 0; i--) {
         var item = items[i];
         if (item instanceof CompItem) {
-            if (/.*_v[0-9]*/g.test(item.name) == true) {
+            if ((/.*_v[0-9]*/g).test(item.name) === true) {
                 incrementVersionNumber(item);
             }
         }
     }
-    app.endUndoGroup(); 
+    app.endUndoGroup();
 })();

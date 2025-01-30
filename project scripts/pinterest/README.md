@@ -13,7 +13,7 @@ To run a script natively in After Effects use `File > Script > Run Script File..
 Assist with updating the naming for the current composition based on a standard
 naming convention. UI should update correctly based on naming.
 
-#### [Place Pin (v1.0)](/scripts/Place%20Pin.jsx)
+#### [Place Pin (v1.1)](/scripts/Place%20Pin.jsx)
 
 Assist with pin placement based on gutter width. Ensure that each pin is parented to
 the pin above it in the pin grid.

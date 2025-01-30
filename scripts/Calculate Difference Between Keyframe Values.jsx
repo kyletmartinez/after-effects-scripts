@@ -1,6 +1,6 @@
 /**
  * @name Calculate Difference Between Keyframe Values
- * @version 2.0
+ * @version 2.1
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Calculate the difference between two keyframe values.
@@ -35,8 +35,9 @@
                     selectedPropertyName,
                     "[" + keyframeIndexTwo + "]" + keyValueTwo + " -",
                     "[" + keyframeIndexOne + "]" + keyValueOne + " =",
-                    difference];
-                alert(message.join("\n"));
+                    difference
+                ].join("\n");
+                alert(message);
             }
         }
     }

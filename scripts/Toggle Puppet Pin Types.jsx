@@ -1,6 +1,6 @@
 /**
  * @name Toggle Puppet Pin Types
- * @version 2.0
+ * @version 2.1
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Toggle the types of selected puppet pins between "Position" and "Advanced".
@@ -19,9 +19,9 @@
     var numProperties = properties.length;
     for (var p = 0; p < numProperties; p++) {
         var property = properties[p];
-        if (property.matchName == "ADBE FreePin3 PosPin Atom") {
+        if (property.matchName === "ADBE FreePin3 PosPin Atom") {
             var pinTypeProperty = property.property("ADBE FreePin3 PosPin Type");
-            if (pinTypeProperty.value == 1) {
+            if (pinTypeProperty.value === 1) {
                 pinTypeProperty.setValue(4);
             } else {
                 pinTypeProperty.setValue(1);

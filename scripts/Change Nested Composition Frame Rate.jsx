@@ -1,6 +1,6 @@
 /**
  * @name Change Nested Composition Frame Rate
- * @version 2.0
+ * @version 2.1
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Change the frame rate of the current composition and all nested compositions.
@@ -21,7 +21,7 @@
             var layer = layers[l];
             if (layer.source instanceof CompItem) {
                 changeCompFrameRate(layer.source, frameRate);
-            } 
+            }
         }
     }
 

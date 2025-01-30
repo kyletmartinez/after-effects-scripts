@@ -1,11 +1,11 @@
 /**
  * @name Stick Effect To Layer
- * @version 2.0
+ * @version 2.1
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Help effects with position properties such as "CC Bend It" or "Gradient Ramp" stick
  * properly to a layer.
- * 
+ *
  * @license This script is provided "as is," without warranty of any kind, expressed or implied. In
  * no event shall the author be held liable for any damages arising in any way from the use of this
  * script.

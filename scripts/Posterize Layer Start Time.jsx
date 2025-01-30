@@ -1,6 +1,6 @@
 /**
  * @name Posterize Layer Start Time
- * @version 2.0
+ * @version 2.1
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Posterize the start time of all layers in a composition to be on 2s.
@@ -21,7 +21,7 @@
     for (var l = 1; l <= numLayers; l++) {
         var layer = layers[l];
         var oldFrame = Math.floor(layer.startTime / frameDuration);
-        if (oldFrame % 2 != 0) {
+        if (oldFrame % 2 !== 0) {
             layer.startTime = (oldFrame - 1) * frameDuration;
         }
     }

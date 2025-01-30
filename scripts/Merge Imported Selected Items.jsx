@@ -1,6 +1,6 @@
 /**
  * @name Merge Imported Selected Items
- * @version 2.0
+ * @version 2.1
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Merge all imported and selected items in a previously existing and matching folder.
@@ -14,7 +14,7 @@
 
 (function mergeImportedSelectedItems() {
 
-    function getNewParentFolder (project, parentFolder) {
+    function getNewParentFolder(project, parentFolder) {
         var items = project.items;
         var numItems = items.length;
         for (var i = 1; i <= numItems; i++) {

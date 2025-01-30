@@ -1,6 +1,6 @@
 /**
  * @name Fix Turbulent Displace
- * @version 1.0
+ * @version 1.1
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Iterate recursively through all precomps and all layers to change the Size property
@@ -17,12 +17,12 @@
 (function() {
     var totalChanged = 0;
 
-    function fixTurbulentDisplace (effect) {
+    function fixTurbulentDisplace(effect) {
         effect.property("Size").setValue(150);
-        totalChanged++;
+        totalChanged += 1;
     }
 
-    function iterateThroughEffects (layer) {
+    function iterateThroughEffects(layer) {
         var effects = layer.property("ADBE Effect Parade");
         var numEffects = effects.numProperties;
         if (numEffects !== 0) {
@@ -35,7 +35,7 @@
         }
     }
 
-    function iterateThroughLayers (comp) {
+    function iterateThroughLayers(comp) {
         var layers = comp.layers;
         var numLayers = layers.length;
         for (var l = 1; l <= numLayers; l++) {

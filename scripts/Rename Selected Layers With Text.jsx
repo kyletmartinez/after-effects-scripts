@@ -1,6 +1,6 @@
 /**
  * @name Rename Selected Layers With Text
- * @version 2.0
+ * @version 2.1
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Rename the selected layers appending each character and character count as needed.

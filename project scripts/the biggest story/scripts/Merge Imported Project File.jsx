@@ -1,6 +1,6 @@
 /**
  * @name Merge Imported Project File
- * @version 1.0
+ * @version 1.1
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Select the folder for the imported project file and merge it by moving items from
@@ -182,7 +182,7 @@
                 rayFolder = folder;
             }
             if (folder.name === "Footage") {
-               footageFolder = folder;
+                footageFolder = folder;
             }
         }
     }

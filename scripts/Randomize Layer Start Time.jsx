@@ -1,6 +1,6 @@
 /**
  * @name Randomize Layer Start Time
- * @version 2.0
+ * @version 2.1
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Randomly shift the start time of all selected layers within a provided range.

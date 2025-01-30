@@ -1,6 +1,6 @@
 /**
  * @name Toggle Specific Effects
- * @version 2.0
+ * @version 2.1
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Disable all specified effects in the current project. Hold the "ALT" key to enable.
@@ -21,7 +21,7 @@
 
     function checkMatchName(effect, altKey) {
         if (MatchNames.hasOwnProperty(effect.matchName)) {
-            effect.enabled = (altKey) ? true : false;
+            effect.enabled = (altKey === true);
         }
     }
 
