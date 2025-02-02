@@ -105,6 +105,10 @@ Change the duration of the current composition and all nested compositions.
 
 Change the frame rate of the current composition and all nested compositions.
 
+#### [Change Nested Composition Start Frame (v1.0)](/scripts/Change%20Nested%20Composition%20Start%20Frame.jsx)
+
+Change the start frame of the current composition and all nested compositions.
+
 #### [Clean Render Queue (v2.0)](/scripts/Clean%20Render%20Queue.jsx)
 
 Clean out the Render Queue.
