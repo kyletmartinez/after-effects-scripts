@@ -13,6 +13,12 @@ To run a script natively in After Effects use `File > Script > Run Script File..
 Add an adjustment layer above the currently selected layer to break the 3D space of
 After Effects. If no layers are selected the adjustment layer will be added at the top.
 
+#### [Add Background Layer (v1.0)](/scripts/Add%20Background%20Layer.jsx)
+
+Add a background layer to the current composition that will stay centered and match
+the `width` and `height` of the current composition no matter if it is resized or copy and pasted
+to a new composition.
+
 #### [Add Camera With Controller (v2.0)](/scripts/Add%20Camera%20With%20Controller.jsx)
 
 Add a camera and 3D null as a controller to the current composition.
@@ -162,6 +168,11 @@ Instead, run this script to expose those Essential Properties by using an interm
 controller. Select a layer to add all properterties or select specific properties to add them.
 
 This script does not currently support `Dropdown Menu Control`.
+
+#### [Extend All Layers (v1.0)](/scripts/Extend%20All%20Layers.jsx)
+
+Extend every layer to match the composition duration in every composition in the
+current project.
 
 #### [Find Specific Effect (v2.0)](/scripts/Find%20Specific%20Effect.jsx)
 
