@@ -1,6 +1,6 @@
 /**
  * @name Duplicate Selected Layer
- * @version 2.0
+ * @version 2.1
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Duplicate the selected layer exactly like pressing "CMD/CTRL + D" but move the new

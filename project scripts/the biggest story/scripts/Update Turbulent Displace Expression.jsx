@@ -1,6 +1,6 @@
 /**
  * @name Update Turbulent Displace Expression
- * @version 1.3
+ * @version 1.4
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Comb throught the entire project looking for all instances of Turbulent Displace and

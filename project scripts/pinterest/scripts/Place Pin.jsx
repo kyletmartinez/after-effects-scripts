@@ -1,6 +1,6 @@
 /**
  * @name Place Pin
- * @version 1.1
+ * @version 1.2
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Assist with pin placement based on gutter width. Ensure that each pin is parented to

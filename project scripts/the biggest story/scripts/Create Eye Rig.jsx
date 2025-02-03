@@ -1,6 +1,6 @@
 /**
  * @name Create Eye Rig
- * @version 1.2
+ * @version 1.3
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Used specifically for a current project. Creates an eye rig for a selected eye

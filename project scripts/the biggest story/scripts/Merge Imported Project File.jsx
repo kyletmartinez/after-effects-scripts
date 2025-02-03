@@ -1,6 +1,6 @@
 /**
  * @name Merge Imported Project File
- * @version 1.1
+ * @version 1.2
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Select the folder for the imported project file and merge it by moving items from

@@ -1,6 +1,6 @@
 /**
  * @name Hard Solo Layers
- * @version 2.0
+ * @version 2.1
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Disable all selected layers.

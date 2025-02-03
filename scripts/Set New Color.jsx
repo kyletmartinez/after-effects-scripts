@@ -1,6 +1,6 @@
 /**
  * @name Set New Color
- * @version 2.1
+ * @version 2.2
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Select a color property and set a new color based on the original color, blend mode,

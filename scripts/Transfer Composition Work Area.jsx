@@ -1,6 +1,6 @@
 /**
  * @name Transfer Composition Work Area
- * @version 2.0
+ * @version 2.1
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Copy the Work Area from the current composition. Hold the "ALT" key to paste a

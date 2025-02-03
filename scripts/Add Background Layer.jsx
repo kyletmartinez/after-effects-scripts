@@ -1,6 +1,6 @@
 /**
  * @name Add Background Layer
- * @version 1.0
+ * @version 1.1
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Add a background layer to the current composition that will stay centered and match

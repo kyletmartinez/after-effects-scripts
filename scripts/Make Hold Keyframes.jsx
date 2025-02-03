@@ -1,6 +1,6 @@
 /**
  * @name Make Hold Keyframes
- * @version 2.0
+ * @version 2.1
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Convert selected keyframes into hold keyframes.

@@ -1,6 +1,6 @@
 /**
  * @name Update Fonts
- * @version 1.0
+ * @version 1.1
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Check the entire project for all fonts in use. If a font is already a valid font

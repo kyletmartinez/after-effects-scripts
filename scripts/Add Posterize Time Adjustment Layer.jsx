@@ -1,6 +1,6 @@
 /**
  * @name Add Posterize Time Adjustment Layer
- * @version 2.0
+ * @version 2.1
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Add "Posterize Time" adjustment layer to the current composition. Default "Frame

@@ -1,6 +1,6 @@
 /**
  * @name Add Composition Guide
- * @version 2.0
+ * @version 2.1
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Add a 16x9 fuscia rectangle shape layer to act as a guide. Helpful with things like

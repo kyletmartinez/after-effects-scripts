@@ -1,6 +1,6 @@
 /**
  * @name Shift Layer Start Time
- * @version 2.0
+ * @version 2.1
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Shift the start of a group of selected layers to the current time while maintaining

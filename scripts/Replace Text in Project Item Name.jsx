@@ -1,6 +1,6 @@
 /**
  * @name Replace Text in Project Item Name
- * @version 2.0
+ * @version 2.1
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Replace text in the name of all selected project items. RegEx is accepted.

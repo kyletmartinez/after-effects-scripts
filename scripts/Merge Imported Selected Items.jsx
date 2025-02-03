@@ -1,6 +1,6 @@
 /**
  * @name Merge Imported Selected Items
- * @version 2.1
+ * @version 2.2
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Merge all imported and selected items in a previously existing and matching folder.

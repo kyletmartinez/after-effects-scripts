@@ -1,6 +1,6 @@
 /**
  * @name Add Properties To Essential Graphics
- * @version 2.0
+ * @version 2.1
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Add all selected properties to Essential Graphics Panel. If any properties belong to

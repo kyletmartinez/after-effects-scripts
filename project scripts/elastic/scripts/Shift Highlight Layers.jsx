@@ -1,6 +1,6 @@
 /**
  * @name Shift Highlight Layers
- * @version 1.0
+ * @version 1.1
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Highlight layers are set up in a grid using sliders for X position and Y Position to

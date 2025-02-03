@@ -1,6 +1,6 @@
 /**
  * @name Add Visibility Controller
- * @version 2.0
+ * @version 2.1
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Add a checkbox that controls the visibility, using opacity, for a selected layer.

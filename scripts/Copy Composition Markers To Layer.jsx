@@ -1,6 +1,6 @@
 /**
  * @name Copy Composition Markers To Layer
- * @version 2.0
+ * @version 2.1
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Copy all markers from the current composition to the currently selected layer

@@ -1,6 +1,6 @@
 /**
  * @name Select All Children
- * @version 2.0
+ * @version 2.1
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Select any unlocked layer parented to the selected layer in the current composition.

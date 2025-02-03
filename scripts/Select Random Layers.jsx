@@ -1,6 +1,6 @@
 /**
  * @name Select Random Layers
- * @version 2.0
+ * @version 2.1
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Randomly select any unlocked layer in the current composition.

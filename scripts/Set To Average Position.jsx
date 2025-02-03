@@ -1,6 +1,6 @@
 /**
  * @name Set To Average Position
- * @version 2.0
+ * @version 2.1
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Set the last selected layer to the average position of all other layers. Hold the

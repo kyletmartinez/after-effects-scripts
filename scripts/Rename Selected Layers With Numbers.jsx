@@ -1,6 +1,6 @@
 /**
  * @name Rename Selected Layers With Numbers
- * @version 2.1
+ * @version 2.2
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Rename the selected layers appending zero-padded numbers as needed.

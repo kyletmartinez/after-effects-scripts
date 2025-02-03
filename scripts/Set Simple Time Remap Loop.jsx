@@ -1,6 +1,6 @@
 /**
  * @name Set Simple Time Remap Loop
- * @version 2.0
+ * @version 2.1
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Automatically enable Time Remapping, set the appropriate keyframes, and apply the

@@ -1,6 +1,6 @@
 /**
  * @name Stick Effect To Layer
- * @version 2.1
+ * @version 2.2
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Help effects with position properties such as "CC Bend It" or "Gradient Ramp" stick

@@ -1,6 +1,6 @@
 /**
  * @name Prepare Project File
- * @version 1.0
+ * @version 1.1
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Automate the process of setting up a new project file for a new shot. The script

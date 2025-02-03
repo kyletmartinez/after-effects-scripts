@@ -1,6 +1,6 @@
 /**
  * @name Change Nested Composition Duration
- * @version 2.0
+ * @version 2.1
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Change the duration of the current composition and all nested compositions.

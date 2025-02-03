@@ -1,6 +1,6 @@
 /**
  * @name Select Layers Below Label
- * @version 2.0
+ * @version 2.1
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Select all layers in the current composition that are directly below a layer with

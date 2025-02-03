@@ -1,6 +1,6 @@
 /**
  * @name Select Parent Layer
- * @version 2.0
+ * @version 2.1
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Select the parent of the currently selected layer.

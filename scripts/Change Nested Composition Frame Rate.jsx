@@ -1,6 +1,6 @@
 /**
  * @name Change Nested Composition Frame Rate
- * @version 2.1
+ * @version 2.2
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Change the frame rate of the current composition and all nested compositions.

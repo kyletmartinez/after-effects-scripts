@@ -1,6 +1,6 @@
 /**
  * @name Unlock All Layers
- * @version 2.0
+ * @version 2.1
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Unlock all layers in all conmpositions in the current project.

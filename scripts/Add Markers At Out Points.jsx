@@ -1,6 +1,6 @@
 /**
  * @name Add Markers At Out Points
- * @version 2.0
+ * @version 2.1
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Add a composition marker at the out point of each layer in the composition.

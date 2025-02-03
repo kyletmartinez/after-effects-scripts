@@ -1,6 +1,6 @@
 /**
  * @name Clean Render Queue
- * @version 2.0
+ * @version 2.1
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Clean out the Render Queue.

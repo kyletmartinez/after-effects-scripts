@@ -1,6 +1,6 @@
 /**
  * @name Add Camera With Controller
- * @version 2.0
+ * @version 2.1
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Add a camera and 3D null as a controller to the current composition.

@@ -1,6 +1,6 @@
 /**
  * @name Find Specific Effect
- * @version 2.0
+ * @version 2.1
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Find all instances of a specific efffect in the current project. Add additional

@@ -1,6 +1,6 @@
 /**
  * @name Multiply Selected Keyframes
- * @version 2.0
+ * @version 2.1
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Multiply selected keyframe values by a provided value.

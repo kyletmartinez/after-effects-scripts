@@ -1,6 +1,6 @@
 /**
  * @name Export Path Points
- * @version 2.0
+ * @version 2.1
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Export path points for the select path property to a text file on the desktop.

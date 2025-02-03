@@ -1,6 +1,6 @@
 /**
  * @name Add Posterize Time Expression
- * @version 2.1
+ * @version 2.2
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Add "posterizeTime(fps)" expression to all selected properties. Default "fps" will

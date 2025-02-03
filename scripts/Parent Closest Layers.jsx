@@ -1,6 +1,6 @@
 /**
  * @name Parent Closest Layers
- * @version 2.1
+ * @version 2.2
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Parent the closest layer in the composition to each selected layer. Calculations

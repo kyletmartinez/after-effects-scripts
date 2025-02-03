@@ -1,6 +1,6 @@
 /**
  * @name Calculate Frames To Selected Keyframe
- * @version 2.0
+ * @version 2.1
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Calculate and alert the amount of time, in frames instead of seconds, between the

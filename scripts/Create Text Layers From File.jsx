@@ -1,6 +1,6 @@
 /**
  * @name Create Text Layers From File
- * @version 2.0
+ * @version 2.1
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Add a Text Layer to the current composition for each line in the selected text file.

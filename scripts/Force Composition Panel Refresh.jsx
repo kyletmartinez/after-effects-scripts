@@ -1,6 +1,6 @@
 /**
  * @name Force Composition Panel Refresh
- * @version 2.0
+ * @version 2.1
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Force the Composition Panel to refresh the current frame.

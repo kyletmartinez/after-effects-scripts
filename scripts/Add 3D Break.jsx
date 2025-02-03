@@ -1,6 +1,6 @@
 /**
  * @name Add 3D Break
- * @version 2.0
+ * @version 2.1
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Add an adjustment layer above the currently selected layer to break the 3D space of

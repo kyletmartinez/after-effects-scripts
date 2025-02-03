@@ -1,6 +1,6 @@
 /**
  * @name Add Markers to Selected Layers
- * @version 2.0
+ * @version 2.1
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Add a marker to all selected layers with an optional comment.

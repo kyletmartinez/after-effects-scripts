@@ -1,6 +1,6 @@
 /**
  * @name Rename Selected Layer Source
- * @version 2.0
+ * @version 2.1
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Rename the source of the currently selected layer.

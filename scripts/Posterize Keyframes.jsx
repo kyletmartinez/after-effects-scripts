@@ -1,6 +1,6 @@
 /**
  * @name Posterize Keyframes
- * @version 2.1
+ * @version 2.2
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Posterize all selected keyframes in a composition to be on 2s.

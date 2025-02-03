@@ -1,6 +1,6 @@
 /**
  * @name Add All Compositions To Render Queue
- * @version 1.4
+ * @version 1.5
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Comb throught the entire project looking for all compositions with names that match

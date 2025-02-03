@@ -1,6 +1,6 @@
 /**
  * @name Set Proxies From Folder
- * @version 2.1
+ * @version 2.2
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Set proxies for all compositions within the project.

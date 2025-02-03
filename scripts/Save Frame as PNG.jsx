@@ -1,6 +1,6 @@
 /**
  * @name Save Frame As PNG
- * @version 2.1
+ * @version 2.2
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Save the current frame as a PNG to the desktop. Output will match the following

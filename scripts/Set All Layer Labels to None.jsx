@@ -1,6 +1,6 @@
 /**
  * @name Set All Layer Labels To None
- * @version 2.0
+ * @version 2.1
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Set the label for all layers in the current composition to "None" or label "0".

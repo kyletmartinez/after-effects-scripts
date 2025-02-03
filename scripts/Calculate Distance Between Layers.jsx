@@ -1,6 +1,6 @@
 /**
  * @name Calculate Distance Between Layers
- * @version 2.1
+ * @version 2.2
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Calculate the distance between any two layers.

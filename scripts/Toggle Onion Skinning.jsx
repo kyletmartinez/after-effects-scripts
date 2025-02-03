@@ -1,6 +1,6 @@
 /**
  * @name Toggle Onion Skinning
- * @version 2.0
+ * @version 2.1
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Toggle onion skinning in the current composition using "CC Wide Time".

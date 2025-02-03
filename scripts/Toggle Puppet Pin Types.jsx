@@ -1,6 +1,6 @@
 /**
  * @name Toggle Puppet Pin Types
- * @version 2.1
+ * @version 2.2
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Toggle the types of selected puppet pins between "Position" and "Advanced".

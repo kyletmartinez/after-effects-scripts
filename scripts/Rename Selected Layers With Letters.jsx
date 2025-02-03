@@ -1,6 +1,6 @@
 /**
  * @name Rename Selected Layers With Letters
- * @version 2.0
+ * @version 2.1
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Rename the selected layers append letters as needed.

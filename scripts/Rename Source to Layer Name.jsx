@@ -1,6 +1,6 @@
 /**
  * @name Rename Source To Layer Name
- * @version 2.0
+ * @version 2.1
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Rename the selected item to match the name of the layer it is used for.

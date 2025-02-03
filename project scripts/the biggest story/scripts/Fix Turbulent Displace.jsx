@@ -1,6 +1,6 @@
 /**
  * @name Fix Turbulent Displace
- * @version 1.1
+ * @version 1.2
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Iterate recursively through all precomps and all layers to change the Size property

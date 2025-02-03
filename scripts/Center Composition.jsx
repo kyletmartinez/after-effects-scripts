@@ -1,6 +1,6 @@
 /**
  * @name Center Composition
- * @version 2.0
+ * @version 2.1
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Center the composition in the Composition Panel. Hold the "ALT" key or "SHIFT" key

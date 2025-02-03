@@ -1,6 +1,6 @@
 /**
  * @name Zero Position
- * @version 2.0
+ * @version 2.1
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Zero out the position of all selected layers.

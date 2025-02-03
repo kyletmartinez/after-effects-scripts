@@ -1,6 +1,6 @@
 /**
  * @name Match Selected Start Time To Below
- * @version 2.0
+ * @version 2.1
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Match the start time of all selected layers to the layer directly below it.

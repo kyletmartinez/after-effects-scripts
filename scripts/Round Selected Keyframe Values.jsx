@@ -1,6 +1,6 @@
 /**
  * @name Round Selected Keyframe Values
- * @version 2.0
+ * @version 2.1
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Round the values for all selected keyframes to the nearest whole number. Currently

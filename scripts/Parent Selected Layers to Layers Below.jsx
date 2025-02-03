@@ -1,6 +1,6 @@
 /**
  * @name Parent Selected Layers To Layers Below
- * @version 2.0
+ * @version 2.1
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Parent each selected layer to the layer directly below it.

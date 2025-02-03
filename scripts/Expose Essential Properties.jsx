@@ -1,6 +1,6 @@
 /**
  * @name Expose Essential Properties
- * @version 2.1
+ * @version 2.2
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Essential Properties from a nested composition can not be directly added to the

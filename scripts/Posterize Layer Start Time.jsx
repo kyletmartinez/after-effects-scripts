@@ -1,6 +1,6 @@
 /**
  * @name Posterize Layer Start Time
- * @version 2.1
+ * @version 2.2
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Posterize the start time of all layers in a composition to be on 2s.

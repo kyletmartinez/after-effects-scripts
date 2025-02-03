@@ -1,6 +1,6 @@
 /**
  * @name Cycle Composition Background Color
- * @version 2.0
+ * @version 2.1
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Cycle the composition background color between "black", "gray", and "white".
