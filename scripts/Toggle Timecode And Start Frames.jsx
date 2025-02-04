@@ -1,6 +1,6 @@
 /**
  * @name Toggle Timecode And Start Frames
- * @version 1.1
+ * @version 1.2
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Toggle timecode between two different values:
@@ -19,7 +19,7 @@
     app.beginUndoGroup("Toggle Timecode and Start Frame(s)");
     var altKey = ScriptUI.environment.keyboardState.altKey;
     var project = app.project;
-    if (altKey === false) {
+    if (altKey === true) {
         project.framesCountType = FramesCountType.FC_START_0;
     } else {
         project.framesCountType = FramesCountType.FC_START_1;

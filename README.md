@@ -423,7 +423,7 @@ Toggle onion skinning in the current composition using `CC Wide Time`.
 
 Toggle the types of selected puppet pins between `Position` and `Advanced`.
 
-#### [Toggle Timecode And Start Frames (v1.1)](/scripts/Toggle%20Timecode%20And%20Start%20Frames.jsx)
+#### [Toggle Timecode And Start Frames (v1.2)](/scripts/Toggle%20Timecode%20And%20Start%20Frames.jsx)
 
 Toggle timecode between two different values:
 
