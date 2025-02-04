@@ -423,17 +423,12 @@ Toggle onion skinning in the current composition using `CC Wide Time`.
 
 Toggle the types of selected puppet pins between `Position` and `Advanced`.
 
-#### [Toggle Timecode And All Start Frames (v1.0)](/scripts/Toggle%20Timecode%20And%20All%20Start%20Frames.jsx)
+#### [Toggle Timecode And Start Frames (v1.1)](/scripts/Toggle%20Timecode%20And%20Start%20Frames.jsx)
 
-Set the `Frame Count` menu setting in the `Project Settings` dialog box to `Start
-at 0`.
+Toggle timecode between two different values:
 
-* `FramesCountType.FC_START_1`
-* `FramesCountType.FC_START_0`
-* `FramesCountType.FC_TIMECODE_CONVERSION`
-
-Set the Display Start Frame for every composition in the project to `0`. Hold the `ALT` key to
-set the Display Start Frame for every composition in the project to `1`.
+* Timecode starts at `0:00:00:00` and composition frames start on `0`
+* Timecode starts at `0:00:00:00` and composition frames start on `1`
 
 #### [Transfer Composition Work Area (v2.1)](/scripts/Transfer%20Composition%20Work%20Area.jsx)
 
