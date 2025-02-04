@@ -1,5 +1,5 @@
 /**
- * @name Toggle Timecode and All Start Frames
+ * @name Toggle Timecode And All Start Frames
  * @version 1.0
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
