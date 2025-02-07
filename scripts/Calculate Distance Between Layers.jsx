@@ -1,6 +1,6 @@
 /**
  * @name Calculate Distance Between Layers
- * @version 2.2
+ * @version 2.3
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Calculate the distance between any two layers.
@@ -49,7 +49,7 @@
     var layerB = layers[1];
     var a = null;
     var b = null;
-    if (altKey) {
+    if (altKey === true) {
         a = getPosition(layerA, "composition");
         b = getPosition(layerB, "composition");
     } else {

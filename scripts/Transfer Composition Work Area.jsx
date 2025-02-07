@@ -1,6 +1,6 @@
 /**
  * @name Transfer Composition Work Area
- * @version 2.1
+ * @version 2.2
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Copy the Work Area from the current composition. Hold the "ALT" key to paste a
@@ -35,7 +35,7 @@
     }
 
     var altKey = ScriptUI.environment.keyboardState.altKey;
-    if (altKey) {
+    if (altKey === true) {
         pasteWorkAreaToComp();
     } else {
         copyWorkAreaFromComp();
