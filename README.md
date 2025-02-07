@@ -74,7 +74,7 @@ Calculate the difference between two keyframe values.
 > [!CAUTION]
 > Currently this script only supports 1 dimensional properties.
 
-#### [Calculate Distance Between Layers (v2.2)](/scripts/Calculate%20Distance%20Between%20Layers.jsx)
+#### [Calculate Distance Between Layers (v2.3)](/scripts/Calculate%20Distance%20Between%20Layers.jsx)
 
 Calculate the distance between any two layers.
 
@@ -145,7 +145,7 @@ Add a Text Layer to the current composition for each line in the selected text f
 
 Cycle the composition background color between `black`, `gray`, and `white`.
 
-#### [Toggle Specific Effects (v2.2)](/scripts/Toggle%20Specific%20Effects.jsx)
+#### [Toggle Specific Effects (v2.3)](/scripts/Toggle%20Specific%20Effects.jsx)
 
 Disable all specified effects in the current project. Hold the `ALT` key to enable.
 Add additional effects to be checked to the `MatchNames` object.
@@ -406,7 +406,7 @@ Swap the values of two selected properties with the same property type.
 Swap the dimension values for all selected properties. For example, swap the x and y
 size values for a rectangle shape layer.
 
-#### [Toggle Difference Blend Mode (v2.1)](/scripts/Toggle%20Difference%20Blend%20Mode.jsx)
+#### [Toggle Difference Blend Mode (v2.2)](/scripts/Toggle%20Difference%20Blend%20Mode.jsx)
 
 Toggle the blend mode of the selected layers to `Difference`. Hold the `ALT` key to
 toggle back to `Normal`.
@@ -430,7 +430,7 @@ Toggle timecode between two different values:
 * Timecode starts at `0:00:00:00` and composition frames start on `0`
 * Timecode starts at `0:00:00:00` and composition frames start on `1`
 
-#### [Transfer Composition Work Area (v2.1)](/scripts/Transfer%20Composition%20Work%20Area.jsx)
+#### [Transfer Composition Work Area (v2.2)](/scripts/Transfer%20Composition%20Work%20Area.jsx)
 
 Copy the Work Area from the current composition. Hold the `ALT` key to paste a
 copied Work Area to the current composition.
