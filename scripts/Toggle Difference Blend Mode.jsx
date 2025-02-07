@@ -1,6 +1,6 @@
 /**
  * @name Toggle Difference Blend Mode
- * @version 2.1
+ * @version 2.2
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Toggle the blend mode of the selected layers to "Difference". Hold the "ALT" key to
@@ -16,16 +16,12 @@
 (function toggleDifferenceBlendMode() {
     app.beginUndoGroup("Toggle Difference Blend Mode");
     var altKey = ScriptUI.environment.keyboardState.altKey;
+    var blendingMode = (altKey === true) ? BlendingMode.NORMAL : BlendingMode.DIFFERENCE;
     var comp = app.project.activeItem;
     var layers = comp.selectedLayers;
     var numLayers = layers.length;
     for (var l = 0; l < numLayers; l++) {
-        var layer = layers[l];
-        if (altKey) {
-            layer.blendingMode = BlendingMode.NORMAL;
-        } else {
-            layer.blendingMode = BlendingMode.DIFFERENCE;
-        }
+        layers[l].blendingMode = blendingMode;
     }
     app.endUndoGroup();
 })();

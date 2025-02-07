@@ -1,6 +1,6 @@
 /**
  * @name Toggle Specific Effects
- * @version 2.2
+ * @version 2.3
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Disable all specified effects in the current project. Hold the "ALT" key to enable.
@@ -19,38 +19,39 @@
         "ADBE Turbulent Displace": "Turbulent Displace"
     };
 
-    function checkMatchName(effect, altKey) {
+    function checkMatchName(effect, enabled) {
         if (MatchNames.hasOwnProperty(effect.matchName)) {
-            effect.enabled = (altKey === true);
+            effect.enabled = enabled;
         }
     }
 
-    function iterateThroughEffects(layer, altKey) {
+    function iterateThroughEffects(layer, enabled) {
         var effects = layer.property("ADBE Effect Parade");
         if (effects !== null) {
             for (var e = effects.numProperties; e > 0; e--) {
                 var effect = effects.property(e);
-                checkMatchName(effect, altKey);
+                checkMatchName(effect, enabled);
             }
         }
     }
 
-    function iterateThroughLayers(comp, altKey) {
+    function iterateThroughLayers(comp, enabled) {
         var layers = comp.layers;
         for (var l = comp.numLayers; l > 0; l--) {
             var layer = layers[l];
-            iterateThroughEffects(layer, altKey);
+            iterateThroughEffects(layer, enabled);
         }
     }
 
     app.beginUndoGroup("Toggle Effects");
     var altKey = ScriptUI.environment.keyboardState.altKey;
+    var enabled = (altKey === true);
     var project = app.project;
     var items = project.items;
     for (var i = project.numItems; i > 0; i--) {
         var item = items[i];
         if (item instanceof CompItem) {
-            iterateThroughLayers(item, altKey);
+            iterateThroughLayers(item, enabled);
         }
     }
     app.endUndoGroup();
