@@ -1,6 +1,6 @@
 /**
- * @name Add Additional AnimationC ontrol
- * @version 1.0
+ * @name Add Additional Animation Control
+ * @version 1.1
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Add an additional animation controller to the layer for the selected property.
@@ -22,7 +22,7 @@
     }
 
     function addController(layer, unitsText) {
-        var property = (unitsText === "") ? "ADBE Slider Control" : "ADBE Angle Control";
+        var property = (unitsText === "degrees") ? "ADBE Angle Control" : "ADBE Slider Control";
         return layer.property("ADBE Effect Parade").addProperty(property);
     }
 

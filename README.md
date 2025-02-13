@@ -13,7 +13,7 @@ To run a script natively in After Effects use `File > Script > Run Script File..
 Add an adjustment layer above the currently selected layer to break the 3D space of
 After Effects. If no layers are selected the adjustment layer will be added at the top.
 
-#### [Add Additional AnimationC ontrol (v1.0)](/scripts/Add%20Additional%20AnimationC%20ontrol.jsx)
+#### [Add Additional Animation Control (v1.1)](/scripts/Add%20Additional%20Animation%20Control.jsx)
 
 Add an additional animation controller to the layer for the selected property.
 
