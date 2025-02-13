@@ -229,6 +229,11 @@ Multiply selected keyframe values by a provided value.
 Parent the closest layer in the composition to each selected layer. Calculations
 done in 2D space. Typically used in conjunction with Newton by Motion Botique.
 
+#### [Parent Opacity (v1.0)](/scripts/Parent%20Opacity.jsx)
+
+Connect the opacity of a layer to the opacity of the parent layer. Both opacity
+properties can be animated individually however the lowest opacity value will always be used.
+
 #### [Parent Selected Layers To Layers Below (v2.1)](/scripts/Parent%20Selected%20Layers%20To%20Layers%20Below.jsx)
 
 Parent each selected layer to the layer directly below it.
@@ -341,6 +346,11 @@ Randomly select any unlocked layer in the current composition.
 
 Select any unlocked layer in the current composition without a parent.
 
+#### [Separate Size Dimensions (v1.0)](/scripts/Separate%20Size%20Dimensions.jsx)
+
+Separate the size dimensions for a parametric rectangle adding a slider for both
+`X Size` and `Y Size` to the layer.
+
 #### [Set All Item Labels To None (v2.1)](/scripts/Set%20All%20Item%20Labels%20To%20None.jsx)
 
 Set the label for all items in the current project to `None` or label `0`.
@@ -418,6 +428,13 @@ Toggle an expression that maintains visual scale for layer regardless of Z posit
 #### [Toggle Onion Skinning (v2.1)](/scripts/Toggle%20Onion%20Skinning.jsx)
 
 Toggle onion skinning in the current composition using `CC Wide Time`.
+
+#### [Toggle Preserve Nested Frame Rate (v1.0)](/scripts/Toggle%20Preserve%20Nested%20Frame%20Rate.jsx)
+
+Cause every composition within the current project to maintain nested frame rate.
+Corresponds to the value of the `Preserve frame rate when nested or in render queue` option in
+the `Advanced` tab of the `Composition Settings` dialog box. Hold the `ALT` key to toggle this
+preference off.
 
 #### [Toggle Puppet Pin Types (v2.2)](/scripts/Toggle%20Puppet%20Pin%20Types.jsx)
 
