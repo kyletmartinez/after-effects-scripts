@@ -13,6 +13,10 @@ To run a script natively in After Effects use `File > Script > Run Script File..
 Add an adjustment layer above the currently selected layer to break the 3D space of
 After Effects. If no layers are selected the adjustment layer will be added at the top.
 
+#### [Add Additional AnimationC ontrol (v1.0)](/scripts/Add%20Additional%20AnimationC%20ontrol.jsx)
+
+Add an additional animation controller to the layer for the selected property.
+
 #### [Add Background Layer (v1.1)](/scripts/Add%20Background%20Layer.jsx)
 
 Add a background layer to the current composition that will stay centered and match
@@ -346,7 +350,7 @@ Randomly select any unlocked layer in the current composition.
 
 Select any unlocked layer in the current composition without a parent.
 
-#### [Separate Size Dimensions (v1.0)](/scripts/Separate%20Size%20Dimensions.jsx)
+#### [Separate Size Dimensions (v1.1)](/scripts/Separate%20Size%20Dimensions.jsx)
 
 Separate the size dimensions for a parametric rectangle adding a slider for both
 `X Size` and `Y Size` to the layer.
