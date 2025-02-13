@@ -67,6 +67,25 @@ a native After Effects expression controller then use the effect name instead.
 * `Point Control`
 * `Slider Control`
 
+#### [Add Simple Loop Expression (v1.0)](/scripts/Add%20Simple%20Loop%20Expression.jsx)
+
+Add a loop expression to all selected properties. Use the popup window to customize
+the loop or press the `Enter` key to use the defaults.
+
+Loop Directions:
+* `loopIn()`
+* `loopOut()` (default)
+
+Loop Types:
+* `cycle` (default)
+* `pingpong`
+* `offset`
+* `continue`
+
+Keyframes:
+* `0` (default)
+* `X`
+
 #### [Add Visibility Controller (v2.1)](/scripts/Add%20Visibility%20Controller.jsx)
 
 Add a checkbox that controls the visibility, using opacity, for a selected layer.
