@@ -36,6 +36,10 @@ precomposed character rigs.
 
 Add the Fill effect to all selected layers while cycling through `red`, `green`,`blue`, `yellow`, `magenta`, and `cyan`.
 
+#### [Add Markers At Selected Keyframes (v1.0)](/scripts/Add%20Markers%20At%20Selected%20Keyframes.jsx)
+
+Add a marker to each layer at the same time as the selected keyframe.
+
 #### [Add Markers At Out Points (v2.1)](/scripts/Add%20Markers%20At%20Out%20Points.jsx)
 
 Add a composition marker at the out point of each layer in the composition.
@@ -213,6 +217,10 @@ Force the Composition Panel to refresh the current frame.
 #### [Hard Solo Layers (v2.1)](/scripts/Hard%20Solo%20Layers.jsx)
 
 Disable all selected layers.
+
+#### [Increase All Pin Sizes (v1.0)](/scripts/Increase%20All%20Pin%20Sizes.jsx)
+
+Increase the scale of all DuIK Pin layers in the current project.
 
 #### [Increment Composition Versions (v2.2)](/scripts/Increment%20Composition%20Versions.jsx)
 
@@ -452,12 +460,22 @@ Toggle an expression that maintains visual scale for layer regardless of Z posit
 
 Toggle onion skinning in the current composition using `CC Wide Time`.
 
+#### [Toggle Pins As Guide Layers (v1.0)](/scripts/Toggle%20Pins%20As%20Guide%20Layers.jsx)
+
+Set all DuIK Pin layers to visible. Hold the `ALT` key to set to guide layers.
+
 #### [Toggle Preserve Nested Frame Rate (v1.0)](/scripts/Toggle%20Preserve%20Nested%20Frame%20Rate.jsx)
 
 Cause every composition within the current project to maintain nested frame rate.
 Corresponds to the value of the `Preserve frame rate when nested or in render queue` option in
 the `Advanced` tab of the `Composition Settings` dialog box. Hold the `ALT` key to toggle this
 preference off.
+
+#### [Toggle Puppet On Transparent (v1.0)](/scripts/Toggle%20Puppet%20On%20Transparent.jsx)
+
+Toggle the `On Transparent` checkbox for every instance of the `Puppet` effect in
+the current project. This eliminates situations where the `Expansion` didn't quite grab every
+pixel for the underlying layer and leaves an extra little snippet.
 
 #### [Toggle Puppet Pin Types (v2.2)](/scripts/Toggle%20Puppet%20Pin%20Types.jsx)
 
