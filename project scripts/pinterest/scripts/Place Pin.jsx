@@ -1,6 +1,6 @@
 /**
  * @name Place Pin
- * @version 1.2
+ * @version 1.3
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Assist with pin placement based on gutter width. Ensure that each pin is parented to
@@ -31,7 +31,7 @@
         return vectorRectSize.value[1];
     }
 
-    var gutter = prompt("Gutter Width (px):", 24);
+    var gutter = prompt("Gutter Width (px)", 24);
     if (gutter !== null && gutter !== "") {
         app.beginUndoGroup("Place Pin");
         var comp = app.project.activeItem;

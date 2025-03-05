@@ -1,6 +1,6 @@
 /**
  * @name Multiply Selected Keyframes
- * @version 2.1
+ * @version 2.2
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Multiply selected keyframe values by a provided value.
@@ -40,7 +40,7 @@
 
     app.beginUndoGroup("Multiply Selected Keyframes");
     var comp = app.project.activeItem;
-    var multiplierString = prompt("Multiplier?", "2");
+    var multiplierString = prompt("Multiplier", "2");
     if (multiplierString !== null && multiplierString.length > 0) {
         var multiplier = parseFloat(multiplierString);
         findSelectedProperties(comp, multiplier);
