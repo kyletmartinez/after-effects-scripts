@@ -94,6 +94,10 @@ Keyframes:
 
 Add a checkbox that controls the visibility, using opacity, for a selected layer.
 
+#### [Append To Expression (v1.0)](/scripts/Append%20To%20Expression.jsx)
+
+Append new code to all selected properties that contain expressions.
+
 #### [Calculate Difference Between Keyframe Values (v2.2)](/scripts/Calculate%20Difference%20Between%20Keyframe%20Values.jsx)
 
 Calculate the difference between two keyframe values.
@@ -231,6 +235,20 @@ project.
 
 Invert selected keyframe values.
 
+#### [Layer Selection Get (v1.0)](/scripts/Layer%20Selection%20Get.jsx)
+
+Reselect all layers stored in a previous `selection state` in the current
+composition.
+
+Sister script to: `Layer Selection Set.jsx`
+
+#### [Layer Selection Set (v1.0)](/scripts/Layer%20Selection%20Set.jsx)
+
+Store all currently selected layers as a `selection state` within the current
+composition.
+
+Sister script to: `Layer Selection Get.jsx`
+
 #### [Lock All Layers (v2.1)](/scripts/Lock%20All%20Layers.jsx)
 
 Lock all layers in all conmpositions in the current project.
@@ -251,7 +269,7 @@ Match the start time of all selected layers to the layer directly below it.
 
 Merge all imported and selected items in a previously existing and matching folder.
 
-#### [Multiply Selected Keyframes (v2.1)](/scripts/Multiply%20Selected%20Keyframes.jsx)
+#### [Multiply Selected Keyframes (v2.2)](/scripts/Multiply%20Selected%20Keyframes.jsx)
 
 Multiply selected keyframe values by a provided value.
 
@@ -460,10 +478,6 @@ Toggle an expression that maintains visual scale for layer regardless of Z posit
 
 Toggle onion skinning in the current composition using `CC Wide Time`.
 
-#### [Toggle Pins As Guide Layers (v1.0)](/scripts/Toggle%20Pins%20As%20Guide%20Layers.jsx)
-
-Set all DuIK Pin layers to visible. Hold the `ALT` key to set to guide layers.
-
 #### [Toggle Preserve Nested Frame Rate (v1.0)](/scripts/Toggle%20Preserve%20Nested%20Frame%20Rate.jsx)
 
 Cause every composition within the current project to maintain nested frame rate.
@@ -481,6 +495,10 @@ pixel for the underlying layer and leaves an extra little snippet.
 
 Toggle the types of selected puppet pins between `Position` and `Advanced`.
 
+#### [Toggle Puppet Pins As Guide Layers (v1.1)](/scripts/Toggle%20Puppet%20Pins%20As%20Guide%20Layers.jsx)
+
+Set all DuIK Pin layers to visible. Hold the `ALT` key to set to guide layers.
+
 #### [Toggle Timecode And Start Frames (v1.2)](/scripts/Toggle%20Timecode%20And%20Start%20Frames.jsx)
 
 Toggle timecode between two different values:
@@ -496,6 +514,10 @@ copied Work Area to the current composition.
 #### [Unlock All Layers (v2.1)](/scripts/Unlock%20All%20Layers.jsx)
 
 Unlock all layers in all conmpositions in the current project.
+
+#### [Update Expressions (v1.0)](/scripts/Update%20Expressions.jsx)
+
+Find an replace all instances of a specific expression with a new expression.
 
 #### [Zero Position (v2.1)](/scripts/Zero%20Position.jsx)
 
