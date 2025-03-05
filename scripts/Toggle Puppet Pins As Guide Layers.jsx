@@ -1,6 +1,6 @@
 /**
- * @name Toggle Pins As Guide Layers
- * @version 1.0
+ * @name Toggle Puppet Pins As Guide Layers
+ * @version 1.1
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Set all DuIK Pin layers to visible. Hold the "ALT" key to set to guide layers.
@@ -12,16 +12,18 @@
  * I'm just trying to help make life as an After Effects animator a little easier.
  */
 
-(function togglePinsAsGuideLayers() {
+(function togglePuppetPinsAsGuideLayers() {
 
     function iterateThroughEffects(layer, guideLayer) {
         var effects = layer.property("ADBE Effect Parade");
-        var numEffects = effects.numProperties;
-        if (numEffects !== 0) {
-            for (var e = 1; e <= numEffects; e++) {
-                var effect = effects.property(e);
-                if (effect.matchName === "Pseudo/Duik pin02") {
-                    layer.guideLayer = guideLayer;
+        if (effects !== null) {
+            var numEffects = effects.numProperties;
+            if (numEffects !== 0) {
+                for (var e = 1; e <= numEffects; e++) {
+                    var effect = effects.property(e);
+                    if (effect.matchName === "Pseudo/Duik pin02") {
+                        layer.guideLayer = guideLayer;
+                    }
                 }
             }
         }
@@ -35,7 +37,7 @@
         }
     }
 
-    app.beginUndoGroup("Toggle Pins As Guide Layers");
+    app.beginUndoGroup("Toggle Puppet Pins As Guide Layers");
     var altKey = ScriptUI.environment.keyboardState.altKey;
     var guideLayer = (altKey === true);
     var project = app.project;
