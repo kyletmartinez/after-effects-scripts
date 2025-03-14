@@ -8,17 +8,17 @@ To run a script natively in After Effects use `File > Script > Run Script File..
 
 ## Scripts
 
-#### [Composition Naming Assistant (v1.1)](/scripts/Composition%20Naming%20Assistant.jsx)
+#### [Composition Naming Assistant (v1.1)](/scripts/Composition_Naming_Assistant.jsx)
 
 Assist with updating the naming for the current composition based on a standard
 naming convention. UI should update correctly based on naming.
 
-#### [Place Pin (v1.3)](/scripts/Place%20Pin.jsx)
+#### [Place Pin (v1.3)](/scripts/Place_Pin.jsx)
 
 Assist with pin placement based on gutter width. Ensure that each pin is parented to
 the pin above it in the pin grid.
 
-#### [Update Fonts (v1.1)](/scripts/Update%20Fonts.jsx)
+#### [Update Fonts (v1.1)](/scripts/Update_Fonts.jsx)
 
 Check the entire project for all fonts in use. If a font is already a valid font
 the don't change it. If a font is recognized as having a valid replacmeent then replace the

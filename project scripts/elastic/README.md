@@ -8,7 +8,7 @@ To run a script natively in After Effects use `File > Script > Run Script File..
 
 ## Scripts
 
-#### [Shift Highlight Layers (v1.1)](/scripts/Shift%20Highlight%20Layers.jsx)
+#### [Shift Highlight Layers (v1.1)](/scripts/Shift_Highlight_Layers.jsx)
 
 Highlight layers are set up in a grid using sliders for X position and Y Position to
 automatically adjust their position. Imagine the sliders indicating which column and row the
