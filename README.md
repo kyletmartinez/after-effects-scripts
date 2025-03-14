@@ -358,12 +358,15 @@ supports basic properties with 1, 2, or 3 dimensions.
 Round the values for all selected properties to the nearest whole number. Currently
 supports basic properties with 1, 2, or 3 dimensions.
 
-#### [Save Frame As PNG (v2.2)](/scripts/Save%20Frame%20As%20PNG.jsx)
+#### [Save Frame As PNG (v2.3)](/scripts/Save%20Frame%20As%20PNG.jsx)
 
-Save the current frame as a PNG to the desktop. Output will match the following
-format:
+Save the current frame as a PNG to the default save location. Output will match the
+following format:
 
 `Composition Name YYYY-MM-DD HH.MM.SS AM.png`
+
+When first running the script, you will be prompted for a save location. That location will be
+used for all future saves. If you want to set a new location, hold the `SHIFT` key.
 
 #### [Select All Children (v2.1)](/scripts/Select%20All%20Children.jsx)
 
