@@ -1,6 +1,6 @@
 /**
  * @name Toggle Specific Effects
- * @version 2.3
+ * @version 2.4
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Disable all specified effects in the current project. Hold the "ALT" key to enable.
@@ -15,9 +15,7 @@
 
 (function toggleSpecificEffects() {
 
-    var MatchNames = {
-        "ADBE Turbulent Displace": "Turbulent Displace"
-    };
+    var MatchNames = {"ADBE Turbulent Displace": "Turbulent Displace"};
 
     function checkMatchName(effect, enabled) {
         if (MatchNames.hasOwnProperty(effect.matchName)) {

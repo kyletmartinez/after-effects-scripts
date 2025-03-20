@@ -1,6 +1,6 @@
 /**
  * @name Update Expressions
- * @version 1.0
+ * @version 1.1
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Find an replace all instances of a specific expression with a new expression.
@@ -37,12 +37,8 @@
         newEdit.preferredSize.height = 100;
 
         var group3 = win.add("group");
-        group3.add("button", undefined, "Cancel", {
-            "name": "cancel"
-        });
-        group3.add("button", undefined, "Okay", {
-            "name": "ok"
-        });
+        group3.add("button", undefined, "Cancel", {"name": "cancel"});
+        group3.add("button", undefined, "Okay", {"name": "ok"});
 
         if (win.show() === 1) {
             return {
