@@ -1,6 +1,6 @@
 /**
  * @name Find Specific Effect
- * @version 2.1
+ * @version 2.2
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Find all instances of a specific efffect in the current project. Add additional
@@ -15,9 +15,7 @@
 
 (function findSpecificEffects() {
 
-    var MatchNames = {
-        "ADBE Gaussian Blur 2": "Gaussian Blur"
-    };
+    var MatchNames = {"ADBE Gaussian Blur 2": "Gaussian Blur"};
 
     function checkMatchName(layer, effect) {
         if (MatchNames.hasOwnProperty(effect.matchName)) {

@@ -1,6 +1,6 @@
 /**
  * @name Add Simple Loop Expression
- * @version 1.0
+ * @version 1.1
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Add a loop expression to all selected properties. Use the popup window to customize
@@ -53,12 +53,8 @@
         keyframeEdittext.preferredSize.width = 100;
 
         var row4 = win.add("group");
-        row4.add("button", undefined, "Cancel", {
-            "name": "cancel"
-        });
-        row4.add("button", undefined, "Okay", {
-            "name": "ok"
-        });
+        row4.add("button", undefined, "Cancel", {"name": "cancel"});
+        row4.add("button", undefined, "Okay", {"name": "ok"});
 
         if (win.show() === 1) {
             return {
