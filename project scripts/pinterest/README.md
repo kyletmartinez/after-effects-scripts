@@ -13,10 +13,14 @@ To run a script natively in After Effects use `File > Script > Run Script File..
 Assist with updating the naming for the current composition based on a standard
 naming convention. UI should update correctly based on naming.
 
+***
+
 #### [Place Pin (v1.3)](/scripts/Place_Pin.jsx)
 
 Assist with pin placement based on gutter width. Ensure that each pin is parented to
 the pin above it in the pin grid.
+
+***
 
 #### [Update Fonts (v1.1)](/scripts/Update_Fonts.jsx)
 
@@ -27,4 +31,6 @@ end, let the user know how many fonts were changed in total.
 
 Currently there is a function that fixes incorrect black-tone font colors as well. Typically I
 comment it out if it isn't needed. There is definitely a more user-friendly way to approach this.
+
+***
 
