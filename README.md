@@ -71,7 +71,7 @@ a native After Effects expression controller then use the effect name instead.
 * `Point Control`
 * `Slider Control`
 
-#### [Add Simple Loop Expression (v1.0)](/scripts/Add_Simple_Loop_Expression.jsx)
+#### [Add Simple Loop Expression (v1.1)](/scripts/Add_Simple_Loop_Expression.jsx)
 
 Add a loop expression to all selected properties. Use the popup window to customize
 the loop or press the `Enter` key to use the defaults.
@@ -176,7 +176,7 @@ Add a Text Layer to the current composition for each line in the selected text f
 
 Cycle the composition background color between `black`, `gray`, and `white`.
 
-#### [Toggle Specific Effects (v2.3)](/scripts/Toggle_Specific_Effects.jsx)
+#### [Toggle Specific Effects (v2.4)](/scripts/Toggle_Specific_Effects.jsx)
 
 Disable all specified effects in the current project. Hold the `ALT` key to enable.
 Add additional effects to be checked to the `MatchNames` object.
@@ -205,7 +205,7 @@ This script does not currently support `Dropdown Menu Control`.
 Extend every layer to match the composition duration in every composition in the
 current project.
 
-#### [Find Specific Effect (v2.1)](/scripts/Find_Specific_Effect.jsx)
+#### [Find Specific Effect (v2.2)](/scripts/Find_Specific_Effect.jsx)
 
 Find all instances of a specific efffect in the current project. Add additional
 effects to be checked to the `MatchNames` object.
@@ -268,6 +268,18 @@ Match the start time of all selected layers to the layer directly below it.
 #### [Merge Imported Selected Items (v2.2)](/scripts/Merge_Imported_Selected_Items.jsx)
 
 Merge all imported and selected items in a previously existing and matching folder.
+
+#### [Move Parametric Anchor Point (v1.0)](/scripts/Move_Parametric_Anchor_Point.jsx)
+
+Select the `Position` property of a parametric Rectangle or Ellipse and apply an
+expression to move the Anchor Point. This allows shapes to have their sizes change but remain
+locked to one edge.
+
+Use the popup window to choose which side to move the Anchor Point:
+`Top`
+`Right`
+`Bottom`
+`Left`
 
 #### [Multiply Selected Keyframes (v2.2)](/scripts/Multiply_Selected_Keyframes.jsx)
 
@@ -398,10 +410,10 @@ Randomly select any unlocked layer in the current composition.
 
 Select any unlocked layer in the current composition without a parent.
 
-#### [Separate Size Dimensions (v1.1)](/scripts/Separate_Size_Dimensions.jsx)
+#### [Separate Size Dimensions (v1.2)](/scripts/Separate_Size_Dimensions.jsx)
 
-Separate the size dimensions for a parametric rectangle adding a slider for both
-`X Size` and `Y Size` to the layer.
+Separate the size dimensions for a parametric rectangle or ellipse by adding a
+slider for both `X Size` and `Y Size` to the layer.
 
 #### [Set All Item Labels To None (v2.1)](/scripts/Set_All_Item_Labels_To_None.jsx)
 
@@ -518,7 +530,7 @@ copied Work Area to the current composition.
 
 Unlock all layers in all conmpositions in the current project.
 
-#### [Update Expressions (v1.0)](/scripts/Update_Expressions.jsx)
+#### [Update Expressions (v1.1)](/scripts/Update_Expressions.jsx)
 
 Find an replace all instances of a specific expression with a new expression.
 
