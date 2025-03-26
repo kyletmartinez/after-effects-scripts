@@ -1,6 +1,6 @@
 /**
  * @name Add 3D Break
- * @version 2.1
+ * @version 2.2
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Add an adjustment layer above the currently selected layer to break the 3D space of
@@ -14,6 +14,21 @@
  */
 
 (function addThreeDBreak() {
+
+    function getTargetIndex(comp) {
+        var index = 2;
+        var layers = comp.selectedLayers;
+        var numLayers = layers.length;
+        if (numLayers > 0) {
+            index = Infinity;
+            for (var l = 0; l < numLayers; l++) {
+                var layer = layers[l];
+                index = (layer.index < index) ? layer.index : index;
+            }
+        }
+        return index;
+    }
+
     app.beginUndoGroup("Add 3D Break");
     var comp = app.project.activeItem;
     var color = [0.5, 0.5, 0.5];
@@ -22,19 +37,9 @@
     var height = comp.height;
     var pixelAspect = comp.pixelAspect;
     var duration = comp.duration;
-    var index = 1;
-    var selectedLayers = comp.selectedLayers;
-    var numSelectedLayers = selectedLayers.length;
-    if (numSelectedLayers !== 0) {
-        selectedLayers.sort(function(a, b) {
-            return a.index - b.index;
-        });
-        index = selectedLayers[0].index;
-    }
+    var index = getTargetIndex(comp);
     var newLayer = comp.layers.addSolid(color, name, width, height, pixelAspect, duration);
     newLayer.adjustmentLayer = true;
-    if (comp.numLayers > 0) {
-        newLayer.moveBefore(comp.layers[index]);
-    }
+    newLayer.moveBefore(comp.layers[index]);
     app.endUndoGroup();
 })();
