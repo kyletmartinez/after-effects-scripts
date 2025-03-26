@@ -8,7 +8,7 @@ To run a script natively in After Effects use `File > Script > Run Script File..
 
 ## Scripts
 
-#### [Add 3D Break (v2.1)](/scripts/Add_3D_Break.jsx)
+#### [Add 3D Break (v2.2)](/scripts/Add_3D_Break.jsx)
 
 Add an adjustment layer above the currently selected layer to break the 3D space of
 After Effects. If no layers are selected the adjustment layer will be added at the top.
@@ -365,7 +365,7 @@ Merge all imported and selected items in a previously existing and matching fold
 
 ***
 
-#### [Move Parametric Anchor Point (v1.0)](/scripts/Move_Parametric_Anchor_Point.jsx)
+#### [Move Parametric Anchor Point (v1.1)](/scripts/Move_Parametric_Anchor_Point.jsx)
 
 Select the `Position` property of a parametric Rectangle or Ellipse and apply an
 expression to move the Anchor Point. This allows shapes to have their sizes change but remain
@@ -373,9 +373,9 @@ locked to one edge.
 
 Use the popup window to choose which side to move the Anchor Point:
 `Top`
-`Right`
-`Bottom`
 `Left`
+`Bottom`
+`Right`
 
 ***
 
