@@ -35,6 +35,12 @@ Add a camera and 3D null as a controller to the current composition.
 
 ***
 
+#### [Add Comment To Selected Layers (v1.1)](/scripts/Add_Comment_To_Selected_Layers.jsx)
+
+Add a comment (or remove a comment) to all selected layers.
+
+***
+
 #### [Add Composition Guide (v2.1)](/scripts/Add_Composition_Guide.jsx)
 
 Add a 16x9 fuscia rectangle shape layer to act as a guide. Helpful with things like
@@ -60,7 +66,7 @@ Add a composition marker at the out point of each layer in the composition.
 
 ***
 
-#### [Add Markers to Selected Layers (v2.1)](/scripts/Add_Markers_to_Selected_Layers.jsx)
+#### [Add Markers To Selected Layers (v2.1)](/scripts/Add_Markers_To_Selected_Layers.jsx)
 
 Add a marker to all selected layers with an optional comment.
 
@@ -248,9 +254,23 @@ layer directly below the selected layer instead of above it.
 
 ***
 
+#### [Enable Collapse Transformations (v1.0)](/scripts/Enable_Collapse_Transformations.jsx)
+
+Enabled the `Collapase Transformations` switch on all layers within the project.
+Layers with a marker that has the exact text of `Do Not Collapse Transformations` will be
+ignored.
+
+***
+
 #### [Export Path Points (v2.1)](/scripts/Export_Path_Points.jsx)
 
 Export path points for the select path property to a text file on the desktop.
+
+***
+
+#### [Export Text To File (v1.0)](/scripts/Export_Text_To_File.jsx)
+
+Export all selected text layers to a single `export.txt` text file on the desktop.
 
 ***
 
@@ -385,12 +405,6 @@ Multiply selected keyframe values by a provided value.
 
 ***
 
-#### [Parent Selected Layers To Layers Below (v2.1)](/scripts/Parent_Selected_Layers_To_Layers_Below.jsx)
-
-Parent each selected layer to the layer directly below it.
-
-***
-
 #### [Parent Closest Layers (v2.2)](/scripts/Parent_Closest_Layers.jsx)
 
 Parent the closest layer in the composition to each selected layer. Calculations
@@ -402,6 +416,12 @@ done in 2D space. Typically used in conjunction with Newton by Motion Botique.
 
 Connect the opacity of a layer to the opacity of the parent layer. Both opacity
 properties can be animated individually however the lowest opacity value will always be used.
+
+***
+
+#### [Parent Selected Layers To Layers Below (v2.1)](/scripts/Parent_Selected_Layers_To_Layers_Below.jsx)
+
+Parent each selected layer to the layer directly below it.
 
 ***
 
@@ -439,12 +459,6 @@ Rename the composition to match the name of the project file.
 
 ***
 
-#### [Rename Source To Layer Name (v2.1)](/scripts/Rename_Source_To_Layer_Name.jsx)
-
-Rename the selected item to match the name of the layer it is used for.
-
-***
-
 #### [Rename Puppet Pins For DuIK (v2.1)](/scripts/Rename_Puppet_Pins_For_DuIK.jsx)
 
 Rename selected arm puppet pins in preparation for DuIK. Hold the `ALT` key to
@@ -479,6 +493,12 @@ Rename the selected layers appending each character and character count as neede
 #### [Rename Selected Project Items (v2.2)](/scripts/Rename_Selected_Project_Items.jsx)
 
 Rename selected project items appending zero-padded numbers as needed.
+
+***
+
+#### [Rename Source To Layer Name (v2.1)](/scripts/Rename_Source_To_Layer_Name.jsx)
+
+Rename the selected item to match the name of the layer it is used for.
 
 ***
 
