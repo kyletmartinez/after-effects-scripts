@@ -1,5 +1,5 @@
 /**
- * @name Add Markers to Selected Layers
+ * @name Add Markers To Selected Layers
  * @version 2.1
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
