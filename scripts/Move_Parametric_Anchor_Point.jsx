@@ -1,6 +1,6 @@
 /**
  * @name Move Parametric Anchor Point
- * @version 1.1
+ * @version 1.2
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Select the "Position" property of a parametric Rectangle or Ellipse and apply an
@@ -8,10 +8,10 @@
  * locked to one edge.
  *
  * Use the popup window to choose which side to move the Anchor Point:
- * "Top"
- * "Left"
- * "Bottom"
- * "Right"
+ * * "Top"
+ * * "Left"
+ * * "Bottom"
+ * * "Right"
  *
  * @license This script is provided "as is," without warranty of any kind, expressed or implied. In
  * no event shall the author be held liable for any damages arising in any way from the use of this
