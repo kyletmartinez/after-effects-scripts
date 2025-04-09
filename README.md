@@ -122,6 +122,18 @@ Keyframes:
 
 ***
 
+#### [Add Text Animation (v1.0)](/scripts/Add_Text_Animation.jsx)
+
+Add text animation to the selected text layers using a text animator.
+
+Use the popup window to set the `Based On` value using familiar options from After Effects:
+* `Characters`
+* `Characters Excluding Spaces`
+* `Words`
+* `Lines`
+
+***
+
 #### [Add Visibility Controller (v2.1)](/scripts/Add_Visibility_Controller.jsx)
 
 Add a checkbox that controls the visibility, using opacity, for a selected layer.
@@ -385,17 +397,17 @@ Merge all imported and selected items in a previously existing and matching fold
 
 ***
 
-#### [Move Parametric Anchor Point (v1.1)](/scripts/Move_Parametric_Anchor_Point.jsx)
+#### [Move Parametric Anchor Point (v1.2)](/scripts/Move_Parametric_Anchor_Point.jsx)
 
 Select the `Position` property of a parametric Rectangle or Ellipse and apply an
 expression to move the Anchor Point. This allows shapes to have their sizes change but remain
 locked to one edge.
 
 Use the popup window to choose which side to move the Anchor Point:
-`Top`
-`Left`
-`Bottom`
-`Right`
+* `Top`
+* `Left`
+* `Bottom`
+* `Right`
 
 ***
 
