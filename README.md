@@ -274,6 +274,13 @@ ignored.
 
 ***
 
+#### [Enable Motion Blur (v1.0)](/scripts/Enable_Motion_Blur.jsx)
+
+Enabled the `Motion Blur` switch on all compositions and on all eligible layers
+within the project.
+
+***
+
 #### [Export Path Points (v2.1)](/scripts/Export_Path_Points.jsx)
 
 Export path points for the select path property to a text file on the desktop.
