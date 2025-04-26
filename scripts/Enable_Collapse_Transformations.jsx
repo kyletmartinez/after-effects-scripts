@@ -49,4 +49,5 @@
             iterateThroughLayers(item);
         }
     }
+    app.endUndoGroup();
 })();
