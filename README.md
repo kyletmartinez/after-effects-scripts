@@ -379,6 +379,21 @@ Convert selected keyframes into hold keyframes.
 
 ***
 
+#### [Manually Render PNG Sequence (v1.0)](/scripts/Manually_Render_PNG_Sequence.jsx)
+
+I wrote this script because the Render Queue was being annoying, spitting out
+renders with issues, and I didn't have time to troubleshoot the problem.
+
+Instead, simply set your `Work Area` then run the script to select where the PNG Sequence should
+be rendered.
+
+> [!CAUTION]
+> I don't recommend using this script regulary. `saveFrameToPng()` is officially undocumented and
+> was found via research. The whole function may disappear or even completely stop working. The
+> quality does not compare to using the Render Queue.
+
+***
+
 #### [Match Selected In Point To Below (v2.1)](/scripts/Match_Selected_In_Point_To_Below.jsx)
 
 Match the in point of all selected layers to the layer directly below it.
