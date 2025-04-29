@@ -1,6 +1,6 @@
 /**
- * @name Select Disable Layers
- * @version 2.1
+ * @name Select Disabled Layers
+ * @version 2.2
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Select any unlocked layer in the current composition that is disabled.

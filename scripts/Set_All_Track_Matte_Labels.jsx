@@ -1,6 +1,6 @@
 /**
  * @name Set All Track Matte Labels
- * @version 2.1
+ * @version 2.2
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Set the label color for all track matte layers in the active composition to "16". In

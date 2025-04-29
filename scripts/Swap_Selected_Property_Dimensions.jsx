@@ -1,6 +1,6 @@
 /**
- * @name Swap Property Dimensions
- * @version 2.1
+ * @name Swap Selected Property Dimensions
+ * @version 2.2
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Swap the dimension values for all selected properties. For example, swap the x and y

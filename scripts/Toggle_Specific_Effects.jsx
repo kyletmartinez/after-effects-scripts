@@ -1,6 +1,6 @@
 /**
  * @name Toggle Specific Effects
- * @version 2.4
+ * @version 2.5
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Disable all specified effects in the current project. Hold the "ALT" key to enable.

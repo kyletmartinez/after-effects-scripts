@@ -1,6 +1,6 @@
 /**
  * @name Add Markers At Selected Keyframes
- * @version 1.0
+ * @version 1.1
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Add a marker to each layer at the same time as the selected keyframe.

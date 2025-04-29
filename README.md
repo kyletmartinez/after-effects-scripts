@@ -54,15 +54,15 @@ Add the Fill effect to all selected layers while cycling through `red`, `green`,
 
 ***
 
-#### [Add Markers At Selected Keyframes (v1.0)](/scripts/Add_Markers_At_Selected_Keyframes.jsx)
-
-Add a marker to each layer at the same time as the selected keyframe.
-
-***
-
 #### [Add Markers At Out Points (v2.1)](/scripts/Add_Markers_At_Out_Points.jsx)
 
 Add a composition marker at the out point of each layer in the composition.
+
+***
+
+#### [Add Markers At Selected Keyframes (v1.1)](/scripts/Add_Markers_At_Selected_Keyframes.jsx)
+
+Add a marker to each layer at the same time as the selected keyframe.
 
 ***
 
@@ -249,13 +249,6 @@ Add a Text Layer to the current composition for each line in the selected text f
 #### [Cycle Composition Background Color (v2.1)](/scripts/Cycle_Composition_Background_Color.jsx)
 
 Cycle the composition background color between `black`, `gray`, and `white`.
-
-***
-
-#### [Toggle Specific Effects (v2.4)](/scripts/Toggle_Specific_Effects.jsx)
-
-Disable all specified effects in the current project. Hold the `ALT` key to enable.
-Add additional effects to be checked to the `MatchNames` object.
 
 ***
 
@@ -521,7 +514,7 @@ Rename the selected item to match the name of the layer it is used for.
 
 ***
 
-#### [Replace Text in Project Item Name (v2.1)](/scripts/Replace_Text_in_Project_Item_Name.jsx)
+#### [Replace Text In Project Item Name (v2.2)](/scripts/Replace_Text_In_Project_Item_Name.jsx)
 
 Replace text in the name of all selected project items. RegEx is accepted.
 
@@ -565,7 +558,7 @@ Select any unlocked layer parented to the selected layer in the current composit
 
 ***
 
-#### [Select Disable Layers (v2.1)](/scripts/Select_Disable_Layers.jsx)
+#### [Select Disabled Layers (v2.2)](/scripts/Select_Disabled_Layers.jsx)
 
 Select any unlocked layer in the current composition that is disabled.
 
@@ -622,7 +615,7 @@ Set the label for all layers in the current composition to `None` or label `0`.
 
 ***
 
-#### [Set All Track Matte Labels (v2.1)](/scripts/Set_All_Track_Matte_Labels.jsx)
+#### [Set All Track Matte Labels (v2.2)](/scripts/Set_All_Track_Matte_Labels.jsx)
 
 Set the label color for all track matte layers in the active composition to `16`. In
 my preferences label 16 is Black `#000000` and is always used for track mattes.
@@ -692,7 +685,7 @@ Swap the values of two selected properties with the same property type.
 
 ***
 
-#### [Swap Property Dimensions (v2.1)](/scripts/Swap_Property_Dimensions.jsx)
+#### [Swap Selected Property Dimensions (v2.2)](/scripts/Swap_Selected_Property_Dimensions.jsx)
 
 Swap the dimension values for all selected properties. For example, swap the x and y
 size values for a rectangle shape layer.
@@ -744,6 +737,13 @@ Toggle the types of selected puppet pins between `Position` and `Advanced`.
 #### [Toggle Puppet Pins As Guide Layers (v1.1)](/scripts/Toggle_Puppet_Pins_As_Guide_Layers.jsx)
 
 Set all DuIK Pin layers to visible. Hold the `ALT` key to set to guide layers.
+
+***
+
+#### [Toggle Specific Effects (v2.5)](/scripts/Toggle_Specific_Effects.jsx)
+
+Disable all specified effects in the current project. Hold the `ALT` key to enable.
+Add additional effects to be checked to the `MatchNames` object.
 
 ***
 
