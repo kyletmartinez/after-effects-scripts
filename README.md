@@ -8,6 +8,10 @@ To run a script natively in After Effects use `File > Script > Run Script File..
 
 ## Scripts
 
+All scripts can be found within the [source/scripts](/source/scripts) folder.
+
+***
+
 #### [Add 3D Break (v2.2)](/source/scripts/Add_3D_Break.jsx)
 
 Add an adjustment layer above the currently selected layer to break the 3D space of
