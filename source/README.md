@@ -1,4 +1,9 @@
-# After Effects Project Scripts
+# Scripts
+
+All scripts can be found within the [/scripts](/scripts) folder.
+
+
+# Project Scripts
 
 These scripts were developed in a very _specific way_ for an _incredibly niche_ use on a _very distinct_ project. The scripts by themselves, with no context, are probably completely useless. However...
 
