@@ -54,6 +54,13 @@ Add the Fill effect to all selected layers while cycling through `red`, `green`,
 
 ***
 
+#### [Add Folder To Render Queue (v1.0)](/scripts/Add_Folder_To_Render_Queue.jsx)
+
+Select a single folder in the Project panel and run this script to search through
+all nested subfolders and add all compositions to the Render Queue.
+
+***
+
 #### [Add Markers At Out Points (v2.1)](/scripts/Add_Markers_At_Out_Points.jsx)
 
 Add a composition marker at the out point of each layer in the composition.
@@ -143,6 +150,13 @@ Add a checkbox that controls the visibility, using opacity, for a selected layer
 #### [Append To Expression (v1.0)](/scripts/Append_To_Expression.jsx)
 
 Append new code to all selected properties that contain expressions.
+
+***
+
+#### [Apply Maintain Stroke Width Expression (v1.0)](/scripts/Apply_Maintain_Stroke_Width_Expression.jsx)
+
+Search through all layers in the current composition, find all Stroke Width
+properties, and apply an expression to maintain the stroke width visually despite any scale.
 
 ***
 
@@ -576,6 +590,12 @@ Select any unlocked layer parented to the selected layer in the current composit
 #### [Select Disabled Layers (v2.2)](/scripts/Select_Disabled_Layers.jsx)
 
 Select any unlocked layer in the current composition that is disabled.
+
+***
+
+#### [Select Guide Layers (v1.0)](/scripts/Select_Guide_Layers.jsx)
+
+Select all layers in the current composition that are Guide Layers.
 
 ***
 
