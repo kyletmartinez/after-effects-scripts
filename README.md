@@ -6,12 +6,10 @@ I also have a free tool for After Effects called [Atheneum](https://github.com/k
 
 To run a script natively in After Effects use `File > Script > Run Script File...` and choose the script.
 
-## Scripts
-
 > [!TIP]
 > All scripts can be found within the [source/scripts](/source/scripts) folder.
 
-***
+## Scripts
 
 #### [Add 3D Break (v2.2)](/source/scripts/Add_3D_Break.jsx)
 
