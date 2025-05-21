@@ -5,29 +5,33 @@ const jsdoc2md = require("jsdoc-to-markdown");
 const path = require("path");
 const through = require("through2");
 
-const baseDir = "../source/scripts";
+const files = "../source/scripts/*.jsx";
 
 gulp.task("build", done => {
     jsdoc2md.render({
-        template: fs.readFileSync("template.hbs", "utf8"),
-        helper: "replace.js",
-        files: `${baseDir}/*.jsx`})
+        "template": fs.readFileSync("template.hbs", "utf8"),
+        "helper": "replace.js",
+        "files": files})
     .then(output => fs.writeFileSync(`../README.md`, output));
     return done();
 });
 
 gulp.task("validate", () => {
     const nameRegex = /@name\s+(.+)/;
-    return gulp.src([`${baseDir}/**/*/*.jsx`])
+    return gulp.src([files])
         .pipe(
             through.obj(function (file, _, cb) {
                 if (file.isBuffer()) {
+                    const fileName = path.basename(file.path, ".jsx");
+                    if (/\s/.test(fileName)) {
+                        console.error(`File name contains spaces: ${fileName}`);
+                    }
+                    const fileNameStripped = fileName.replace(/_/g, " ");
                     const content = file.contents.toString();
-                    const fileName = path.basename(file.path, ".jsx").replace(/_/g, " ");
                     const match = content.match(nameRegex);
                     if (match && match[1]) {
                         const docName = match[1].trim();
-                        if (fileName !== docName) {
+                        if (fileNameStripped !== docName) {
                             console.error(`Mismatch in ${fileName}.jsx`);
                         }
                     }
@@ -38,7 +42,7 @@ gulp.task("validate", () => {
 });
 
 gulp.task("lint", () => {
-    return gulp.src([`${baseDir}/**/*/*.jsx`])
+    return gulp.src([files])
         .pipe(eslint({configFile: ".eslintrc.json"}))
         .pipe(eslint.format())
         .pipe(eslint.failAfterError());
