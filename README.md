@@ -111,6 +111,12 @@ a native After Effects expression controller then use the effect name instead.
 
 ***
 
+#### [Add Selection To New Folder (v1.0)](/source/scripts/Add_Selection_To_New_Folder.jsx)
+
+Add all selected items in the Project Panel to a new folder.
+
+***
+
 #### [Add Simple Loop Expression (v1.1)](/source/scripts/Add_Simple_Loop_Expression.jsx)
 
 Add a loop expression to all selected properties. Use the popup window to customize
@@ -322,6 +328,13 @@ current project.
 
 ***
 
+#### [Find All Expressions (v1.0)](/source/scripts/Find_All_Expressions.jsx)
+
+Find and report all active expressions in the current project. Useful in preparing
+compositions for Lottie.
+
+***
+
 #### [Find Specific Effect (v2.2)](/source/scripts/Find_Specific_Effect.jsx)
 
 Find all instances of a specific efffect in the current project. Add additional
@@ -485,6 +498,13 @@ Posterize the start time of all layers in a composition to be on 2s.
 
 ***
 
+#### [Prepare Layer Out Points For Lottie (v1.0)](/source/scripts/Prepare_Layer_Out_Points_For_Lottie.jsx)
+
+Ensure that any layer active on the last from of the composition it's `Out Point`
+extended one frame past the end. This removes a bug from Lottie exports.
+
+***
+
 #### [Randomize Layer Start Time (v2.2)](/source/scripts/Randomize_Layer_Start_Time.jsx)
 
 Randomly shift the start time of all selected layers within a provided range.
@@ -546,7 +566,7 @@ Rename the selected item to match the name of the layer it is used for.
 
 ***
 
-#### [Replace Text In Project Item Name (v2.2)](/source/scripts/Replace_Text_In_Project_Item_Name.jsx)
+#### [Replace Text In Project Item Name (v2.3)](/source/scripts/Replace_Text_In_Project_Item_Name.jsx)
 
 Replace text in the name of all selected project items. RegEx is accepted.
 
