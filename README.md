@@ -233,6 +233,13 @@ Change the start frame of the current composition and all nested compositions.
 
 ***
 
+#### [Change Nested Composition Work Area (v2.1)](/source/scripts/Change_Nested_Composition_Work_Area.jsx)
+
+Reset the Work Area of the current composition and all nested compositions to cover
+the full duration of the composition.
+
+***
+
 #### [Clean Render Queue (v2.1)](/source/scripts/Clean_Render_Queue.jsx)
 
 Clean out the Render Queue.
