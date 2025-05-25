@@ -655,6 +655,12 @@ Randomly select any unlocked layer in the current composition.
 
 ***
 
+#### [Select Text Layers (v1.0)](/source/scripts/Select_Text_Layers.jsx)
+
+Select all `Text Layers` in the current composition.
+
+***
+
 #### [Select Unparented Layers (v2.1)](/source/scripts/Select_Unparented_Layers.jsx)
 
 Select any unlocked layer in the current composition without a parent.
