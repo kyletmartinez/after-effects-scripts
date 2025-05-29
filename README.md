@@ -343,6 +343,16 @@ current project.
 
 ***
 
+#### [Fill In Keyframes (v1.0)](/source/scripts/Fill_In_Keyframes.jsx)
+
+Convert a property to keyframes and remove any redundant keyframes.
+
+> [!WARNING]
+> While you can select multiple properties, running the `Convert Expression To Keyframes` as it
+> is setup now only works on the first viable property. Assume one property at a time for now.
+
+***
+
 #### [Find All Expressions (v1.0)](/source/scripts/Find_All_Expressions.jsx)
 
 Find and report all active expressions in the current project. Useful in preparing
