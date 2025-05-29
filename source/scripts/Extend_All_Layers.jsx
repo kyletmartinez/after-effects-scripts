@@ -1,6 +1,6 @@
 /**
  * @name Extend All Layers
- * @version 1.1
+ * @version 1.2
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Extend every layer to match the composition duration in every composition in the
@@ -15,21 +15,25 @@
 
 (function extendAllLayers() {
 
-    function extendLayers(comp) {
-        var duration = comp.duration;
+    function extendLayers(comp, duration) {
         var layers = comp.layers;
-        for (var l = comp.numLayers; l > 0; l--) {
-            layers[l].outPoint = duration;
+        for (var l = layers.length; l > 0; l--) {
+            var layer = layers[l];
+            layer.locked = false;
+            layer.outPoint = duration;
+            if (layer.source instanceof CompItem) {
+                extendLayers(layer.source, duration);
+            }
         }
     }
 
     app.beginUndoGroup("Extend All Layers");
-    var project = app.project;
-    var items = project.items;
-    for (var i = project.numItems; i > 0; i--) {
-        var item = items[i];
-        if (item instanceof CompItem) {
-            extendLayers(item);
+    var newDurationString = prompt("New Duration (Seconds)", "30");
+    if (newDurationString !== null && newDurationString.length > 0) {
+        var duration = parseFloat(newDurationString);
+        if (isNaN(duration) === false) {
+            var comp = app.project.activeItem;
+            extendLayers(comp, duration);
         }
     }
     app.endUndoGroup();
