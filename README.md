@@ -169,6 +169,14 @@ properties, and apply an expression to maintain the stroke width visually despit
 
 ***
 
+#### [Build Dropdown Selector (v1.0)](/source/scripts/Build_Dropdown_Selector.jsx)
+
+Create a new controller layer and add a `Dropdown Control`. You can now toggle the
+visibility of all layers in the current composition. This dropdown will also be added to the
+Essential Graphics Panel for the current composition.
+
+***
+
 #### [Calculate Difference Between Keyframe Values (v2.2)](/source/scripts/Calculate_Difference_Between_Keyframe_Values.jsx)
 
 Calculate the difference between two keyframe values.
@@ -328,7 +336,7 @@ This script does not currently support `Dropdown Menu Control`.
 
 ***
 
-#### [Extend All Layers (v1.1)](/source/scripts/Extend_All_Layers.jsx)
+#### [Extend All Layers (v1.2)](/source/scripts/Extend_All_Layers.jsx)
 
 Extend every layer to match the composition duration in every composition in the
 current project.
@@ -582,6 +590,12 @@ Replace text in the name of all selected project items. RegEx is accepted.
 #### [Reset Composition Work Area (v2.1)](/source/scripts/Reset_Composition_Work_Area.jsx)
 
 Set the Work Area to cover the entire composition.
+
+***
+
+#### [Reset Layer Names (v1.0)](/source/scripts/Reset_Layer_Names.jsx)
+
+Reset the name for all layers in the current composition.
 
 ***
 
