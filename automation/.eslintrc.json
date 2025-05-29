@@ -71,9 +71,6 @@
         "multiline-comment-style": ["error", "starred-block"],
         "multiline-ternary": ["error", "never"],
         "new-parens": ["error", "always"],
-        "newline-per-chained-call": ["error", {
-            "ignoreChainWithDepth": 2
-        }],
         "no-bitwise": ["error"],
         "no-eval": ["error"],
         "no-implicit-coercion": ["error"],
