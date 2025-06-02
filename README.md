@@ -9,6 +9,14 @@ To run a script natively in After Effects use `File > Script > Run Script File..
 > [!TIP]
 > All scripts can be found within the [source/scripts](/source/scripts) folder.
 
+## Download Entire Collection
+
+From the front page, click the green `Code` button and then click `Download ZIP.` From there, you can unzip the file and choose any script file you want.
+
+## Download Single Script
+
+From a script page, click the `Download raw file` near the upper right of code window.
+
 ## Scripts
 
 #### [Add 3D Break (v2.2)](/source/scripts/Add_3D_Break.jsx)
