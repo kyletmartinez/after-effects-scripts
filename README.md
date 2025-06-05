@@ -268,6 +268,13 @@ Remove unused items from any selected folders.
 
 ***
 
+#### [Convert SRT To Text Layers (v1.0)](/source/scripts/Convert_SRT_To_Text_Layers.jsx)
+
+Run the script, select an SRT file, and automatically convert all subtitles into
+After Effects `Text Layers` with no styling applied just in and out point timing.
+
+***
+
 #### [Copy Composition Markers To Layer (v2.1)](/source/scripts/Copy_Composition_Markers_To_Layer.jsx)
 
 Copy all markers from the current composition to the currently selected layer
