@@ -47,10 +47,16 @@
     function parseSubtitleBlock(subtitleBlock) {
         var blockArray = subtitleBlock.split("\n");
         var timeArray = blockArray[1].split(" ");
+        var textLines = [];
+        for (var i = 2; i < blockArray.length; i++) {
+            if (blockArray[i].trim() !== "") {
+                textLines.push(blockArray[i]);
+            }
+        }
         return {
             "inPoint": parseTime(timeArray[0]),
             "outPoint": parseTime(timeArray[2]),
-            "text": blockArray[2]
+            "text": textLines.join("\n")
         };
     }
 
