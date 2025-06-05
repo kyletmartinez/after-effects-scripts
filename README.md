@@ -587,6 +587,16 @@ Rename the selected layers appending each character and character count as neede
 
 ***
 
+#### [Rename Selected Matte Layers (v1.0)](/source/scripts/Rename_Selected_Matte_Layers.jsx)
+
+Renames a selected layer to match the layer below and appending `Matte` to the end.
+
+> [!WARNING]
+> This script doesn't detect actual Track Matte pairs. This script also assumes the timeline is
+set up using the old style of mattes where mattes were required to be directly above a layer.
+
+***
+
 #### [Rename Selected Project Items (v2.2)](/source/scripts/Rename_Selected_Project_Items.jsx)
 
 Rename selected project items appending zero-padded numbers as needed.
