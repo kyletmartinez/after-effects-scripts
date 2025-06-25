@@ -557,6 +557,13 @@ Remove all proxies within the current project.
 
 ***
 
+#### [Remove Redundant Keyframes (v1.0)](/source/scripts/Remove_Redundant_Keyframes.jsx)
+
+Remove redundant keyframes from the selected properties. Especially helpful for
+reducing the amount of keyframes after using the `Convert Expression to Keyframes` command.
+
+***
+
 #### [Rename Composition To File Name (v2.1)](/source/scripts/Rename_Composition_To_File_Name.jsx)
 
 Rename the composition to match the name of the project file.
