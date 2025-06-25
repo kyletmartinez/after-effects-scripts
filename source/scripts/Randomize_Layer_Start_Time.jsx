@@ -1,6 +1,6 @@
 /**
  * @name Randomize Layer Start Time
- * @version 2.2
+ * @version 2.3
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Randomly shift the start time of all selected layers within a provided range.
@@ -26,7 +26,7 @@
     app.beginUndoGroup("Randomize Layer Start Time");
     var comp = app.project.activeItem;
     if (comp !== null && (comp instanceof CompItem)) {
-        var range = parseInt(prompt("Range (Frames)", ""), 10);
+        var range = Number(prompt("Range (Frames)", ""));
         if (isNaN(range) === false) {
             var layers = comp.selectedLayers;
             var numLayers = layers.length;

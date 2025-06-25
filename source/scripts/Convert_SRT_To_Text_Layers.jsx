@@ -1,6 +1,6 @@
 /**
  * @name Convert SRT To Text Layers
- * @version 1.0
+ * @version 1.1
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Run the script, select an SRT file, and automatically convert all subtitles into
@@ -37,10 +37,10 @@
 
     function parseTime(time) {
         var timeArray = time.split(",");
-        var h = parseInt(timeArray[0].split(":")[0], 10) * 3600;
-        var m = parseInt(timeArray[0].split(":")[1], 10) * 60;
-        var s = parseInt(timeArray[0].split(":")[2], 10);
-        var l = parseInt(timeArray[1], 10) / 1000;
+        var h = Number(timeArray[0].split(":")[0]) * 3600;
+        var m = Number(timeArray[0].split(":")[1]) * 60;
+        var s = Number(timeArray[0].split(":")[2]);
+        var l = Number(timeArray[1]) / 1000;
         return h + m + s + l;
     }
 

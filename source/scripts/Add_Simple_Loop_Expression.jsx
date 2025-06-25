@@ -1,6 +1,6 @@
 /**
  * @name Add Simple Loop Expression
- * @version 1.1
+ * @version 1.2
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Add a loop expression to all selected properties. Use the popup window to customize
@@ -60,7 +60,7 @@
             return {
                 "direction": String(directionDropdown.selection.text),
                 "type": String(typeDropdown.selection.text),
-                "keyframes": parseInt(keyframeEdittext.text, 10)
+                "keyframes": Number(keyframeEdittext.text)
             };
         } else {
             return false;

@@ -1,6 +1,6 @@
 /**
  * @name Toggle Onion Skinning
- * @version 2.1
+ * @version 2.2
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Toggle onion skinning in the current composition using "CC Wide Time".
@@ -30,7 +30,7 @@
     function disableOnionSkin(comp) {
         var comment = comp.comment.split("*onion-skinning*");
         comp.comment = comment[0];
-        var id = parseInt(comment[1], 10);
+        var id = Number(comment[1]);
         var item = app.project.itemByID(id);
         if (item !== null) {
             item.remove();

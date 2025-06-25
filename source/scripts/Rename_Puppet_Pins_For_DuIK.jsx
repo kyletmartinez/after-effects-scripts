@@ -1,6 +1,6 @@
 /**
  * @name Rename Puppet Pins For DuIK
- * @version 2.1
+ * @version 2.2
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Rename selected arm puppet pins in preparation for DuIK. Hold the "ALT" key to
@@ -25,7 +25,7 @@
     for (var p = 0; p < numProperties; p++) {
         var property = properties[p];
         if (property.name.match(/Puppet Pin [0-9]*/g)) {
-            var index = parseInt(property.name.split(" ")[2], 10);
+            var index = Number(property.name.split(" ")[2]);
             property.name = names[index - 1];
         }
     }

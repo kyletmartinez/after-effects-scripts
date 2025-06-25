@@ -39,7 +39,7 @@
         var currentPinHeight = getPinHeight(layer.source) / 2;
         var parentPinHeight = getPinHeight(layer.parent.source) / 2;
         var parentCompHeight = layer.parent.source.height / 2;
-        var gutterInt = parseInt(gutter, 10);
+        var gutterInt = Number(gutter);
         var yPosition = parentCompHeight + currentPinHeight + parentPinHeight + gutterInt;
         layer.transform.yPosition.setValue(yPosition);
         app.endUndoGroup();

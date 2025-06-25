@@ -1,6 +1,6 @@
 /**
  * @name Add Fill With Color Cycle
- * @version 2.2
+ * @version 2.3
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Add the Fill effect to all selected layers while cycling through "red", "green",
@@ -20,7 +20,7 @@
     function getNextColor() {
         var lastColorIndex = -1;
         if (app.settings.haveSetting("Fill Color", "Index") === true) {
-            lastColorIndex = parseInt(app.settings.getSetting("Fill Color", "Index"), 10);
+            lastColorIndex = Number(app.settings.getSetting("Fill Color", "Index"));
         }
         lastColorIndex = (lastColorIndex + 1) % colors.length;
         app.settings.saveSetting("Fill Color", "Index", lastColorIndex);

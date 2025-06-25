@@ -1,6 +1,6 @@
 /**
  * @name Increase All Pin Sizes
- * @version 1.0
+ * @version 1.1
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Increase the scale of all DuIK Pin layers in the current project.
@@ -42,7 +42,7 @@
     app.beginUndoGroup("Increase Pin Size");
     var newSizeString = prompt("Size (Percent)", "100");
     if (newSizeString !== null && newSizeString.length > 0) {
-        var size = parseInt(newSizeString, 10);
+        var size = Number(newSizeString);
         if (isNaN(size) === false) {
             var project = app.project;
             var items = project.items;

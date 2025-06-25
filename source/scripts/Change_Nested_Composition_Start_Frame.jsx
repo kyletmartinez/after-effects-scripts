@@ -1,6 +1,6 @@
 /**
  * @name Change Nested Composition Start Frame
- * @version 1.1
+ * @version 1.2
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Change the start frame of the current composition and all nested compositions.
@@ -28,7 +28,7 @@
     app.beginUndoGroup("Change Nested Composition Start Frame");
     var startFrameString = prompt("New Start Frame", "1");
     if (startFrameString !== null && startFrameString.length > 0) {
-        var startFrame = parseInt(startFrameString, 10);
+        var startFrame = Number(startFrameString);
         if (isNaN(startFrame) === false) {
             var comp = app.project.activeItem;
             changeCompStartFrame(comp, startFrame);

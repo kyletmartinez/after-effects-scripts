@@ -1,6 +1,6 @@
 /**
  * @name Prepare Project File
- * @version 1.1
+ * @version 1.2
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Automate the process of setting up a new project file for a new shot. The script
@@ -133,7 +133,7 @@
      */
     function getNumberFromFileName(index) {
         var projectName = app.project.name.split("_");
-        return parseInt(projectName[index], 10);
+        return Number(projectName[index]);
     }
 
     app.beginUndoGroup("Prepare Project File");

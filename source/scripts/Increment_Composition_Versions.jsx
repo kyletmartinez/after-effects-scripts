@@ -1,6 +1,6 @@
 /**
  * @name Increment Composition Versions
- * @version 2.2
+ * @version 2.3
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Increment any version numbers found in the name of all compositions in the current
@@ -18,7 +18,7 @@
     function incrementVersionNumber(comp) {
         var oldArray = comp.name.split("_v");
         var oldString = oldArray.pop();
-        var oldInteger = parseInt(oldString, 10);
+        var oldInteger = Number(oldString);
         var newInteger = oldInteger + 1;
         var newString = (newInteger < 9) ? "0" + newInteger : newInteger;
         var newName = oldArray.join("") + "_v" + newString;

@@ -59,7 +59,7 @@ precomposed character rigs.
 
 ***
 
-#### [Add Fill With Color Cycle (v2.2)](/source/scripts/Add_Fill_With_Color_Cycle.jsx)
+#### [Add Fill With Color Cycle (v2.3)](/source/scripts/Add_Fill_With_Color_Cycle.jsx)
 
 Add the Fill effect to all selected layers while cycling through `red`, `green`,`blue`, `yellow`, `magenta`, and `cyan`.
 
@@ -125,7 +125,7 @@ Add all selected items in the Project Panel to a new folder.
 
 ***
 
-#### [Add Simple Loop Expression (v1.1)](/source/scripts/Add_Simple_Loop_Expression.jsx)
+#### [Add Simple Loop Expression (v1.2)](/source/scripts/Add_Simple_Loop_Expression.jsx)
 
 Add a loop expression to all selected properties. Use the popup window to customize
 the loop or press the `Enter` key to use the defaults.
@@ -243,7 +243,7 @@ Change the frame rate of the current composition and all nested compositions.
 
 ***
 
-#### [Change Nested Composition Start Frame (v1.1)](/source/scripts/Change_Nested_Composition_Start_Frame.jsx)
+#### [Change Nested Composition Start Frame (v1.2)](/source/scripts/Change_Nested_Composition_Start_Frame.jsx)
 
 Change the start frame of the current composition and all nested compositions.
 
@@ -268,7 +268,7 @@ Remove unused items from any selected folders.
 
 ***
 
-#### [Convert SRT To Text Layers (v1.0)](/source/scripts/Convert_SRT_To_Text_Layers.jsx)
+#### [Convert SRT To Text Layers (v1.1)](/source/scripts/Convert_SRT_To_Text_Layers.jsx)
 
 Run the script, select an SRT file, and automatically convert all subtitles into
 After Effects `Text Layers` with no styling applied just in and out point timing.
@@ -400,13 +400,13 @@ Disable all selected layers.
 
 ***
 
-#### [Increase All Pin Sizes (v1.0)](/source/scripts/Increase_All_Pin_Sizes.jsx)
+#### [Increase All Pin Sizes (v1.1)](/source/scripts/Increase_All_Pin_Sizes.jsx)
 
 Increase the scale of all DuIK Pin layers in the current project.
 
 ***
 
-#### [Increment Composition Versions (v2.2)](/source/scripts/Increment_Composition_Versions.jsx)
+#### [Increment Composition Versions (v2.3)](/source/scripts/Increment_Composition_Versions.jsx)
 
 Increment any version numbers found in the name of all compositions in the current
 project.
@@ -545,7 +545,7 @@ extended one frame past the end. This removes a bug from Lottie exports.
 
 ***
 
-#### [Randomize Layer Start Time (v2.2)](/source/scripts/Randomize_Layer_Start_Time.jsx)
+#### [Randomize Layer Start Time (v2.3)](/source/scripts/Randomize_Layer_Start_Time.jsx)
 
 Randomly shift the start time of all selected layers within a provided range.
 
@@ -563,7 +563,7 @@ Rename the composition to match the name of the project file.
 
 ***
 
-#### [Rename Puppet Pins For DuIK (v2.1)](/source/scripts/Rename_Puppet_Pins_For_DuIK.jsx)
+#### [Rename Puppet Pins For DuIK (v2.2)](/source/scripts/Rename_Puppet_Pins_For_DuIK.jsx)
 
 Rename selected arm puppet pins in preparation for DuIK. Hold the `ALT` key to
 rename selected leg puppet pins.
@@ -825,7 +825,7 @@ Toggle an expression that maintains visual scale for layer regardless of Z posit
 
 ***
 
-#### [Toggle Onion Skinning (v2.1)](/source/scripts/Toggle_Onion_Skinning.jsx)
+#### [Toggle Onion Skinning (v2.2)](/source/scripts/Toggle_Onion_Skinning.jsx)
 
 Toggle onion skinning in the current composition using `CC Wide Time`.
 
