@@ -61,7 +61,8 @@ precomposed character rigs.
 
 #### [Add Fill With Color Cycle (v2.3)](/source/scripts/Add_Fill_With_Color_Cycle.jsx)
 
-Add the Fill effect to all selected layers while cycling through `red`, `green`,`blue`, `yellow`, `magenta`, and `cyan`.
+Add the Fill effect to all selected layers while cycling through `red`, `green`,
+`blue`, `yellow`, `magenta`, and `cyan`.
 
 ***
 
@@ -265,6 +266,15 @@ Clean out the Render Queue.
 #### [Clean Selected Folder (v2.2)](/source/scripts/Clean_Selected_Folder.jsx)
 
 Remove unused items from any selected folders.
+
+***
+
+#### [Clean Up Overlord Folder (v1.0)](/source/scripts/Clean_Up_Overlord_Folder.jsx)
+
+Clean up the Overlord source folder by removing all files that aren't imported into
+the current project. Folder detection in the project and on the file systems is all automatic.
+
+Files are not truely deleted instead they are moved to a `Deleted` folder on the desktop.
 
 ***
 
