@@ -13,6 +13,7 @@
         "File": "readonly",
         "Folder": "readonly",
         "FolderItem": "readonly",
+        "FootageItem": "readonly",
         "FramesCountType": "readonly",
         "generateRandomNumber": "readonly",
         "KeyframeEase": "readonly",
