@@ -61,8 +61,7 @@ precomposed character rigs.
 
 #### [Add Fill With Color Cycle (v2.3)](/source/scripts/Add_Fill_With_Color_Cycle.jsx)
 
-Add the Fill effect to all selected layers while cycling through `red`, `green`,
-`blue`, `yellow`, `magenta`, and `cyan`.
+Add the Fill effect to all selected layers while cycling through `red`, `green`,`blue`, `yellow`, `magenta`, and `cyan`.
 
 ***
 
@@ -229,6 +228,13 @@ for other values.
 #### [Change Nested Composition Background (v2.1)](/source/scripts/Change_Nested_Composition_Background.jsx)
 
 Change the background color of the current composition and all nested compositions.
+
+***
+
+#### [Change Nested Composition Duration With Timecode (v2.1)](/source/scripts/Change_Nested_Composition_Duration_With_Timecode.jsx)
+
+Change the duration of the current composition and all nested compositions using
+timecode.
 
 ***
 
@@ -630,6 +636,13 @@ Rename selected project items appending zero-padded numbers as needed.
 #### [Rename Source To Layer Name (v2.1)](/source/scripts/Rename_Source_To_Layer_Name.jsx)
 
 Rename the selected item to match the name of the layer it is used for.
+
+***
+
+#### [Replace Grid Rig Control (v1.0)](/source/scripts/Replace_Grid_Rig_Control.jsx)
+
+Replace the selected `Grid Rig Control` null layer created by `Flex by Zack Lovatt`
+with a shape layer. This script assumes default and un-keyframed values.
 
 ***
 
