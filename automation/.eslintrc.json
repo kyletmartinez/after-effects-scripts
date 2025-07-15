@@ -10,6 +10,7 @@
         "AVLayer": "readonly",
         "BlendingMode": "readonly",
         "CompItem": "readonly",
+        "currentFormatToTime": "readonly",
         "File": "readonly",
         "Folder": "readonly",
         "FolderItem": "readonly",
