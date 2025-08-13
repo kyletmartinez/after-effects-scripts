@@ -1,6 +1,6 @@
 /**
  * @name Add Background Layer
- * @version 1.1
+ * @version 1.2
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Add a background layer to the current composition that will stay centered and match
@@ -33,5 +33,8 @@
 
     var fill = group.property("ADBE Vectors Group").addProperty("ADBE Vector Graphic - Fill");
     fill.property("ADBE Vector Fill Color").setValue([0.5, 0.5, 0.5]);
+
+    layer.moveToEnd();
+
     app.endUndoGroup();
 })();
