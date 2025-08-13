@@ -1,12 +1,12 @@
 /**
  * @name Copy Composition Markers To Layer
- * @version 2.1
+ * @version 2.2
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Copy all markers from the current composition to the currently selected layer
  * including duration, comments, and labels.
  *
- * Sister script to: "Copy Layer Makers to Composition.jsx"
+ * Sister script to: "Copy_Layer_Makers_To_Composition.jsx"
  *
  * @license This script is provided "as is," without warranty of any kind, expressed or implied. In
  * no event shall the author be held liable for any damages arising in any way from the use of this
