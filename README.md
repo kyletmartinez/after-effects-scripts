@@ -352,6 +352,14 @@ within the project.
 
 ***
 
+#### [Estimate Path Length (v1.0)](/source/scripts/Estimate_Path_Length.jsx)
+
+Add two sliders to the selected layer to estimate the length of a selected path.
+Increase the `Path Samples` slider for a more accurate length and use the `Path Length` slider
+to reveal the path length.
+
+***
+
 #### [Export Path Points (v2.1)](/source/scripts/Export_Path_Points.jsx)
 
 Export path points for the select path property to a text file on the desktop.
