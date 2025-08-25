@@ -40,7 +40,7 @@
         var lengthSlider = layer.property("ADBE Effect Parade").addProperty("ADBE Slider Control");
         lengthSlider.name = "Path Length";
         lengthSlider.property(1).expression = [
-            "var pathProperty = " + getPropertyExpressionString(path) + ";",
+            "var pathProperty = " + getPropertyPath(path) + ";",
             "var samples = effect(\"Path Samples\")(1).value;",
             "var totalLength = 0;",
             "var previousPoint = pathProperty.pointOnPath(0);",
