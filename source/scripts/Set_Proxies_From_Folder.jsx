@@ -1,6 +1,6 @@
 /**
  * @name Set Proxies From Folder
- * @version 2.2
+ * @version 2.3
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Set proxies for all compositions within the project.
@@ -29,7 +29,7 @@
         var numFiles = files.length;
         for (var f = 0; f < numFiles; f++) {
             var file = files[f];
-            var name = file.displayName.spit(".")[0];
+            var name = file.displayName.split(".")[0];
             allFiles[name] = file.fsName;
         }
         return allFiles;
