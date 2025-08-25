@@ -806,7 +806,7 @@ following blend modes:
 
 ***
 
-#### [Set Proxies From Folder (v2.2)](/source/scripts/Set_Proxies_From_Folder.jsx)
+#### [Set Proxies From Folder (v2.3)](/source/scripts/Set_Proxies_From_Folder.jsx)
 
 Set proxies for all compositions within the project.
 
