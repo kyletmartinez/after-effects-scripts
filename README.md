@@ -13,11 +13,13 @@ To run a script natively in After Effects use `File > Script > Run Script File..
 
 From the front page, click the green `Code` button and then click `Download ZIP.` From there, you can unzip the file and choose any script file you want.
 
-![download_all](https://github.com/user-attachments/assets/2c5cdbb5-f058-4f9f-b562-7c2bc7da35a0)
+<img width="896" height="400" alt="download_all" src="https://github.com/user-attachments/assets/8b5a13ea-6313-4e86-9e47-87a5b1dfdd12" />
 
 ## Download Single Script
 
 From a script page, click the `Download raw file` near the upper right of code window.
+
+<img width="896" height="200" alt="download_script" src="https://github.com/user-attachments/assets/38f2006e-59af-4b8b-b379-84917c8e48bd" />
 
 ## Scripts
 
