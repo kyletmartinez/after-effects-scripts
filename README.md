@@ -128,6 +128,18 @@ a native After Effects expression controller then use the effect name instead.
 
 ***
 
+#### [Add Selected Compositions To Render Queue (v1.0)](/source/scripts/Add_Selected_Compositions_To_Render_Queue.jsx)
+
+Add the selected compositions to the Render queue defaulting to using the
+`H.264 MP4` Output Template. However, if the composition name contains the characters `_TEXT_`
+anywhere in the name, then use the `Apple ProRes 4444 + Alpha` Output Template.
+
+> [!CAUTION]
+> These script was built for a very specific use-case and requires both Output Templates to exist
+> in your After Effects project.
+
+***
+
 #### [Add Selection To New Folder (v1.0)](/source/scripts/Add_Selection_To_New_Folder.jsx)
 
 Add all selected items in the Project Panel to a new folder.
@@ -330,6 +342,12 @@ Cycle the composition background color between `black`, `gray`, and `white`.
 
 ***
 
+#### [Disable Selected Expressions (v1.0)](/source/scripts/Disable_Selected_Expressions.jsx)
+
+Disable the expression for all selected properties.
+
+***
+
 #### [Duplicate Selected Layer (v2.1)](/source/scripts/Duplicate_Selected_Layer.jsx)
 
 Duplicate the selected layer exactly like pressing `CMD/CTRL + D` but move the new
@@ -349,6 +367,12 @@ ignored.
 
 Enabled the `Motion Blur` switch on all compositions and on all eligible layers
 within the project.
+
+***
+
+#### [Enable Selected Expressions (v1.0)](/source/scripts/Enable_Selected_Expressions.jsx)
+
+Enable the expression for all selected properties.
 
 ***
 
@@ -424,6 +448,12 @@ Append `.value;` to the end of an expression recently set with the pickwhip.
 #### [Force Composition Panel Refresh (v2.1)](/source/scripts/Force_Composition_Panel_Refresh.jsx)
 
 Force the Composition Panel to refresh the current frame.
+
+***
+
+#### [Get Selected Layer Duration (v1.0)](/source/scripts/Get_Selected_Layer_Duration.jsx)
+
+Display the duration (seconds) for the currently selected layer.
 
 ***
 
