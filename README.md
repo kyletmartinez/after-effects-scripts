@@ -13,6 +13,8 @@ To run a script natively in After Effects use `File > Script > Run Script File..
 
 From the front page, click the green `Code` button and then click `Download ZIP.` From there, you can unzip the file and choose any script file you want.
 
+![download_all](https://github.com/user-attachments/assets/2c5cdbb5-f058-4f9f-b562-7c2bc7da35a0)
+
 ## Download Single Script
 
 From a script page, click the `Download raw file` near the upper right of code window.
@@ -61,7 +63,8 @@ precomposed character rigs.
 
 #### [Add Fill With Color Cycle (v2.3)](/source/scripts/Add_Fill_With_Color_Cycle.jsx)
 
-Add the Fill effect to all selected layers while cycling through `red`, `green`,`blue`, `yellow`, `magenta`, and `cyan`.
+Add the Fill effect to all selected layers while cycling through `red`, `green`,
+`blue`, `yellow`, `magenta`, and `cyan`.
 
 ***
 
