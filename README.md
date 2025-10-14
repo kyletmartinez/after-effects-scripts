@@ -550,17 +550,13 @@ Merge all imported and selected items in a previously existing and matching fold
 
 ***
 
-#### [Move Parametric Anchor Point (v1.2)](/source/scripts/Move_Parametric_Anchor_Point.jsx)
+#### [Move Parametric Anchor Point (v1.3)](/source/scripts/Move_Parametric_Anchor_Point.jsx)
 
 Select the `Position` property of a parametric Rectangle or Ellipse and apply an
 expression to move the Anchor Point. This allows shapes to have their sizes change but remain
-locked to one edge.
+locked to one edge or corner.
 
-Use the popup window to choose which side to move the Anchor Point:
-* `Top`
-* `Left`
-* `Bottom`
-* `Right`
+Use the popup window grid to choose which side or corner to move the Anchor Point.
 
 ***
 
@@ -997,3 +993,10 @@ Zero out the position of all selected layers.
 
 ***
 
+## Usage & Support
+
+Please keep in mind these scripts are provided as-is. They're written specifially to support my setup and After Effects workflow so they don't include extensive error handling or validation.
+
+Please review each script before using it to ensure it fits your workflow and file struture.
+
+While I'm more than happy to share these tools with the animation community, I'm unable to provide support or guarantee compatibility with all After Effects configurations. Feel free to fork and modify them to suit your needs!
