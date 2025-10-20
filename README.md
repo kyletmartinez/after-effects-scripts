@@ -13,13 +13,9 @@ To run a script natively in After Effects use `File > Script > Run Script File..
 
 From the front page, click the green `Code` button and then click `Download ZIP.` From there, you can unzip the file and choose any script file you want.
 
-<img width="896" height="400" alt="download_all" src="https://github.com/user-attachments/assets/8b5a13ea-6313-4e86-9e47-87a5b1dfdd12" />
-
 ## Download Single Script
 
 From a script page, click the `Download raw file` near the upper right of code window.
-
-<img width="896" height="200" alt="download_script" src="https://github.com/user-attachments/assets/38f2006e-59af-4b8b-b379-84917c8e48bd" />
 
 ## Scripts
 
@@ -65,8 +61,7 @@ precomposed character rigs.
 
 #### [Add Fill With Color Cycle (v2.3)](/source/scripts/Add_Fill_With_Color_Cycle.jsx)
 
-Add the Fill effect to all selected layers while cycling through `red`, `green`,
-`blue`, `yellow`, `magenta`, and `cyan`.
+Add the Fill effect to all selected layers while cycling through `red`, `green`,`blue`, `yellow`, `magenta`, and `cyan`.
 
 ***
 
@@ -332,6 +327,24 @@ Copy all markers from the currently selected layer to the current composition
 including duration, comments, and labels.
 
 Sister script to: `Copy_Composition_Markers_To_Layer.jsx`
+
+***
+
+#### [Create Shapes From Text (v1.0)](/source/scripts/Create_Shapes_From_Text.jsx)
+
+Convert all Text Layers in the current composition to Shape Layers using the
+`Menu > Layer > Create > Create Shapes from Text` command but with the following customizations:
+
+* Layers with names that start with `DNU` (`Do Not Use`) will be ignored
+* Previously converted layers will be ignored
+* Any resulting Stroke properties that are not enabled will be removed
+
+> [!WARNING]
+> Due to the use of the `app.findMenuCommandId();` method this script may only work in English
+> After Effects installations.
+
+Add an adjustment layer above the currently selected layer to break the 3D space of
+After Effects. If no layers are selected the adjustment layer will be added at the top.
 
 ***
 
