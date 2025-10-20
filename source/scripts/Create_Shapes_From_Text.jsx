@@ -14,9 +14,6 @@
  * > Due to the use of the "app.findMenuCommandId();" method this script may only work in English
  * > After Effects installations.
  *
- * Add an adjustment layer above the currently selected layer to break the 3D space of
- * After Effects. If no layers are selected the adjustment layer will be added at the top.
- *
  * @license This script is provided "as is," without warranty of any kind, expressed or implied. In
  * no event shall the author be held liable for any damages arising in any way from the use of this
  * script.
