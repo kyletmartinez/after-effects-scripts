@@ -347,9 +347,6 @@ Convert all Text Layers in the current composition to Shape Layers using the
 > Due to the use of the `app.findMenuCommandId();` method this script may only work in English
 > After Effects installations.
 
-Add an adjustment layer above the currently selected layer to break the 3D space of
-After Effects. If no layers are selected the adjustment layer will be added at the top.
-
 ***
 
 #### [Create Text Layers From File (v2.1)](/source/scripts/Create_Text_Layers_From_File.jsx)
