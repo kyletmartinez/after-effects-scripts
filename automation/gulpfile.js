@@ -5,20 +5,67 @@ const jsdoc2md = require("jsdoc-to-markdown");
 const path = require("path");
 const through = require("through2");
 
-const files = "../source/scripts/*.jsx";
+const categories = fs.readdirSync("../")
+    .filter(name => {
+        const fullPath = path.join("..", name);
+        return fs.statSync(fullPath).isDirectory() &&
+               name !== "automation" &&
+               name !== ".git" &&
+               !name.startsWith(".");
+    });
 
-gulp.task("build", done => {
-    jsdoc2md.render({
-        "template": fs.readFileSync("template.hbs", "utf8"),
-        "helper": "replace.js",
-        "files": files})
-    .then(output => fs.writeFileSync(`../README.md`, output));
-    return done();
+gulp.task("build", async () => {
+    const categoryTemplate = fs.readFileSync("template-category.hbs", "utf8");
+    const rootTemplate = fs.readFileSync("template-root.hbs", "utf8");
+
+    for (const category of categories) {
+        const categoryPath = path.join("..", category);
+        const files = path.join(categoryPath, "*.jsx");
+
+        try {
+            const customizedTemplate = categoryTemplate.replace(/{{categoryName}}/g, category);
+
+            const output = await jsdoc2md.render({
+                "template": customizedTemplate,
+                "helper": "replace.js",
+                "files": files
+            });
+
+            fs.writeFileSync(path.join(categoryPath, "README.md"), output);
+            console.log(`Generated README for ${category}`);
+        } catch (error) {
+            console.error(`Error generating README for ${category}:`, error.message);
+        }
+    }
+
+    const allScripts = categories.flatMap(cat =>
+        fs.readdirSync(path.join("..", cat))
+            .filter(file => file.endsWith(".jsx"))
+            .map(file => path.join("..", cat, file))
+    );
+
+    try {
+        const categoryList = categories.map(cat => `- [${cat}](/${cat})`).join("\n");
+        const customizedTemplate = rootTemplate.replace(/{{#each categories}}[\s\S]*?{{\/each}}/g, categoryList);
+
+        const output = await jsdoc2md.render({
+            "template": customizedTemplate,
+            "helper": "replace.js",
+            "files": allScripts
+        });
+
+        fs.writeFileSync("../README.md", output);
+        console.log("Generated root README");
+    } catch (error) {
+        console.error("Error generating root README:", error.message);
+    }
 });
 
 gulp.task("validate", () => {
     const nameRegex = /@name\s+(.+)/;
-    return gulp.src([files])
+    const allScripts = categories.map(cat => path.join("..", cat, "*.jsx"));
+
+    return gulp.src(allScripts)
         .pipe(
             through.obj(function (file, _, cb) {
                 if (file.isBuffer()) {
@@ -42,7 +89,9 @@ gulp.task("validate", () => {
 });
 
 gulp.task("lint", () => {
-    return gulp.src([files])
+    const allScripts = categories.map(cat => path.join("..", cat, "*.jsx"));
+
+    return gulp.src(allScripts)
         .pipe(eslint({configFile: ".eslintrc.json"}))
         .pipe(eslint.format())
         .pipe(eslint.failAfterError());

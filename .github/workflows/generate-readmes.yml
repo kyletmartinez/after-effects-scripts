@@ -1,0 +1,39 @@
+name: Generate READMEs
+
+on:
+  push:
+    paths:
+      - '**.jsx'
+      - 'automation/**'
+
+jobs:
+  generate-readmes:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: |
+          cd automation
+          npm install
+
+      - name: Run gulp
+        run: |
+          cd automation
+          npx gulp
+
+      - name: Commit and push if changed
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add '*/README.md' 'README.md'
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-generate READMEs" && git push)
