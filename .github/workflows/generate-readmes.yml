@@ -4,7 +4,7 @@ on:
   push:
     paths:
       - '**.jsx'
-      - 'automation/**'
+      - '.automation/**'
 
 jobs:
   generate-readmes:
@@ -23,12 +23,12 @@ jobs:
 
       - name: Install dependencies
         run: |
-          cd automation
+          cd .automation
           npm install
 
       - name: Run gulp
         run: |
-          cd automation
+          cd .automation
           npx gulp
 
       - name: Commit and push if changed
