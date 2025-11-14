@@ -43,14 +43,13 @@ After Effects `Text Layers` with no styling applied just in and out point timing
 
 ---
 
-### [Create Shapes From Text (v1.0)](Create_Shapes_From_Text.jsx)
+### [Create Shapes From Text (v1.1)](Create_Shapes_From_Text.jsx)
 
 Convert all Text Layers in the current composition to Shape Layers using the
 `Menu > Layer > Create > Create Shapes from Text` command but with the following customizations:
 
 * Layers with names that start with `DNU` (`Do Not Use`) will be ignored
 * Previously converted layers will be ignored
-* Any resulting Stroke properties that are not enabled will be removed
 
 > [!WARNING]
 > Due to the use of the `app.findMenuCommandId();` method this script may only work in English
