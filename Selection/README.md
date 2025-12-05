@@ -62,6 +62,12 @@ Randomly select any unlocked layer in the current composition.
 
 ---
 
+### [Select Shape Layers (v1.0)](Select_Shape_Layers.jsx)
+
+Select all `Shape Layers` in the current composition.
+
+---
+
 ### [Select Text Layers (v1.0)](Select_Text_Layers.jsx)
 
 Select all `Text Layers` in the current composition.

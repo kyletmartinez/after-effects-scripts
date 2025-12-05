@@ -44,6 +44,13 @@ Invert selected keyframe values.
 
 ---
 
+### [Keyframe Current Valuet From Expression (v1.0)](Keyframe_Current_Valuet_From_Expression.jsx)
+
+Add a keyframe at the Current Time Indicator for each selected property effectively
+snapshotting a post-expression value.
+
+---
+
 ### [Make Hold Keyframes (v2.1)](Make_Hold_Keyframes.jsx)
 
 Convert selected keyframes into hold keyframes.

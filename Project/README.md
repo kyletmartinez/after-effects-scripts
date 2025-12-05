@@ -103,6 +103,13 @@ Replace text in the name of all selected project items. RegEx is accepted.
 
 ---
 
+### [Reveal Project File (v1.0)](Reveal_Project_File.jsx)
+
+Attempt to reveal the project file location of a saved After Effects project in
+Finder on macOS or Explorer on Windows.
+
+---
+
 ### [Set All Item Labels To None (v2.1)](Set_All_Item_Labels_To_None.jsx)
 
 Set the label for all items in the current project to `None` or label `0`.

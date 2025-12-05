@@ -36,6 +36,12 @@ Hold the `ALT key` to force any combination to calculate `2D Distance`.
 
 ---
 
+### [Connect Layers With A Line (v1.0)](Connect_Layers_With_A_Line.jsx)
+
+Connect two layers with a Shape Layer stroked line.
+
+---
+
 ### [Convert SRT To Text Layers (v1.1)](Convert_SRT_To_Text_Layers.jsx)
 
 Run the script, select an SRT file, and automatically convert all subtitles into
@@ -99,6 +105,12 @@ Disable all selected layers.
 ### [Lock All Layers (v2.1)](Lock_All_Layers.jsx)
 
 Lock all layers in all conmpositions in the current project.
+
+---
+
+### [Match Layers To Newton Layers (v1.0)](Match_Layers_To_Newton_Layers.jsx)
+
+Copy position values then parent individual layers to a matching Newton layer.
 
 ---
 

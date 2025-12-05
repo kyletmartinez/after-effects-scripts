@@ -83,3 +83,17 @@ Toggle an expression that maintains visual scale for layer regardless of Z posit
 
 Find an replace all instances of a specific expression with a new expression.
 
+---
+
+### [Update Stroke Weight Expressions (v1.0)](Update_Stroke_Weight_Expressions.jsx)
+
+There are a few variations of a `Maintain Stroke Weight` expression floating around
+the internet but I believe mine is the best as it handles 0% scale much more elegantly. Use the
+script to replace a common alternate.
+
+OLD:
+`value / length(toComp([0,0]), toComp([0.7071,0.7071])) || 0.001;`
+
+NEW:
+`s = length(toComp([0,0]),toComp([0.7071,0.7071])); (s) ? value / s : 0;`
+
