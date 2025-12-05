@@ -24,6 +24,7 @@
         "PropertyType": "readonly",
         "PropertyValueType": "readonly",
         "ScriptUI": "readonly",
+        "ShapeLayer": "readonly",
         "TextLayer": "readonly",
         "TrackMatteType": "readonly",
         "Window": "readonly",
