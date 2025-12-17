@@ -18,7 +18,7 @@ labels, etc) the majority of the workflow is as workflow-agnostic as possible.
 
 > [!IMPORTANT]
 > Through trial-and-error I landed on using a modifier of `0.75` when converting Drop Shadow
-> `Softness` to * > Gaussian Blur `Blurriness`. For some reason using 75% of blur seems to match
+> `Softness` to Gaussian Blur `Blurriness`. For some reason using `75%`` of blur seems to match
 > the best.
 
 Learn more about [Lottie Supported Features](https://lottiefiles.com/supported-features)
