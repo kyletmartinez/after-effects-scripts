@@ -152,13 +152,6 @@ Posterize the start time of all layers in a composition to be on 2s.
 
 ---
 
-### [Prepare Layer Out Points For Lottie (v1.0)](Prepare_Layer_Out_Points_For_Lottie.jsx)
-
-Ensure that any layer active on the last from of the composition it's `Out Point`
-extended one frame past the end. This removes a bug from Lottie exports.
-
----
-
 ### [Randomize Layer Start Time (v2.3)](Randomize_Layer_Start_Time.jsx)
 
 Randomly shift the start time of all selected layers within a provided range.
