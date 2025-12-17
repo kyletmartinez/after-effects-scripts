@@ -22,6 +22,7 @@ Browse scripts by category:
 - [Expressions](/Expressions)
 - [Keyframes](/Keyframes)
 - [Layers](/Layers)
+- [Lottie](/Lottie)
 - [Markers](/Markers)
 - [Project](/Project)
 - [Properties](/Properties)
