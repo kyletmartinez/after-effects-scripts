@@ -7,6 +7,12 @@ all nested subfolders and add all compositions to the Render Queue.
 
 ---
 
+### [Add Labeled Items To Render Queue (v1.0)](Add_Labeled_Items_To_Render_Queue.jsx)
+
+Add all compositions to the Render Queue that have the specified label.
+
+---
+
 ### [Add Selected Compositions To Render Queue (v1.0)](Add_Selected_Compositions_To_Render_Queue.jsx)
 
 Add the selected compositions to the Render queue defaulting to using the

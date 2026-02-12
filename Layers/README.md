@@ -36,7 +36,7 @@ Hold the `ALT key` to force any combination to calculate `2D Distance`.
 
 ---
 
-### [Connect Layers With A Line (v1.0)](Connect_Layers_With_A_Line.jsx)
+### [Connect Two Layers With A Line (v1.1)](Connect_Two_Layers_With_A_Line.jsx)
 
 Connect two layers with a Shape Layer stroked line.
 

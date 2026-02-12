@@ -1,6 +1,6 @@
 # Scripts
 
-### [Frame Navigator (v1.0)](Frame_Navigator.jsx)
+### [Frame Navigator (v1.1)](Frame_Navigator.jsx)
 
 Easily navigate the timeline by moving the Current Time Indicator as needed:
 
@@ -16,7 +16,7 @@ Easily navigate the timeline by moving the Current Time Indicator as needed:
 
 ---
 
-### [Millseconds To Frames (v1.0)](Millseconds_To_Frames.jsx)
+### [Milliseconds To Frames (v1.1)](Milliseconds_To_Frames.jsx)
 
 Easily calcuate millseconds to frames and frames to milliseconds.
 
