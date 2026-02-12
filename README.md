@@ -27,6 +27,7 @@ Browse scripts by category:
 - [Project](/Project)
 - [Properties](/Properties)
 - [Selection](/Selection)
+- [Utilities](/Utilities)
 
 ## Usage & Support
 
