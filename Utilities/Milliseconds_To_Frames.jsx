@@ -1,6 +1,6 @@
 /**
- * @name Millseconds To Frames
- * @version 1.0
+ * @name Milliseconds To Frames
+ * @version 1.1
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Easily calcuate millseconds to frames and frames to milliseconds.

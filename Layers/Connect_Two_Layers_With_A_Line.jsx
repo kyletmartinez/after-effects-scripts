@@ -1,6 +1,6 @@
 /**
- * @name Connect Layers With A Line
- * @version 1.0
+ * @name Connect Two Layers With A Line
+ * @version 1.1
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Connect two layers with a Shape Layer stroked line.

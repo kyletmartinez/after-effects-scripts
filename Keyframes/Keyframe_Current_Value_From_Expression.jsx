@@ -1,6 +1,6 @@
 /**
- * @name Keyframe Current Valuet From Expression
- * @version 1.0
+ * @name Keyframe Current Value From Expression
+ * @version 1.1
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Add a keyframe at the Current Time Indicator for each selected property effectively
@@ -14,7 +14,7 @@
  */
 
 (function keyframeCurrentValueFromExpression() {
-    app.beginUndoGroup("Keyframe Current Valuet From Expression");
+    app.beginUndoGroup("Keyframe Current Value From Expression");
     var comp = app.project.activeItem;
     var currentTime = comp.time;
     var properties = comp.selectedProperties;
