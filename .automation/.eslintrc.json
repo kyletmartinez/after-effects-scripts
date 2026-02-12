@@ -20,6 +20,7 @@
         "KeyframeEase": "readonly",
         "KeyframeInterpolationType": "readonly",
         "MarkerValue": "readonly",
+        "Panel": "readonly",
         "prompt": "readonly",
         "PropertyType": "readonly",
         "PropertyValueType": "readonly",
