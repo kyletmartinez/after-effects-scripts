@@ -109,6 +109,15 @@ Replace text in the name of all selected project items. RegEx is accepted.
 
 ---
 
+### [Reset Imported Item Names (v1.0)](Reset_Imported_Item_Names.jsx)
+
+Reset the name for all selected imported items in the Project Panel.
+
+Useful for when a file name is changed on the operating system side then relinked in After
+Effects but the name doesn't update.
+
+---
+
 ### [Reveal Project File (v1.0)](Reveal_Project_File.jsx)
 
 Attempt to reveal the project file location of a saved After Effects project in

@@ -19,6 +19,12 @@ Add the Fill effect to all selected layers while cycling through `red`, `green`,
 
 ---
 
+### [Append To Layer Name (v1.0)](Append_To_Layer_Name.jsx)
+
+Append text to the beginning of the layer name for all selected layers.
+
+---
+
 ### [Calculate Distance Between Layers (v2.3)](Calculate_Distance_Between_Layers.jsx)
 
 Calculate the distance between any two layers.
@@ -197,6 +203,12 @@ set up using the old style of mattes where mattes were required to be directly a
 
 Replace the selected `Grid Rig Control` null layer created by `Flex by Zack Lovatt`
 with a shape layer. This script assumes default and un-keyframed values.
+
+---
+
+### [Replace Text In Layer Name (v1.0)](Replace_Text_In_Layer_Name.jsx)
+
+Replace text in the name of all selected layers. RegEx is accepted.
 
 ---
 
