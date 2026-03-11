@@ -77,6 +77,18 @@ Use the popup window grid to choose which side or corner to move the Anchor Poin
 
 ---
 
+### [Remove Disabled Strokes (v1.0)](Remove_Disabled_Strokes.jsx)
+
+Select any shape layers and run the script to remove all disabled Stroke properties.
+
+When converting a typing animation from `Text Animator` to `Shape layer` for Lottie my workflow
+typically uses:
+1. `Layers/Create_Shapes_From_Text.jsx`
+2. `Properties/Remove_Disabled_Strokes.jsx`
+3. `Keyframes/Keyframe_Group_Opacities.jsx`
+
+---
+
 ### [Rename Selected Properties (v1.0)](Rename_Selected_Properties.jsx)
 
 Rename the selected properties appending numbers as needed.

@@ -51,6 +51,19 @@ snapshotting a post-expression value.
 
 ---
 
+### [Keyframe Group Opacities (v1.0)](Keyframe_Group_Opacities.jsx)
+
+Select any shape layers and run the script to add a keyframe to all group Opacity
+properties at the Current Time Indicator.
+
+When converting a typing animation from `Text Animator` to `Shape layer` for Lottie my workflow
+typically uses:
+1. `Layers/Create_Shapes_From_Text.jsx`
+2. `Properties/Remove_Disabled_Strokes.jsx`
+3. `Keyframes/Keyframe_Group_Opacities.jsx`
+
+---
+
 ### [Make Hold Keyframes (v2.1)](Make_Hold_Keyframes.jsx)
 
 Convert selected keyframes into hold keyframes.
