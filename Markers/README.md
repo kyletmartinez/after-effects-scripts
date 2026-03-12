@@ -36,7 +36,7 @@ Sister script to: `Copy_Layer_Makers_To_Composition.jsx`
 
 ---
 
-### [Copy Layer Makers To Composition (v2.2)](Copy_Layer_Makers_To_Composition.jsx)
+### [Copy Layer Markers To Composition (v2.2)](Copy_Layer_Markers_To_Composition.jsx)
 
 Copy all markers from the currently selected layer to the current composition
 including duration, comments, and labels.

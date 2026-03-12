@@ -91,7 +91,7 @@ current project.
 
 ### [Find Specific Effect (v2.2)](Find_Specific_Effect.jsx)
 
-Find all instances of a specific efffect in the current project. Add additional
+Find all instances of a specific effect in the current project. Add additional
 effects to be checked to the `MatchNames` object.
 
 ---
@@ -110,7 +110,7 @@ Disable all selected layers.
 
 ### [Lock All Layers (v2.1)](Lock_All_Layers.jsx)
 
-Lock all layers in all conmpositions in the current project.
+Lock all layers in all compositions in the current project.
 
 ---
 
@@ -177,7 +177,7 @@ Rename the selected layers append letters as needed.
 
 ---
 
-### [Rename Selected Layers With Numbers (v2.2)](Rename_Selected_Layers_With_Numbers.jsx)
+### [Rename Selected Layers With Numbers (v2.3)](Rename_Selected_Layers_With_Numbers.jsx)
 
 Rename the selected layers appending zero-padded numbers as needed.
 
@@ -286,7 +286,7 @@ Add additional effects to be checked to the `MatchNames` object.
 
 ### [Unlock All Layers (v2.1)](Unlock_All_Layers.jsx)
 
-Unlock all layers in all conmpositions in the current project.
+Unlock all layers in all compositions in the current project.
 
 ---
 

@@ -18,5 +18,5 @@ Easily navigate the timeline by moving the Current Time Indicator as needed:
 
 ### [Milliseconds To Frames (v1.1)](Milliseconds_To_Frames.jsx)
 
-Easily calcuate millseconds to frames and frames to milliseconds.
+Easily calculate milliseconds to frames and frames to milliseconds.
 

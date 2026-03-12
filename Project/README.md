@@ -58,7 +58,7 @@ Export all selected text layers to a single `export.txt` text file on the deskto
 
 ---
 
-### [Manually Render PNG Sequence (v1.0)](Manually_Render_PNG_Sequence.jsx)
+### [Manually Render PNG Sequence (v1.1)](Manually_Render_PNG_Sequence.jsx)
 
 I wrote this script because the Render Queue was being annoying, spitting out
 renders with issues, and I didn't have time to troubleshoot the problem.
@@ -91,7 +91,7 @@ Rename the source of the currently selected layer.
 
 ---
 
-### [Rename Selected Project Items (v2.2)](Rename_Selected_Project_Items.jsx)
+### [Rename Selected Project Items (v2.3)](Rename_Selected_Project_Items.jsx)
 
 Rename selected project items appending zero-padded numbers as needed.
 
