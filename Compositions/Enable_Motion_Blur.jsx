@@ -1,6 +1,6 @@
 /**
  * @name Enable Motion Blur
- * @version 1.0
+ * @version 1.1
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Enabled the "Motion Blur" switch on all compositions and on all eligible layers
@@ -15,28 +15,41 @@
 
 (function enableMotionBlur() {
 
-    function iterateThroughLayers(comp) {
+    function enableLayerMotionBlur(comp, motionBlur) {
         var layers = comp.layers;
-        for (var l = comp.numLayers; l > 0; l--) {
+        var numLayers = layers.length;
+        for (var l = 1; l <= numLayers; l++) {
             var layer = layers[l];
-            layer.locked = false;
-            if (layer.enabled === true) {
-                if (layer.threeDLayer === true) {
-                    layer.motionBlur = true;
-                }
+            layer.motionBlur = motionBlur;
+        }
+    }
+
+    function enableCompositionLayerBlur(project, motionBlur) {
+        var items = project.items;
+        var numItems = items.length;
+        for (var i = 1; i <= numItems; i++) {
+            var item = items[i];
+            if (item instanceof CompItem) {
+                item.motionBlur = motionBlur;
+                enableLayerMotionBlur(item, motionBlur);
             }
         }
     }
 
-    app.beginUndoGroup("Enable Motion Blur");
-    var project = app.project;
-    var items = project.items;
-    for (var i = project.numItems; i > 0; i--) {
-        var item = items[i];
-        if (item instanceof CompItem) {
-            item.motionBlur = true;
-            iterateThroughLayers(item);
-        }
+    function getMotionBlur() {
+        var win = new Window("dialog", "Enable Motion Blur");
+        win.orientation = "row";
+        var oButton = win.add("button", undefined, "Enable", {"name": "ok"});
+        var cButton = win.add("button", undefined, "Disable", {"name": "cancel"});
+        oButton.active = true;
+        cButton.active = false;
+        return (win.show() === 1);
     }
+
+    var motionBlur = getMotionBlur();
+    var undoGroup = (motionBlur) ? "Enable All Motion Blur" : "Disable All Motion Blur";
+    app.beginUndoGroup(undoGroup);
+    enableCompositionLayerBlur(app.project, motionBlur);
     app.endUndoGroup();
+
 })();
