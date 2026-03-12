@@ -1,5 +1,12 @@
 # Scripts
 
+### [Add Assorted Composition Guides (v1.0)](Add_Assorted_Composition_Guides.jsx)
+
+Add guides to the current composition. Supports `Edges`, `Center`, `Action Safe`,
+and `Title Safe` at all aspect ratios.
+
+---
+
 ### [Add Background Layer (v1.2)](Add_Background_Layer.jsx)
 
 Add a background layer to the current composition that will stay centered and match
@@ -87,7 +94,7 @@ ignored.
 
 ---
 
-### [Enable Motion Blur (v1.0)](Enable_Motion_Blur.jsx)
+### [Enable Motion Blur (v1.1)](Enable_Motion_Blur.jsx)
 
 Enabled the `Motion Blur` switch on all compositions and on all eligible layers
 within the project.

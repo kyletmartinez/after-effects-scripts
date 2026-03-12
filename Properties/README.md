@@ -61,6 +61,13 @@ This script does not currently support `Dropdown Menu Control`.
 
 ---
 
+### [Flip Path (v1.0)](Flip_Path.jsx)
+
+Flip a `Shape` or `Mask` path either `Horizontally` or `Vertically`. Supports both
+static paths and keyframed paths.
+
+---
+
 ### [Increase All Pin Sizes (v1.1)](Increase_All_Pin_Sizes.jsx)
 
 Increase the scale of all DuIK Pin layers in the current project.
