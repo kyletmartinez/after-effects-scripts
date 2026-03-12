@@ -1,6 +1,6 @@
 /**
  * @name Rename Selected Layers With Numbers
- * @version 2.2
+ * @version 2.3
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description Rename the selected layers appending zero-padded numbers as needed.
@@ -14,16 +14,17 @@
 
 (function renameLayersWithNumbers() {
 
-    String.prototype.padStart = function(length, pad) {
-        return Array(Math.max(length - this.length + 1, 0)).join(pad) + String(this);
-    };
+    function padStart(str, length, pad) {
+        str = String(str);
+        return Array(Math.max(length - str.length + 1, 0)).join(pad) + str;
+    }
 
     function getLength(numLayers) {
         return Math.max(numLayers.toString().length, 2);
     }
 
     function getNumber(index, length) {
-        return String(index).padStart(length, "0");
+        return padStart(index, length, "0");
     }
 
     function renameLayers(layers, numLayers, name) {

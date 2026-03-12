@@ -1,6 +1,6 @@
 /**
  * @name Manually Render PNG Sequence
- * @version 1.0
+ * @version 1.1
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
  * @description I wrote this script because the Render Queue was being annoying, spitting out
@@ -23,9 +23,10 @@
 
 (function manuallyRenderPNGSequence() {
 
-    String.prototype.padStart = function(targetLength, padString) {
-        return Array(Math.max(targetLength - this.length + 1, 0)).join(padString) + String(this);
-    };
+    function padStart(str, length, pad) {
+        str = String(str);
+        return Array(Math.max(length - str.length + 1, 0)).join(pad) + str;
+    }
 
     function timeToFrames(time, frameRate) {
         return Math.round(time * frameRate);
@@ -33,7 +34,7 @@
 
     function exportFrame(comp, path) {
         var frames = timeToFrames(comp.time, comp.frameRate);
-        var name = comp.name + "_" + String(frames).padStart(5, "0");
+        var name = comp.name + "_" + padStart(frames, 5, "0");
         comp.saveFrameToPng(comp.time, File(path + "/" + name + ".png"));
         var workAreaEnd = comp.workAreaStart + comp.workAreaDuration;
         if (comp.time <= workAreaEnd) {
