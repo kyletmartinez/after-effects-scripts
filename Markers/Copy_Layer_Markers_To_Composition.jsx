@@ -1,5 +1,5 @@
 /**
- * @name Copy Layer Makers To Composition
+ * @name Copy Layer Markers To Composition
  * @version 2.2
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
