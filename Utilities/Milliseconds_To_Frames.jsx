@@ -3,7 +3,7 @@
  * @version 1.1
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
- * @description Easily calcuate millseconds to frames and frames to milliseconds.
+ * @description Easily calculate milliseconds to frames and frames to milliseconds.
  *
  * @license This script is provided "as is," without warranty of any kind, expressed or implied. In
  * no event shall the author be held liable for any damages arising in any way from the use of this

@@ -3,7 +3,7 @@
  * @version 2.1
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
- * @description Unlock all layers in all conmpositions in the current project.
+ * @description Unlock all layers in all compositions in the current project.
  *
  * @license This script is provided "as is," without warranty of any kind, expressed or implied. In
  * no event shall the author be held liable for any damages arising in any way from the use of this

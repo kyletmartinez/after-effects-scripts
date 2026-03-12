@@ -3,7 +3,7 @@
  * @version 2.2
  * @author Kyle Martinez <www.kyle-martinez.com>
  *
- * @description Find all instances of a specific efffect in the current project. Add additional
+ * @description Find all instances of a specific effect in the current project. Add additional
  * effects to be checked to the "MatchNames" object.
  *
  * @license This script is provided "as is," without warranty of any kind, expressed or implied. In
