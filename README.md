@@ -1,18 +1,22 @@
-# After Effects Scripts
+# 🚀 After Effects Scripts
 
 A collection of helpful workflow scripts for After Effects that either run natively right from the After Effects menu or partner well with 3rd party tools from [aescripts + aeplugins](https://aescripts.com/) such as [KBar3](https://aescripts.com/kbar/), [Tool Launcher](https://aescripts.com/tool-launcher/), [Quick Menu 3](https://aescripts.com/quick-menu/).
 
 To run a script natively in After Effects use `File > Script > Run Script File...` and choose the script.
 
-## Download Entire Collection
+## 💾 Download Scripts
 
-From the front page, click the green `Code` button and then click `Download ZIP.` From there, you can unzip the file and choose any script file you want.
+There are two ways to download these tools:
 
-## Download Single Script
+### 📄 Download Single Script
 
 From a script page, click the `Download raw file` near the upper right of code window.
 
-## Script Categories
+### 📁 Download Entire Collection
+
+From the front page, click the green `Code` button and then click `Download ZIP.` From there, you can unzip the file and choose any script file you want.
+
+## 🧩 Script Categories
 
 Browse scripts by category:
 
@@ -27,7 +31,7 @@ Browse scripts by category:
 - [Selection](/Selection)
 - [Utilities](/Utilities)
 
-## Usage & Support
+## 💡 Usage & Support
 
 Please keep in mind these scripts are provided as-is. They're written specifially to support my setup and After Effects workflow so they don't include extensive error handling or validation.
 
