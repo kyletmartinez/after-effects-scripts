@@ -98,3 +98,11 @@ reducing the amount of keyframes after using the `Convert Expression to Keyframe
 Round the values for all selected keyframes to the nearest whole number. Currently
 supports basic properties with 1, 2, or 3 dimensions.
 
+---
+
+### [Set Spacial In Tangent (v1.0)](Set_Spacial_In_Tangent.jsx)
+
+Set the spacial in tangent for the selected position keyframe to be 50% of the
+distance between the current keyframe and the previous keyframe. Helpful in animating natural
+mouse cursor movements.
+
