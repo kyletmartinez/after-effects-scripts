@@ -1,5 +1,11 @@
 # Scripts
 
+### [Alert Selected Layer Index (v1.0)](Alert_Selected_Layer_Index.jsx)
+
+Alert the selected layer index.
+
+---
+
 ### [Frame Navigator (v1.1)](Frame_Navigator.jsx)
 
 Easily navigate the timeline by moving the Current Time Indicator as needed:

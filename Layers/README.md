@@ -218,6 +218,13 @@ Reset the name for all layers in the current composition.
 
 ---
 
+### [Reset Selected Layer Labels (v1.0)](Reset_Selected_Layer_Labels.jsx)
+
+Restore all selected layer labels to their default as defined in the After Effects
+preferences.
+
+---
+
 ### [Set All Layer Labels To None (v2.1)](Set_All_Layer_Labels_To_None.jsx)
 
 Set the label for all layers in the current composition to `None` or label `0`.
