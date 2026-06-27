@@ -1,0 +1,40 @@
+# 🚀 After Effects Scripts
+
+A collection of helpful workflow scripts for After Effects that either run natively right from the After Effects menu or partner well with 3rd party tools from [aescripts + aeplugins](https://aescripts.com/) such as [KBar3](https://aescripts.com/kbar/), [Tool Launcher](https://aescripts.com/tool-launcher/), [Quick Menu 3](https://aescripts.com/quick-menu/).
+
+To run a script natively in After Effects use `File > Script > Run Script File...` and choose the script.
+
+## 💾 Download Scripts
+
+There are two ways to download these tools:
+
+### 📄 Download Single Script
+
+From a script page, click the `Download raw file` near the upper right of code window.
+
+### 📁 Download Entire Collection
+
+From the front page, click the green `Code` button and then click `Download ZIP.` From there, you can unzip the file and choose any script file you want.
+
+## 🧩 Script Categories
+
+Browse scripts by category:
+
+- 🎬 [Compositions](/Compositions)
+- 🤖 [Expressions](/Expressions)
+- 💎 [Keyframes](/Keyframes)
+- 🥞 [Layers](/Layers)
+- 🪶 [Lottie](/Lottie)
+- 🏷️ [Markers](/Markers)
+- 🗄️ [Project](/Project)
+- 🎛️ [Properties](/Properties)
+- 🎯 [Selection](/Selection)
+- 🧰 [Utilities](/Utilities)
+
+## 💡 Usage & Support
+
+Please keep in mind these scripts are provided as-is. They're written specifially to support my setup and After Effects workflow so they don't include extensive error handling or validation.
+
+Please review each script before using it to ensure it fits your workflow and file struture.
+
+While I'm more than happy to share these tools with the animation community, I'm unable to provide support or guarantee compatibility with all After Effects configurations. Feel free to fork and modify them to suit your needs!
