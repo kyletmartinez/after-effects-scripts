@@ -32,6 +32,7 @@
         "ShapeLayer": "readonly",
         "SolidSource": "readonly",
         "TextLayer": "readonly",
+        "timeToCurrentFormat": "readonly",
         "TrackMatteType": "readonly",
         "Window": "readonly",
         "writeLn": "readonly"
