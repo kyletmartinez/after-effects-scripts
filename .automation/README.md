@@ -1,30 +1,41 @@
 # ⚙️ Automation
 
-This Gulp workflow was built to leverage my extensive use of [JSDoc](https://jsdoc.app/) comments with all of the script files and easily built the `README.md` file automatically from preexisting documentation.
+This Gulp workflow leverages [JSDoc](https://jsdoc.app/) comments in script files to automatically generate `README.md` files.
 
-Simply navigate to `/automation`and run the `gulp` command. The `gulpfile` will default to running all three tasks however, each task can be run individually as well.
+From the `.automation` directory, run:
 
-`after-effects-scripts/automation % gulp`
+```bash
+npm run default   # Runs lint, validate, and build
+npm run lint      # Lint only
+npm run validate  # Validate only
+npm run build     # Build only
+```
 
 ## 🧼 Lint
 
-`after-effects-scripts/automation % gulp lint`
+```bash
+npm run lint
+```
 
-I'm using [eslint](https://eslint.org/) to keep script files bug-free and consistently formatted based on my [.eslintrc.json](.eslintrc.json) rules.
+Uses [ESLint 10](https://eslint.org/) with flat config ([eslint.config.mjs](eslint.config.mjs)) to enforce code quality and consistent formatting.
 
-* `Parser options` - ExtendScript runs an older version of JavaScript
-* `Global variables` - variables defined within the ExtendScript environment in After Effects
-* `Rules` - formatting standards based on personal preferrence
+* `Parser options` - ExtendScript (older JavaScript version)
+* `Global variables` - After Effects ExtendScript environment
+* `Rules` - Formatting standards
 
 ## 🔎 Validate
 
-`after-effects-scripts/automation % gulp validate`
+```bash
+npm run validate
+```
 
-Because links are built using the `@name` within each script I need to ensure that `@name` and file name match perfectly (replacing spaces with `_` underscores of course!).
+Ensures that the `@name` JSDoc comment matches the filename exactly (with spaces replaced by underscores).
 
 ## 📝 Build
 
-`after-effects-scripts/automation % gulp build`
+```bash
+npm run build
+```
 
 The primary `README.md` and each category `README.md` are built automatically using [Handlebars](https://handlebarsjs.com/).
 
