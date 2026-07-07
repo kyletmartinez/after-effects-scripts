@@ -1,9 +1,9 @@
-const eslint = require("gulp-eslint");
 const fs = require("fs");
 const gulp = require("gulp");
 const jsdoc2md = require("jsdoc-to-markdown");
 const path = require("path");
-const through = require("through2");
+const through = require("through2").default;
+const {ESLint} = require("eslint");
 
 const categories = fs.readdirSync("../")
     .filter(name => {
@@ -107,13 +107,28 @@ gulp.task("validate", () => {
         );
 });
 
-gulp.task("lint", () => {
-    const allScripts = categories.map(cat => path.join("..", cat, "*.jsx"));
+gulp.task("lint", async() => {
+    const allScripts = categories.flatMap(cat => {
+        const dir = path.join("..", cat);
+        return fs.readdirSync(dir)
+            .filter(file => file.endsWith(".jsx"))
+            .map(file => path.join(dir, file));
+    });
 
-    return gulp.src(allScripts)
-        .pipe(eslint({configFile: ".eslintrc.json"}))
-        .pipe(eslint.format())
-        .pipe(eslint.failAfterError());
+    const eslintInstance = new ESLint({
+        "overrideConfigFile": "eslint.config.mjs",
+        "allowInlineConfig": false
+    });
+    const results = await eslintInstance.lintFiles(allScripts, {"warnIgnored": false});
+
+    const hasErrors = results.some(result => result.errorCount > 0);
+
+    if (hasErrors) {
+        const formatter = await eslintInstance.loadFormatter("stylish");
+        const resultText = await formatter.format(results);
+        console.log(resultText);
+        throw new Error("ESLint errors found");
+    }
 });
 
 gulp.task("default", gulp.series("lint", "validate", "build"));

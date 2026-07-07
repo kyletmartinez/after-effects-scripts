@@ -1,45 +1,50 @@
-{
-    "parserOptions": {
+import { defineConfig } from "eslint/config";
+
+export default defineConfig([{
+    "files": ["../**/*.jsx"],
+    "languageOptions": {
+        "globals": {
+            "alert": "readonly",
+            "app": "readonly",
+            "AVLayer": "readonly",
+            "BlendingMode": "readonly",
+            "CameraLayer": "readonly",
+            "CompItem": "readonly",
+            "currentFormatToTime": "readonly",
+            "File": "readonly",
+            "Folder": "readonly",
+            "FolderItem": "readonly",
+            "FootageItem": "readonly",
+            "FramesCountType": "readonly",
+            "generateRandomNumber": "readonly",
+            "KeyframeEase": "readonly",
+            "KeyframeInterpolationType": "readonly",
+            "LightLayer": "readonly",
+            "MarkerValue": "readonly",
+            "Panel": "readonly",
+            "PREFType": "readonly",
+            "prompt": "readonly",
+            "PropertyType": "readonly",
+            "PropertyValueType": "readonly",
+            "ScriptUI": "readonly",
+            "Shape": "readonly",
+            "ShapeLayer": "readonly",
+            "SolidSource": "readonly",
+            "TextLayer": "readonly",
+            "timeToCurrentFormat": "readonly",
+            "TrackMatteType": "readonly",
+            "Window": "readonly",
+            "writeLn": "readonly"
+        },
         "ecmaVersion": 3,
         "sourceType": "script",
-        "allowReserved": false
-    },
-    "globals": {
-        "alert": "readonly",
-        "app": "readonly",
-        "AVLayer": "readonly",
-        "BlendingMode": "readonly",
-        "CameraLayer": "readonly",
-        "CompItem": "readonly",
-        "currentFormatToTime": "readonly",
-        "File": "readonly",
-        "Folder": "readonly",
-        "FolderItem": "readonly",
-        "FootageItem": "readonly",
-        "FramesCountType": "readonly",
-        "generateRandomNumber": "readonly",
-        "KeyframeEase": "readonly",
-        "KeyframeInterpolationType": "readonly",
-        "LightLayer": "readonly",
-        "MarkerValue": "readonly",
-        "Panel": "readonly",
-        "PREFType": "readonly",
-        "prompt": "readonly",
-        "PropertyType": "readonly",
-        "PropertyValueType": "readonly",
-        "ScriptUI": "readonly",
-        "Shape": "readonly",
-        "ShapeLayer": "readonly",
-        "SolidSource": "readonly",
-        "TextLayer": "readonly",
-        "timeToCurrentFormat": "readonly",
-        "TrackMatteType": "readonly",
-        "Window": "readonly",
-        "writeLn": "readonly"
+        "parserOptions": {
+            "allowReserved": false
+        }
     },
     "rules": {
         "array-bracket-newline": ["error", {
-            "multiline": true
+            "multiline": true,
         }],
         "array-bracket-spacing": ["error", "never"],
         "array-element-newline": ["error", "consistent"],
@@ -87,7 +92,7 @@
         "no-implicit-globals": ["error"],
         "no-mixed-spaces-and-tabs": ["error"],
         "no-plusplus": ["error", {
-            "allowForLoopAfterthoughts": true
+            "allowForLoopAfterthoughts": true,
         }],
         "no-proto": ["error"],
         "no-shadow-restricted-names": ["error"],
@@ -103,6 +108,7 @@
                 "multiline": true,
                 "minProperties": 2
             },
+
             "ObjectPattern": "never",
             "ImportDeclaration": "never",
             "ExportDeclaration": "never"
@@ -128,6 +134,6 @@
             "after": true
         }],
         "wrap-iife": ["error", "inside"],
-        "wrap-regex": ["error"]
+        "wrap-regex": ["error"],
     }
-}
+}]);
