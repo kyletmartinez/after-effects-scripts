@@ -1,56 +1,61 @@
-{
-    "parserOptions": {
+import { defineConfig } from "eslint/config";
+
+export default defineConfig([{
+    "files": ["../**/*.jsx"],
+    "languageOptions": {
+        "globals": {
+            "alert": "readonly",
+            "app": "readonly",
+            "AVLayer": "readonly",
+            "BlendingMode": "readonly",
+            "CameraLayer": "readonly",
+            "CompItem": "readonly",
+            "currentFormatToTime": "readonly",
+            "File": "readonly",
+            "Folder": "readonly",
+            "FolderItem": "readonly",
+            "FootageItem": "readonly",
+            "FramesCountType": "readonly",
+            "generateRandomNumber": "readonly",
+            "KeyframeEase": "readonly",
+            "KeyframeInterpolationType": "readonly",
+            "LightLayer": "readonly",
+            "MarkerValue": "readonly",
+            "Panel": "readonly",
+            "PREFType": "readonly",
+            "prompt": "readonly",
+            "PropertyType": "readonly",
+            "PropertyValueType": "readonly",
+            "ScriptUI": "readonly",
+            "Shape": "readonly",
+            "ShapeLayer": "readonly",
+            "SolidSource": "readonly",
+            "TextLayer": "readonly",
+            "timeToCurrentFormat": "readonly",
+            "TrackMatteType": "readonly",
+            "Window": "readonly",
+            "writeLn": "readonly",
+        },
         "ecmaVersion": 3,
         "sourceType": "script",
-        "allowReserved": false
-    },
-    "globals": {
-        "alert": "readonly",
-        "app": "readonly",
-        "AVLayer": "readonly",
-        "BlendingMode": "readonly",
-        "CameraLayer": "readonly",
-        "CompItem": "readonly",
-        "currentFormatToTime": "readonly",
-        "File": "readonly",
-        "Folder": "readonly",
-        "FolderItem": "readonly",
-        "FootageItem": "readonly",
-        "FramesCountType": "readonly",
-        "generateRandomNumber": "readonly",
-        "KeyframeEase": "readonly",
-        "KeyframeInterpolationType": "readonly",
-        "LightLayer": "readonly",
-        "MarkerValue": "readonly",
-        "Panel": "readonly",
-        "PREFType": "readonly",
-        "prompt": "readonly",
-        "PropertyType": "readonly",
-        "PropertyValueType": "readonly",
-        "ScriptUI": "readonly",
-        "Shape": "readonly",
-        "ShapeLayer": "readonly",
-        "SolidSource": "readonly",
-        "TextLayer": "readonly",
-        "timeToCurrentFormat": "readonly",
-        "TrackMatteType": "readonly",
-        "Window": "readonly",
-        "writeLn": "readonly"
+        "parserOptions": {
+            "allowReserved": false,
+        },
     },
     "rules": {
         "array-bracket-newline": ["error", {
-            "multiline": true
+            "multiline": true,
         }],
         "array-bracket-spacing": ["error", "never"],
         "array-element-newline": ["error", "consistent"],
         "block-spacing": ["error", "never"],
         "brace-style": ["error", "1tbs", {
-            "allowSingleLine": true
+            "allowSingleLine": true,
         }],
         "comma-dangle": ["error", "never"],
         "comma-spacing": ["error", {
             "before": false,
-            "after": true
+            "after": true,
         }],
         "comma-style": ["error", "last"],
         "computed-property-spacing": ["error", "never"],
@@ -61,22 +66,22 @@
         "function-call-argument-newline": ["error", "never"],
         "function-paren-newline": ["error", "never"],
         "indent": ["error", 4, {
-            "SwitchCase": 1
+            "SwitchCase": 1,
         }],
         "key-spacing": ["error", {
             "beforeColon": false,
-            "afterColon": true
+            "afterColon": true,
         }],
         "keyword-spacing": ["error", {
             "before": true,
-            "after": true
+            "after": true,
         }],
         "line-comment-position": ["error", "above"],
         "max-len": ["error", {
-            "code": 100
+            "code": 100,
         }],
         "max-statements-per-line": ["error", {
-            "max": 1
+            "max": 1,
         }],
         "multiline-comment-style": ["error", "starred-block"],
         "multiline-ternary": ["error", "never"],
@@ -87,7 +92,7 @@
         "no-implicit-globals": ["error"],
         "no-mixed-spaces-and-tabs": ["error"],
         "no-plusplus": ["error", {
-            "allowForLoopAfterthoughts": true
+            "allowForLoopAfterthoughts": true,
         }],
         "no-proto": ["error"],
         "no-shadow-restricted-names": ["error"],
@@ -101,11 +106,12 @@
         "object-curly-newline": ["error", {
             "ObjectExpression": {
                 "multiline": true,
-                "minProperties": 2
+                "minProperties": 2,
             },
+
             "ObjectPattern": "never",
             "ImportDeclaration": "never",
-            "ExportDeclaration": "never"
+            "ExportDeclaration": "never",
         }],
         "object-curly-spacing": ["error", "never"],
         "object-property-newline": ["error"],
@@ -120,14 +126,14 @@
         "space-infix-ops": ["error"],
         "space-unary-ops": ["error", {
             "words": true,
-            "nonwords": false
+            "nonwords": false,
         }],
         "spaced-comment": ["error", "always"],
         "switch-colon-spacing": ["error", {
             "before": false,
-            "after": true
+            "after": true,
         }],
         "wrap-iife": ["error", "inside"],
-        "wrap-regex": ["error"]
-    }
-}
+        "wrap-regex": ["error"],
+    },
+}]);
