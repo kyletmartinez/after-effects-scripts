@@ -42,6 +42,13 @@ for other values.
 
 ---
 
+### [Change Composition Background (v1.0)](Change_Composition_Background.jsx)
+
+Change the background color of the current composition using interactive color
+swatches.
+
+---
+
 ### [Change Nested Composition Background (v2.1)](Change_Nested_Composition_Background.jsx)
 
 Change the background color of the current composition and all nested compositions.

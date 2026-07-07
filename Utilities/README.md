@@ -6,6 +6,13 @@ Alert the selected layer index.
 
 ---
 
+### [Current Time Formatter (v1.0)](Current_Time_Formatter.jsx)
+
+Hover over the panel to update current time in multiple formats: `timecode`,
+`seconds`, `frames`, and `milliseconds`.
+
+---
+
 ### [Frame Navigator (v1.1)](Frame_Navigator.jsx)
 
 Easily navigate the timeline by moving the Current Time Indicator as needed:
