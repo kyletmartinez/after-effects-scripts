@@ -34,13 +34,13 @@ export default defineConfig([{
             "timeToCurrentFormat": "readonly",
             "TrackMatteType": "readonly",
             "Window": "readonly",
-            "writeLn": "readonly",
+            "writeLn": "readonly"
         },
         "ecmaVersion": 3,
         "sourceType": "script",
         "parserOptions": {
-            "allowReserved": false,
-        },
+            "allowReserved": false
+        }
     },
     "rules": {
         "array-bracket-newline": ["error", {
@@ -50,12 +50,12 @@ export default defineConfig([{
         "array-element-newline": ["error", "consistent"],
         "block-spacing": ["error", "never"],
         "brace-style": ["error", "1tbs", {
-            "allowSingleLine": true,
+            "allowSingleLine": true
         }],
         "comma-dangle": ["error", "never"],
         "comma-spacing": ["error", {
             "before": false,
-            "after": true,
+            "after": true
         }],
         "comma-style": ["error", "last"],
         "computed-property-spacing": ["error", "never"],
@@ -66,22 +66,22 @@ export default defineConfig([{
         "function-call-argument-newline": ["error", "never"],
         "function-paren-newline": ["error", "never"],
         "indent": ["error", 4, {
-            "SwitchCase": 1,
+            "SwitchCase": 1
         }],
         "key-spacing": ["error", {
             "beforeColon": false,
-            "afterColon": true,
+            "afterColon": true
         }],
         "keyword-spacing": ["error", {
             "before": true,
-            "after": true,
+            "after": true
         }],
         "line-comment-position": ["error", "above"],
         "max-len": ["error", {
-            "code": 100,
+            "code": 100
         }],
         "max-statements-per-line": ["error", {
-            "max": 1,
+            "max": 1
         }],
         "multiline-comment-style": ["error", "starred-block"],
         "multiline-ternary": ["error", "never"],
@@ -106,12 +106,12 @@ export default defineConfig([{
         "object-curly-newline": ["error", {
             "ObjectExpression": {
                 "multiline": true,
-                "minProperties": 2,
+                "minProperties": 2
             },
 
             "ObjectPattern": "never",
             "ImportDeclaration": "never",
-            "ExportDeclaration": "never",
+            "ExportDeclaration": "never"
         }],
         "object-curly-spacing": ["error", "never"],
         "object-property-newline": ["error"],
@@ -126,14 +126,14 @@ export default defineConfig([{
         "space-infix-ops": ["error"],
         "space-unary-ops": ["error", {
             "words": true,
-            "nonwords": false,
+            "nonwords": false
         }],
         "spaced-comment": ["error", "always"],
         "switch-colon-spacing": ["error", {
             "before": false,
-            "after": true,
+            "after": true
         }],
         "wrap-iife": ["error", "inside"],
         "wrap-regex": ["error"],
-    },
+    }
 }]);
