@@ -113,3 +113,10 @@ Set the spacial in tangent for the selected position keyframe to be 50% of the
 distance between the current keyframe and the previous keyframe. Helpful in animating natural
 mouse cursor movements.
 
+---
+
+### [Set Temporal Tangent To Midpoint (v2.2)](Set_Temporal_Tangent_To_Midpoint.jsx)
+
+Set the temporal ease of selected keyframes to the midpoint value between the
+selected keyframe and an adjacent keyframe. Choose to set the `In` or `Out` ease direction.
+
