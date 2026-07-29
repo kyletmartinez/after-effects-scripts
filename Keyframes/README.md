@@ -1,5 +1,12 @@
 # 💎 Keyframes Scripts
 
+### [Add Opacity Keyframe At Current Time (v1.0)](Add_Opacity_Keyframe_At_Current_Time.jsx)
+
+Add two `HOLD` opacity keyframes to any selected Opacity properties: one at 0%
+opacity at the beginning of the composition and one at 100% at the Current Time Indicator.
+
+---
+
 ### [Add Text Animation (v1.0)](Add_Text_Animation.jsx)
 
 Add text animation to the selected text layers using a text animator.
