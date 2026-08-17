@@ -13,6 +13,13 @@ Hover over the panel to update current time in multiple formats: `timecode`,
 
 ---
 
+### [Export Image Layers (v1.0)](Export_Image_Layers.jsx)
+
+Export all image layers with scale over 100% to a text file on the desktop.
+Automatically deduplicates by image path and stacks multiple scale instances.
+
+---
+
 ### [Frame Navigator (v1.1)](Frame_Navigator.jsx)
 
 Easily navigate the timeline by moving the Current Time Indicator as needed:
