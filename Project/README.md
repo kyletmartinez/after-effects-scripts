@@ -118,6 +118,13 @@ Effects but the name doesn't update.
 
 ---
 
+### [Reset Selected Item Labels (v1.0)](Reset_Selected_Item_Labels.jsx)
+
+Restore all selected item labels to their default as defined in the After Effects
+preferences.
+
+---
+
 ### [Set All Item Labels To None (v2.1)](Set_All_Item_Labels_To_None.jsx)
 
 Set the label for all items in the current project to `None` or label `0`.
