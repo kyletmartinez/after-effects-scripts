@@ -82,7 +82,7 @@ layer directly below the selected layer instead of above it.
 
 ---
 
-### [Extend All Layers (v1.2)](Extend_All_Layers.jsx)
+### [Extend All Layer Durations (v1.3)](Extend_All_Layer_Durations.jsx)
 
 Extend every layer to match the composition duration in every composition in the
 current project.
