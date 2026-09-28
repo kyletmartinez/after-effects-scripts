@@ -121,6 +121,12 @@ project.
 
 ---
 
+### [Remove Guides (v1.0)](Remove_Guides.jsx)
+
+Remove all guides from the current composition.
+
+---
+
 ### [Rename Composition To File Name (v2.1)](Rename_Composition_To_File_Name.jsx)
 
 Rename the composition to match the name of the project file.
