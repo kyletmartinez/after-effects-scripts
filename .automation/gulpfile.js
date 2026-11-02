@@ -23,6 +23,7 @@ const categoryEmojis = {
     "Markers": "🏷️",
     "Project": "🗄️",
     "Properties": "🎛️",
+    "Render": "🚀",
     "Selection": "🎯",
     "Utilities": "🧰"
 };

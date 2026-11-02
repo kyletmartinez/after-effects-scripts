@@ -1,39 +1,14 @@
 # 🗄️ Project Scripts
 
-### [Add Folder To Render Queue (v1.0)](Add_Folder_To_Render_Queue.jsx)
+### [Add Comments To Selected Items (v1.0)](Add_Comments_To_Selected_Items.jsx)
 
-Select a single folder in the Project panel and run this script to search through
-all nested subfolders and add all compositions to the Render Queue.
-
----
-
-### [Add Labeled Items To Render Queue (v1.0)](Add_Labeled_Items_To_Render_Queue.jsx)
-
-Add all compositions to the Render Queue that have the specified label.
-
----
-
-### [Add Selected Compositions To Render Queue (v1.0)](Add_Selected_Compositions_To_Render_Queue.jsx)
-
-Add the selected compositions to the Render queue defaulting to using the
-`H.264 MP4` Output Template. However, if the composition name contains the characters `_TEXT_`
-anywhere in the name, then use the `Apple ProRes 4444 + Alpha` Output Template.
-
-> [!CAUTION]
-> These script was built for a very specific use-case and requires both Output Templates to exist
-> in your After Effects project.
+Add a comment to all selected compositions in the project file
 
 ---
 
 ### [Add Selection To New Folder (v1.0)](Add_Selection_To_New_Folder.jsx)
 
 Add all selected items in the Project Panel to a new folder.
-
----
-
-### [Clean Render Queue (v2.1)](Clean_Render_Queue.jsx)
-
-Clean out the Render Queue.
 
 ---
 
@@ -55,21 +30,6 @@ Files are not truely deleted instead they are moved to a `Deleted` folder on the
 ### [Export Text To File (v1.0)](Export_Text_To_File.jsx)
 
 Export all selected text layers to a single `export.txt` text file on the desktop.
-
----
-
-### [Manually Render PNG Sequence (v1.1)](Manually_Render_PNG_Sequence.jsx)
-
-I wrote this script because the Render Queue was being annoying, spitting out
-renders with issues, and I didn't have time to troubleshoot the problem.
-
-Instead, simply set your `Work Area` then run the script to select where the PNG Sequence should
-be rendered.
-
-> [!CAUTION]
-> I don't recommend using this script regulary. `saveFrameToPng()` is officially undocumented and
-> was found via research. The whole function may disappear or even completely stop working. The
-> quality does not compare to using the Render Queue.
 
 ---
 
@@ -134,6 +94,12 @@ Set the label for all items in the current project to `None` or label `0`.
 ### [Set Proxies From Folder (v2.3)](Set_Proxies_From_Folder.jsx)
 
 Set proxies for all compositions within the project.
+
+---
+
+### [Set Selected Duration (v1.0)](Set_Selected_Duration.jsx)
+
+Set the duration of all selected compositions in the Project Panel.
 
 ---
 

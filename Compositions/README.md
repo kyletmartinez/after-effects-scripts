@@ -28,6 +28,13 @@ precomposed character rigs.
 
 ---
 
+### [Add Numbered Markers (v1.0)](Add_Numbered_Markers.jsx)
+
+Remove existing markers and add new numbered markers at regular intervals
+throughout the active composition.
+
+---
+
 ### [Add Posterize Time Adjustment Layer (v2.1)](Add_Posterize_Time_Adjustment_Layer.jsx)
 
 Add `Posterize Time` adjustment layer to the current composition. Default `Frame
@@ -90,6 +97,12 @@ the full duration of the composition.
 ### [Cycle Composition Background Color (v2.1)](Cycle_Composition_Background_Color.jsx)
 
 Cycle the composition background color between `black`, `gray`, and `white`.
+
+---
+
+### [Delete All Composition Markers (v1.0)](Delete_All_Composition_Markers.jsx)
+
+Delete all composition markers from every composition in the project.
 
 ---
 
